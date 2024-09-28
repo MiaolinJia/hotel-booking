@@ -1,0 +1,4 @@
+rootProject.name = 'hotel-booking'
+include 'ui-service'
+include 'test-service'
+
