@@ -1,3 +1,5 @@
+import org.apache.tools.ant.taskdefs.condition.Os
+
 plugins {
 	id 'java'
 	id 'base'
@@ -70,16 +72,20 @@ tasks.named('asciidoctor') {
 }
 
 tasks.register('npmBuild') {
-	doLast {
-		exec {
-			workingDir './src/main/frontend/hotel-booking-ui'
-			commandLine 'npm', 'install'
-		}
-		exec {
-			workingDir './src/main/frontend/hotel-booking-ui'
-			commandLine 'npm', 'run', 'build' // Command to run
-		}
-	}
+    doLast {
+        def npmCommand = Os.isFamily(Os.FAMILY_WINDOWS) ? 'npm.cmd' : 'npm'
+        def workingDirectory = './src/main/frontend/hotel-booking-ui'
+
+        exec {
+            workingDir workingDirectory
+            commandLine npmCommand, 'install'
+        }
+
+        exec {
+            workingDir workingDirectory
+            commandLine npmCommand, 'run', 'build'
+        }
+    }
 }
 
 tasks.named('build').configure {
