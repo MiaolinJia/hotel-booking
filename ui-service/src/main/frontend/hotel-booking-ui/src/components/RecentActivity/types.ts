@@ -1,0 +1,23 @@
+export interface RecentActivity {
+  id: string;
+  type: "hotel";
+  city: string;
+  state: string;
+  startDate: string;
+  endDate: string;
+}
+
+export interface RecentActivityProps {
+  children: (
+    activities: RecentActivity[],
+    deleteActivity: (id: string) => void
+  ) => React.ReactNode;
+  activities: RecentActivity[];
+  deleteActivity: (id: string) => void;
+}
+
+export interface UseRecentActivitiesReturn {
+  activities: RecentActivity[];
+  addActivity: (newActivity: Omit<RecentActivity, "id">) => void;
+  deleteActivity: (idToDelete: string) => void;
+}
