@@ -1,6 +1,10 @@
-import React from "react";
+import { RecentActivityProps } from "./types";
 
-const RecentActivityComponent = ({ children, activities, deleteActivity }) => {
+const RecentActivityComponent = ({
+  children,
+  activities,
+  deleteActivity,
+}: RecentActivityProps) => {
   if (activities.length === 0) {
     return null;
   }

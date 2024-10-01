@@ -16,6 +16,11 @@ export interface RecentActivityProps {
   deleteActivity: (id: string) => void;
 }
 
+export interface ActivityCardProps {
+  activity: RecentActivity;
+  onDelete: (id: string) => void;
+}
+
 export interface UseRecentActivitiesReturn {
   activities: RecentActivity[];
   addActivity: (newActivity: Omit<RecentActivity, "id">) => void;
