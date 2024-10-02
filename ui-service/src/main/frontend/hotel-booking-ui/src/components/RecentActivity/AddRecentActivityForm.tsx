@@ -35,15 +35,10 @@ const AddActivityForm: React.FC<AddActivityFormProps> = ({ addActivity }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="mb-4 p-4 bg-gray-100 rounded">
-      <h2 className="text-xl font-bold mb-2">Add New Activity</h2>
-      <div className="grid grid-cols-2 gap-4">
-        <select
-          name="type"
-          value={activity.type}
-          onChange={handleChange}
-          className="p-2 border rounded"
-        >
+    <form onSubmit={handleSubmit}>
+      <h2>Add New Activity</h2>
+      <div>
+        <select name="type" value={activity.type} onChange={handleChange}>
           <option value="hotel">Hotel</option>
           <option value="flight">Flight</option>
           <option value="car">Car</option>
@@ -54,7 +49,6 @@ const AddActivityForm: React.FC<AddActivityFormProps> = ({ addActivity }) => {
           value={activity.city}
           onChange={handleChange}
           placeholder="City"
-          className="p-2 border rounded"
           required
         />
         <input
@@ -63,7 +57,6 @@ const AddActivityForm: React.FC<AddActivityFormProps> = ({ addActivity }) => {
           value={activity.state}
           onChange={handleChange}
           placeholder="State"
-          className="p-2 border rounded"
           required
         />
         <input
@@ -71,7 +64,6 @@ const AddActivityForm: React.FC<AddActivityFormProps> = ({ addActivity }) => {
           name="startDate"
           value={activity.startDate}
           onChange={handleChange}
-          className="p-2 border rounded"
           required
         />
         <input
@@ -79,16 +71,10 @@ const AddActivityForm: React.FC<AddActivityFormProps> = ({ addActivity }) => {
           name="endDate"
           value={activity.endDate}
           onChange={handleChange}
-          className="p-2 border rounded"
           required
         />
       </div>
-      <button
-        type="submit"
-        className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
-      >
-        Add Activity
-      </button>
+      <button type="submit">Add Activity</button>
     </form>
   );
 };

@@ -16,8 +16,17 @@ export function useRecentActivity(): UseRecentActivitiesReturn {
     if (storedActivities) {
       const parsedActivities = JSON.parse(storedActivities);
 
-      setActivities(parsedActivities);
-      activitiesRef.current = parsedActivities;
+      const currentDate = new Date().toISOString().split("T")[0];
+      const validActivities = parsedActivities.filter(
+        (activity: RecentActivity) => activity.startDate >= currentDate
+      );
+
+      if (parsedActivities.length > validActivities.length) {
+        saveActivities(validActivities);
+      }
+
+      setActivities(validActivities);
+      activitiesRef.current = validActivities;
     }
   }, []);
 

@@ -1,7 +1,6 @@
 import HomePageExampleComponent from "../components/HomePageExampleComponent";
 import ActivityCard from "../components/RecentActivity/ActivityCard";
 import { useRecentActivity } from "../components/RecentActivity/useRecentActivity";
-import { RecentActivity } from "../components/RecentActivity/types";
 import RecentActivityComponent from "../components/RecentActivity/RecentActivityComponent";
 import AddActivityForm from "../components/RecentActivity/AddRecentActivityForm";
 
@@ -18,18 +17,13 @@ const HomePage: React.FC = () => {
         activities={activities}
         deleteActivity={deleteActivity}
       >
-        {(
-          activities: RecentActivity[],
-          deleteActivity: (idToDelete: string) => void
-        ) =>
-          activities.map((activity) => (
-            <ActivityCard
-              key={activity.id}
-              activity={activity}
-              onDelete={deleteActivity}
-            />
-          ))
-        }
+        {activities.map((activity) => (
+          <ActivityCard
+            key={activity.id}
+            activity={activity}
+            onDelete={deleteActivity}
+          />
+        ))}
       </RecentActivityComponent>
     </>
   );

@@ -8,10 +8,7 @@ export interface RecentActivity {
 }
 
 export interface RecentActivityProps {
-  children: (
-    activities: RecentActivity[],
-    deleteActivity: (id: string) => void
-  ) => React.ReactNode;
+  children: React.ReactNode;
   activities: RecentActivity[];
   deleteActivity: (id: string) => void;
 }
@@ -24,5 +21,5 @@ export interface ActivityCardProps {
 export interface UseRecentActivitiesReturn {
   activities: RecentActivity[];
   addActivity: (newActivity: Omit<RecentActivity, "id">) => void;
-  deleteActivity: (idToDelete: string) => void;
+  deleteActivity: (id: string) => void;
 }
