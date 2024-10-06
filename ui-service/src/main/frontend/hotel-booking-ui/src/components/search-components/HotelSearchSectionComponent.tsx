@@ -1,7 +1,9 @@
-import React, {useState} from "react";
+import {useState} from "react";
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
 import {BadgeDollarSign} from 'lucide-react';
+import {fakeApiService} from "../../services/fakeApiService.ts";
+
 
 interface FormData {
     hotelType: 'single' | 'multi';
@@ -59,6 +61,13 @@ function HotelSearchSectionComponent() {
         e.preventDefault();
         console.log('Form submitted with data:', formData);
         // async call
+        fakeApiService.getHotels()
+            .then(response => {
+                console.log(response);
+            })
+            .catch(error => {
+                console.error('Error fetching hotels:', error);
+            });
     };
 
     return (
