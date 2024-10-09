@@ -14,7 +14,7 @@ const HomePage: React.FC = () => {
       <HomePageExampleComponent>
         <h1>"Here is a placeholder for homepage components"</h1>
       </HomePageExampleComponent>
-      <AddActivityForm addActivity={addActivity} />
+
       <RecentActivityComponent
         activities={activities}
         deleteActivity={deleteActivity}
@@ -28,6 +28,7 @@ const HomePage: React.FC = () => {
         ))}
       </RecentActivityComponent>
       <FeaturedBundleComponent bundles={mockBundles} />
+      <AddActivityForm addActivity={addActivity} />
     </>
   );
 };

@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { RecentActivity, UseRecentActivitiesReturn } from "./types";
 
 const STORAGE_KEY = "recentActivity";
-const MAX_ACTIVITIES = 3;
+const MAX_ACTIVITIES = 4;
 
 export function useRecentActivity(): UseRecentActivitiesReturn {
   // State for initial render and delete re-render
