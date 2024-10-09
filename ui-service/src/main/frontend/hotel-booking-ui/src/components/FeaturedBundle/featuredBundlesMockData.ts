@@ -1,4 +1,6 @@
-export const bundles = [
+import { FeaturedBundleCardProp } from "./types";
+
+export const bundles: FeaturedBundleCardProp[] = [
   {
     destination: "Atlanta, GA",
     dates: "Nov 1st - Nov 4th",

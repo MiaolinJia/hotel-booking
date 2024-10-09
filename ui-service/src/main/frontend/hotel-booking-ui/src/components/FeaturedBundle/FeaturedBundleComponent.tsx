@@ -2,8 +2,9 @@ import Slider from "react-slick";
 import FeaturedBundleCard from "./FeaturedBundleCard";
 import "./featuredBundle.css";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
+import { ArrowProps, FeaturedBundleComponentProps } from "./types";
 
-const FeaturedBundleComponent = ({ bundles }) => {
+const FeaturedBundleComponent = ({ bundles }: FeaturedBundleComponentProps) => {
   const settings = {
     dots: false,
     infinite: false,
@@ -12,8 +13,8 @@ const FeaturedBundleComponent = ({ bundles }) => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
   };
 
   return (
@@ -36,7 +37,7 @@ const FeaturedBundleComponent = ({ bundles }) => {
 
 export default FeaturedBundleComponent;
 
-function SampleNextArrow({ className, onClick }) {
+const NextArrow: React.FC<ArrowProps> = ({ className, onClick }) => {
   return (
     <div
       onClick={onClick}
@@ -58,9 +59,9 @@ function SampleNextArrow({ className, onClick }) {
       <FaAngleRight className="w-5 h-5 text-blue-600 hover:text-blue-800" />
     </div>
   );
-}
+};
 
-function SamplePrevArrow({ className, onClick }) {
+const PrevArrow: React.FC<ArrowProps> = ({ className, onClick }) => {
   return (
     <div
       onClick={onClick}
@@ -83,4 +84,4 @@ function SamplePrevArrow({ className, onClick }) {
       <FaAngleLeft className="w-5 h-5 text-blue-600 hover:text-blue-800" />
     </div>
   );
-}
+};
