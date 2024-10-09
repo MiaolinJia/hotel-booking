@@ -1,11 +1,15 @@
 import Slider from "react-slick";
-import FeaturedBundleCard from "./FeaturedBundleCard";
-import "./featuredBundle.css";
+import "./carouselComponent.css";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
-import { ArrowProps, FeaturedBundleComponentProps } from "./types";
+import { ArrowProps, CarouselComponentProps } from "./types";
+import React from "react";
 
-const FeaturedBundleComponent = ({ bundles }: FeaturedBundleComponentProps) => {
-  const settings = {
+const FeaturedBundleComponent = ({
+  children,
+  title = "Carousel",
+  sliderSettings = {},
+}: CarouselComponentProps) => {
+  const defaultSettings = {
     dots: false,
     infinite: false,
     draggable: false,
@@ -17,16 +21,18 @@ const FeaturedBundleComponent = ({ bundles }: FeaturedBundleComponentProps) => {
     prevArrow: <PrevArrow />,
   };
 
+  const settings = { ...defaultSettings, ...sliderSettings };
+
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
-      <h2 className="text-2xl font-bold text-blue-900 mb-6">
-        Don't miss these hotel + flight deals
-      </h2>
+      {title && (
+        <h2 className="text-2xl font-bold text-blue-900 mb-6">{title}</h2>
+      )}
       <div className="relative">
         <Slider {...settings}>
-          {bundles.map((bundle, index) => (
+          {React.Children.map(children, (child, index) => (
             <div key={index} className="px-2">
-              <FeaturedBundleCard {...bundle} />
+              {child}
             </div>
           ))}
         </Slider>

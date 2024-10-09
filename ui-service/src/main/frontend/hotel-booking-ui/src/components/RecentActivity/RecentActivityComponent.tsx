@@ -9,7 +9,7 @@ const RecentActivityComponent = ({
   }
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-8 bg-white p-6 rounded-lg shadow-sm bg-blue-100">
+    <div className="max-w-6xl mx-auto px-4 py-8 p-6 rounded-lg shadow-sm bg-blue-100">
       <div className="flex justify-between items-center mb-4">
         <h2 className="inline-block align-middle text-2xl font-bold text-blue-900 mb-6">
           Pick up where you left off

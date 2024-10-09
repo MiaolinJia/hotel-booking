@@ -3,8 +3,9 @@ import ActivityCard from "../components/RecentActivity/ActivityCard";
 import { useRecentActivity } from "../components/RecentActivity/useRecentActivity";
 import RecentActivityComponent from "../components/RecentActivity/RecentActivityComponent";
 import AddActivityForm from "../components/RecentActivity/AddRecentActivityForm";
-import FeaturedBundleComponent from "../components/FeaturedBundle/FeaturedBundleComponent";
 import { bundles as mockBundles } from "../components/FeaturedBundle/featuredBundlesMockData";
+import CarouselComponent from "../components/CarouselComponent/CarouselComponent";
+import FeaturedBundleCard from "../components/FeaturedBundle/FeaturedBundleCard";
 
 const HomePage: React.FC = () => {
   const { activities, addActivity, deleteActivity } = useRecentActivity();
@@ -27,7 +28,13 @@ const HomePage: React.FC = () => {
           />
         ))}
       </RecentActivityComponent>
-      <FeaturedBundleComponent bundles={mockBundles} />
+
+      <CarouselComponent title="Don't miss these hotel + flight deals">
+        {mockBundles.map((item, index) => (
+          <FeaturedBundleCard key={index} {...item} />
+        ))}
+      </CarouselComponent>
+
       <AddActivityForm addActivity={addActivity} />
     </>
   );
