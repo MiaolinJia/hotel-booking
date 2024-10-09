@@ -3,6 +3,8 @@ import ActivityCard from "../components/RecentActivity/ActivityCard";
 import { useRecentActivity } from "../components/RecentActivity/useRecentActivity";
 import RecentActivityComponent from "../components/RecentActivity/RecentActivityComponent";
 import AddActivityForm from "../components/RecentActivity/AddRecentActivityForm";
+import FeaturedBundleComponent from "../components/FeaturedBundle/FeaturedBundleComponent";
+import { bundles as mockBundles } from "../components/FeaturedBundle/featuredBundlesMockData";
 
 const HomePage: React.FC = () => {
   const { activities, addActivity, deleteActivity } = useRecentActivity();
@@ -25,6 +27,7 @@ const HomePage: React.FC = () => {
           />
         ))}
       </RecentActivityComponent>
+      <FeaturedBundleComponent bundles={mockBundles} />
     </>
   );
 };
