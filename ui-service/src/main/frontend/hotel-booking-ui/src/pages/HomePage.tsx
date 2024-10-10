@@ -6,6 +6,8 @@ import AddActivityForm from "../components/RecentActivity/AddRecentActivityForm"
 import { bundles as mockBundles } from "../components/FeaturedBundle/featuredBundlesMockData";
 import CarouselComponent from "../components/CarouselComponent/CarouselComponent";
 import FeaturedBundleCard from "../components/FeaturedBundle/FeaturedBundleCard";
+import FeaturedPropertyCard from "../components/FeaturedProperties/FeaturedPropertyCard";
+import { properties as mockProperties } from "../components/FeaturedProperties/featuredPropertiesMockData";
 
 const HomePage: React.FC = () => {
   const { activities, addActivity, deleteActivity } = useRecentActivity();
@@ -28,6 +30,15 @@ const HomePage: React.FC = () => {
           />
         ))}
       </RecentActivityComponent>
+
+      <CarouselComponent
+        title="Looking for the perfect stay?"
+        sliderSettings={{ slidesToShow: 4 }}
+      >
+        {mockProperties.map((item, index) => (
+          <FeaturedPropertyCard key={index} {...item} />
+        ))}
+      </CarouselComponent>
 
       <CarouselComponent title="Don't miss these hotel + flight deals">
         {mockBundles.map((item, index) => (

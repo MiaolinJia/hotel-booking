@@ -1,11 +1,11 @@
-import { FeaturedBundleCardProp } from "./types";
+import { FeaturedBundle } from "./types";
 
 const FeaturedBundleCard = ({
   destination,
   dates,
   price,
   imgSrc,
-}: FeaturedBundleCardProp) => {
+}: FeaturedBundle) => {
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer hover:shadow-[rgba(0,0,0,0.4)] transition-shadow duration-300">
       <div className="h-40 bg-gray-300 relative overflow-hidden">

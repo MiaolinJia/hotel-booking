@@ -1,4 +1,4 @@
-export interface FeaturedBundleCardProp {
+export interface FeaturedBundle {
   destination: string;
   dates: string;
   price: number;
