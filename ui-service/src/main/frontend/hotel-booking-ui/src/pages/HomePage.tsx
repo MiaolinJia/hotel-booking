@@ -8,6 +8,7 @@ import CarouselComponent from "../components/CarouselComponent/CarouselComponent
 import FeaturedBundleCard from "../components/FeaturedBundle/FeaturedBundleCard";
 import FeaturedPropertyCard from "../components/FeaturedProperties/FeaturedPropertyCard";
 import { properties as mockProperties } from "../components/FeaturedProperties/featuredPropertiesMockData";
+import { recommendedHotels as mockRecommendedHotels } from "../components/FeaturedProperties/recommendedHotelsMockData";
 
 const HomePage: React.FC = () => {
   const { activities, addActivity, deleteActivity } = useRecentActivity();
@@ -36,6 +37,15 @@ const HomePage: React.FC = () => {
         sliderSettings={{ slidesToShow: 4 }}
       >
         {mockProperties.map((item, index) => (
+          <FeaturedPropertyCard key={index} {...item} />
+        ))}
+      </CarouselComponent>
+
+      <CarouselComponent
+        title="Make your travel dreams come true"
+        sliderSettings={{ slidesToShow: 4 }}
+      >
+        {mockRecommendedHotels.map((item, index) => (
           <FeaturedPropertyCard key={index} {...item} />
         ))}
       </CarouselComponent>
