@@ -4,7 +4,7 @@ import MainNavigation from "../components/MainNavigation";
 const RootLayout: React.FC = () => {
   return (
     <>
-      <MainNavigation />
+      <MainNavigation/>
       <main>
         <Outlet />
       </main>

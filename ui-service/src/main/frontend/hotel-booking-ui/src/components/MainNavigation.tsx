@@ -1,12 +1,16 @@
-import { NavLink } from "react-router-dom";
+import MainNavagationLinks from "./MainNavagationLinks";
+import MainNavagationPopups from "./MainNavagationPopups";
 
 const MainNavigation: React.FC = () => {
   return (
     <header>
       <nav>
         <ul>
-          <li>
-            <NavLink to="/">Home</NavLink>
+          <li className="left left-nav" >
+            <MainNavagationLinks />
+          </li>
+          <li className="right right-nav">
+            <MainNavagationPopups />
           </li>
         </ul>
       </nav>
