@@ -9,6 +9,7 @@ import FeaturedBundleCard from "../components/FeaturedBundle/FeaturedBundleCard"
 import FeaturedPropertyCard from "../components/FeaturedProperties/FeaturedPropertyCard";
 import { properties as mockProperties } from "../components/FeaturedProperties/featuredPropertiesMockData";
 import { recommendedHotels as mockRecommendedHotels } from "../components/FeaturedProperties/recommendedHotelsMockData";
+import PromotionComponent from "../components/PromotionComponent/PromotionComponent";
 
 const HomePage: React.FC = () => {
   const { activities, addActivity, deleteActivity } = useRecentActivity();
@@ -49,6 +50,8 @@ const HomePage: React.FC = () => {
           <FeaturedPropertyCard key={index} {...item} />
         ))}
       </CarouselComponent>
+
+      <PromotionComponent />
 
       <CarouselComponent title="Don't miss these hotel + flight deals">
         {mockBundles.map((item, index) => (
