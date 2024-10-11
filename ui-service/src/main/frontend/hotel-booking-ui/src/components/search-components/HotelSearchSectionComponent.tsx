@@ -2,8 +2,9 @@ import {useState} from "react";
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
 import {BadgeDollarSign} from 'lucide-react';
-import {hotelService} from "../../services/hotelService.ts";
-
+import {AppDispatch} from "../../store";
+import {useDispatch} from 'react-redux';
+import {searchHotelList} from '../../store/modules/hotels';
 
 interface FormData {
     hotelType: 'single' | 'multi';
@@ -56,18 +57,12 @@ function HotelSearchSectionComponent() {
             hotelType: type
         }));
     };
+    const dispatch = useDispatch<AppDispatch>();
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         console.log('Form submitted with data:', formData);
-        // async call
-        hotelService.getHotels()
-            .then(response => {
-                console.log(response);
-            })
-            .catch(error => {
-                console.error('Error fetching hotels:', error);
-            });
+        dispatch(searchHotelList());
     };
 
     return (

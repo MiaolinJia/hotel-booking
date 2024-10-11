@@ -45,5 +45,33 @@
       "currency": "USD",
       "amenities": ["spa", "pool", "gym", "restaurant"]
     }
+  ],
+  "searchHotels": [
+    {
+      "id": "4",
+      "name": "Cozy Inn",
+      "address": "101 Maple Road, Smallville",
+      "rating": 3.8,
+      "price": 120,
+      "currency": "USD",
+      "amenities": [
+        "free-breakfast",
+        "parking"
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Luxury Towers",
+      "address": "1 High Street, Bigcity",
+      "rating": 4.8,
+      "price": 350,
+      "currency": "USD",
+      "amenities": [
+        "spa",
+        "pool",
+        "gym",
+        "restaurant"
+      ]
+    }
   ]
 }
