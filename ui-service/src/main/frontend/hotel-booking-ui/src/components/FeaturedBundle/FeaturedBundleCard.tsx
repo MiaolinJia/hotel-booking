@@ -1,4 +1,6 @@
 import { FeaturedBundle } from "./types";
+import { MdFlight } from "react-icons/md";
+import { FaHotel } from "react-icons/fa6";
 
 const FeaturedBundleCard = ({
   destination,
@@ -24,30 +26,12 @@ const FeaturedBundleCard = ({
       </div>
       <div className="p-4">
         <p className="text-gray-600 mb-2">{dates}</p>
-        <div className="flex items-center mb-2">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5 text-green-500 mr-2"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-          >
-            <path d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" />
-          </svg>
+        <div className="flex items-center mb-2 gap-2">
+          <MdFlight className="text-blue-600" />
           <p>Round-trip flight</p>
         </div>
-        <div className="flex items-center mb-4">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5 text-green-500 mr-2"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-          >
-            <path
-              fillRule="evenodd"
-              d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4zm3 1h6v7H7V5zm8 9v-7h2v7h-2zm-8 0v-7H5v7h2z"
-              clipRule="evenodd"
-            />
-          </svg>
+        <div className="flex items-center mb-4 gap-2">
+          <FaHotel className="text-blue-600" />
           <p>Hotel for 3 Nights</p>
         </div>
         <div className="flex justify-between content-end">

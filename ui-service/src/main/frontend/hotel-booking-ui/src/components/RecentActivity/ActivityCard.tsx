@@ -2,6 +2,12 @@ import { ActivityCardProps } from "./types";
 import { MdFlight, MdHotel, MdClose } from "react-icons/md";
 
 const ActivityCard = ({ activity, onDelete }: ActivityCardProps) => {
+  function capitalizeWords(str: string) {
+    return str
+      .split(" ")
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+      .join(" ");
+  }
   const getIcon = (type: string) => {
     switch (type) {
       case "flight":
@@ -23,15 +29,17 @@ const ActivityCard = ({ activity, onDelete }: ActivityCardProps) => {
       >
         <MdClose />
       </button>
-      <div className="flex flex-row items-center justify-between">
+      <div className="flex flex-row items-center  gap-2">
         <div className="flex items-center justify-center w-[52px] h-[52px] text-blue-500 rounded-full bg-blue-200">
           {getIcon(activity.type)}
         </div>
         <div className="flex flex-col items-start my-2">
-          <span className="text-blue-600 font-semibold">{activity.type}</span>
+          <span className="text-blue-600 font-semibold">
+            {capitalizeWords(activity.type)}
+          </span>
           <div>
             <h3 className="font-bold text-gray-800 mb-1">
-              {activity.city}, {activity.state}
+              {capitalizeWords(activity.city)}, {activity.state.toUpperCase()}
             </h3>
             <p className="text-sm text-gray-600 mb-2">
               {activity.startDate} - {activity.endDate}

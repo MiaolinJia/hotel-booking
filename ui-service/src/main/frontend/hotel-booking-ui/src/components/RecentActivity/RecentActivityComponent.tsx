@@ -15,7 +15,7 @@ const RecentActivityComponent = ({
           Pick up where you left off
         </h2>
         <div>
-          <span className="inline-block align-middle bg-white rounded-full p-4  text-blue-500 cursor-pointer hover:bg-slate-50 hover:text-blue-600">
+          <span className="inline-block align-middle bg-white rounded-full p-4  text-blue-500 cursor-pointer hover:bg-slate-50 hover:text-blue-600 font-bold">
             View All Recent Activity
           </span>
         </div>

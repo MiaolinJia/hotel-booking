@@ -1,6 +1,7 @@
 import { FaRegHeart } from "react-icons/fa6";
 import { MdOutlineThumbUp } from "react-icons/md";
 import { FeaturedProperty } from "./types";
+import { Tooltip } from "@mui/material";
 
 const FeaturedPropertyCard: React.FC<FeaturedProperty> = ({
   image,
@@ -34,18 +35,30 @@ const FeaturedPropertyCard: React.FC<FeaturedProperty> = ({
       <div className="relative h-48">
         <img className="w-full h-full object-cover" src={image} alt={name} />
         {showWishlist && (
-          <button className="absolute top-2 right-2 p-2 bg-white rounded-full">
-            <FaRegHeart className="h-6 w-6 text-gray-600" />
-          </button>
+          <Tooltip title={"Save to wish list"} placement="top">
+            <button className="absolute top-2 right-2 p-2 bg-white rounded-full hover:bg-slate-50">
+              <FaRegHeart className="h-6 w-6 text-gray-600" />
+            </button>
+          </Tooltip>
         )}
       </div>
-      <div className="px-6 py-4 flex-grow flex flex-col">
+      <div className="px-2 py-2 flex-grow flex flex-col">
         {propertyType && (
           <div className="flex items-center mb-2">
             <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
               {propertyType}
             </span>
-            {isGenius && <MdOutlineThumbUp className="h-5 w-5 text-blue-500" />}
+            {isGenius && (
+              <Tooltip
+                title={"This is our featured property. Blah blah."}
+                enterNextDelay={500}
+                leaveDelay={200}
+              >
+                <div>
+                  <MdOutlineThumbUp className="h-5 w-5 text-blue-500" />
+                </div>
+              </Tooltip>
+            )}
           </div>
         )}
         <div className="font-bold text-xl mb-2 line-clamp-2 overflow-hidden">
@@ -63,7 +76,7 @@ const FeaturedPropertyCard: React.FC<FeaturedProperty> = ({
             </span>
           </div>
           {price && (
-            <div className="mt-2">
+            <div className="mt-2 text-right">
               {originalPrice && (
                 <span className="line-through text-gray-500 mr-2">
                   ${formatNumber(originalPrice)}

@@ -14,7 +14,7 @@ const FeaturedBundleComponent = ({
     infinite: false,
     draggable: false,
     arrows: true,
-    speed: 500,
+    speed: 200,
     slidesToShow: 3,
     slidesToScroll: 1,
     nextArrow: <NextArrow />,
