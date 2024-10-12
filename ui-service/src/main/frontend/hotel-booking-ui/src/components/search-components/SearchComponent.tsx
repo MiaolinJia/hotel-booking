@@ -16,7 +16,7 @@ function SearchHotelComponent() {
             <HotelListComponent/>
         </Provider>
     );
-};
+}
 
 
 export default SearchHotelComponent;
