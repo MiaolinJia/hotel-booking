@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { User, Minus, Plus } from 'lucide-react';
-import './RoomSelector.css';
+import './styles/RoomSelector.css';
 
 interface SearchHotelComponentProps {
     rooms: number;

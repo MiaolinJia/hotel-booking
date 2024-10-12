@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     min-height: 40vh;
-    background-image: url('../../assets/search-background.jpg');
+    background-image: url('../../../assets/search-background.jpg');
     background-size: cover;
     background-position: center;
     padding: 20px;
@@ -114,7 +114,7 @@
     position: relative;
     overflow: hidden;
     border-radius: 8px;
-    background-image: url('../../assets/search-background.jpg');
+    background-image: url('../../../assets/search-background.jpg');
     background-size: cover;
     background-position: center;
 }

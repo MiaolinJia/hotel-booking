@@ -1,4 +1,4 @@
-import './HotelBooking.css';
+import './styles/HotelBooking.css';
 import JoinVipComponent from "./JoinVipComponent.tsx";
 import HotelSearchSectionComponent from "./HotelSearchSectionComponent.tsx";
 import {Provider} from "react-redux";
