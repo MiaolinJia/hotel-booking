@@ -5,13 +5,17 @@ import {BadgeDollarSign} from 'lucide-react';
 import {AppDispatch} from "../../store";
 import {useDispatch} from 'react-redux';
 import {searchHotelList} from '../../store/modules/hotels';
+import SearchHotelComponent from "./RoomSelectorComponent.tsx";
+
 
 interface FormData {
     hotelType: 'single' | 'multi';
     destination: string;
     startDate: Date | undefined;
     endDate: Date | undefined;
-    guests: string;
+    rooms: number;
+    adults: number;
+    children: number;
     bundleSave: boolean;
     addCar: boolean;
     addFlight: boolean;
@@ -19,15 +23,21 @@ interface FormData {
 
 function HotelSearchSectionComponent() {
     const today = new Date();
+    today.setHours(0, 0, 0, 0);
     const tomorrow = new Date();
     tomorrow.setDate(today.getDate() + 1);
+    const isDateSelectable = (date: Date) => {
+        return date >= today; // Allow selection of today and future dates
+    };
 
     const [formData, setFormData] = useState<FormData>({
         hotelType: 'single',
         destination: '',
         startDate: today,
         endDate: tomorrow,
-        guests: '2 Adults, 1 Room',
+        rooms: 1,
+        adults: 2,
+        children: 0,
         bundleSave: false,
         addCar: false,
         addFlight: false
@@ -57,8 +67,15 @@ function HotelSearchSectionComponent() {
             hotelType: type
         }));
     };
-    const dispatch = useDispatch<AppDispatch>();
 
+    const handleRoomDataChange = (key: 'rooms' | 'adults' | 'children', value: number) => {
+        setFormData(prevState => ({
+            ...prevState,
+            [key]: value
+        }));
+    };
+
+    const dispatch = useDispatch<AppDispatch>();
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         console.log('Form submitted with data:', formData);
@@ -107,13 +124,13 @@ function HotelSearchSectionComponent() {
                         onChange={handleDateChange}
                         placeholderText="Check-in - Check-out"
                         className="search-input date-picker-input"
+                        filterDate={isDateSelectable}
                     />
-                    <input
-                        type="text"
-                        name="guests"
-                        value={formData.guests}
-                        onChange={handleInputChange}
-                        className="search-input"
+                    <SearchHotelComponent
+                        rooms={formData.rooms}
+                        adults={formData.adults}
+                        children={formData.children}
+                        onRoomDataChange={handleRoomDataChange}
                     />
                     <div className="submit-button">
                         <button type="submit" className="search-button">Find Your Hotel</button>
