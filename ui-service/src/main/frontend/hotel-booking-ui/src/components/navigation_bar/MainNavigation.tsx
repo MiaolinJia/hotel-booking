@@ -6,10 +6,10 @@ const MainNavigation: React.FC = () => {
     <header>
       <nav>
         <ul>
-          <li className="left left-nav" >
+          <li className="left-nav">
             <MainNavagationLinks />
           </li>
-          <li className="right right-nav">
+          <li className="right-nav">
             <MainNavagationPopups />
           </li>
         </ul>

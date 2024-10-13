@@ -1,4 +1,4 @@
-import HomePageExampleComponent from "../components/HomePageExampleComponent";
+import HomePageExampleComponent from "../components/navigation_bar/HomePageExampleComponent";
 
 const HomePage: React.FC = () => {
   return (
