@@ -1,18 +1,13 @@
 import MainNavagationLinks from "./MainNavagationLinks";
 import MainNavagationPopups from "./MainNavagationPopups";
+import "./navigationStyle.css";
 
 const MainNavigation: React.FC = () => {
   return (
     <header>
       <nav>
-        <ul>
-          <li className="left-nav">
-            <MainNavagationLinks />
-          </li>
-          <li className="right-nav">
-            <MainNavagationPopups />
-          </li>
-        </ul>
+        <MainNavagationLinks />
+        <MainNavagationPopups />
       </nav>
     </header>
   );

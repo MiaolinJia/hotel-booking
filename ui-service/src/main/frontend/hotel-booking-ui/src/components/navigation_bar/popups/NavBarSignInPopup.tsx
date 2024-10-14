@@ -9,8 +9,12 @@ export default function NavBarSignInPopUp() {
           you become a VIP.
         </h2>
       </div>
-      <PopUpButton text="Sign In" />
-      <PopUpButton text="Create Account" />
+      <PopUpButton text="Sign In" backGroundColor="#0068ef" textColor="white" />
+      <PopUpButton
+        text="Create Account"
+        backGroundColor="#edf0f3"
+        textColor="#0068ef"
+      />
       <ul className="popup-list">
         <li>VIP Benefits</li>
         <li>My Trips</li>

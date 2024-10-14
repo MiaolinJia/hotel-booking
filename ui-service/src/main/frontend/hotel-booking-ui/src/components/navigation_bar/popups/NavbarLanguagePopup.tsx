@@ -1,9 +1,10 @@
 import ReactCountryFlag from "react-country-flag";
 import PopUpButton from "./PopupButton";
+import { forwardRef } from "react";
 
-export default function NavBarLanguagePopUp() {
+const NavBarLanguagePopUpWithRef = forwardRef<HTMLDivElement, {}>((_, ref) => {
   return (
-    <div className="popup">
+    <div className="popup" ref={ref}>
       <div className="popup-header">
         <h2>Select Your Language</h2>
       </div>
@@ -21,7 +22,13 @@ export default function NavBarLanguagePopUp() {
           Francais (CA)
         </li>
       </ul>
-      <PopUpButton text="Travel Support/Contact Us" />
+      <PopUpButton
+        text="Travel Support/Contact Us"
+        backGroundColor="#0068ef"
+        textColor="white"
+      />
     </div>
   );
-}
+});
+
+export default NavBarLanguagePopUpWithRef;

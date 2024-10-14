@@ -10,7 +10,11 @@ export default function NavBarFindMyTripPopUp() {
         <li>My Trips</li>
         <li>View, Print or Email Your Itinerary</li>
       </ul>
-      <PopUpButton text="Find My Trips" />
+      <PopUpButton
+        text="Find My Trips"
+        backGroundColor="#0068ef"
+        textColor="white"
+      />
     </div>
   );
 }
