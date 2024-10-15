@@ -14,6 +14,10 @@ function SearchHotelComponent() {
                 <JoinVipComponent/>
             </div>
             <HotelListComponent/>
+            <HotelListComponent/>
+            <HotelListComponent/>
+            <HotelListComponent/>
+            <HotelListComponent/>
         </Provider>
     );
 }
