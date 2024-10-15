@@ -1,0 +1,104 @@
+{
+  "hotels": [
+    {
+      "id": "1",
+      "name": "Sunset Beach Resort",
+      "address": "123 Ocean Drive, Beach City",
+      "rating": 4.5,
+      "price": 250,
+      "currency": "USD",
+      "amenities": ["pool", "wifi", "restaurant"]
+    },
+    {
+      "id": "2",
+      "name": "Mountain View Lodge",
+      "address": "456 Pine Street, Mountain Town",
+      "rating": 4.2,
+      "price": 180,
+      "currency": "USD",
+      "amenities": ["parking", "wifi", "gym"]
+    },
+    {
+      "id": "3",
+      "name": "City Center Hotel",
+      "address": "789 Main Street, Metropolis",
+      "rating": 4.0,
+      "price": 200,
+      "currency": "USD",
+      "amenities": ["restaurant", "bar", "business-center"]
+    },
+    {
+      "id": "4",
+      "name": "Cozy Inn",
+      "address": "101 Maple Road, Smallville",
+      "rating": 3.8,
+      "price": 120,
+      "currency": "USD",
+      "amenities": ["free-breakfast", "parking"]
+    },
+    {
+      "id": "5",
+      "name": "Luxury Towers",
+      "address": "1 High Street, Bigcity",
+      "rating": 4.8,
+      "price": 350,
+      "currency": "USD",
+      "amenities": ["spa", "pool", "gym", "restaurant"]
+    },
+    {
+      "id": "6",
+      "name": "Luxury Towers",
+      "address": "1 High Street, Bigcity",
+      "rating": 4.8,
+      "price": 350,
+      "currency": "USD",
+      "amenities": ["spa", "pool", "gym", "restaurant"]
+    },
+    {
+      "id": "7",
+      "name": "Luxury Towers",
+      "address": "1 High Street, Bigcity",
+      "rating": 4.8,
+      "price": 350,
+      "currency": "USD",
+      "amenities": ["spa", "pool", "gym", "restaurant"]
+    },
+    {
+      "id": "8",
+      "name": "Luxury Towers",
+      "address": "1 High Street, Bigcity",
+      "rating": 4.8,
+      "price": 350,
+      "currency": "USD",
+      "amenities": ["spa", "pool", "gym", "restaurant"]
+    }
+  ],
+  "searchHotels": [
+    {
+      "id": "4",
+      "name": "Cozy Inn",
+      "address": "101 Maple Road, Smallville",
+      "rating": 3.8,
+      "price": 120,
+      "currency": "USD",
+      "amenities": [
+        "free-breakfast",
+        "parking"
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Luxury Towers",
+      "address": "1 High Street, Bigcity",
+      "rating": 4.8,
+      "price": 350,
+      "currency": "USD",
+      "amenities": [
+        "spa",
+        "pool",
+        "gym",
+        "restaurant"
+      ]
+    }
+  ]
+}
