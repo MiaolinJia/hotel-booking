@@ -1,4 +1,4 @@
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
 import {BadgeDollarSign} from 'lucide-react';
@@ -43,6 +43,21 @@ function HotelSearchSectionComponent() {
         addFlight: false
     });
 
+    const [isSticky, setIsSticky] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const offset = window.scrollY;
+            setIsSticky(offset > 500);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
 
     const handleDateChange = (dates: [Date | null, Date | null]) => {
         const [start, end] = dates;
@@ -83,30 +98,34 @@ function HotelSearchSectionComponent() {
     };
 
     return (
-        <div className="hotel-search-section">
-            <div className="search-box">
-                <h2>Searching for a place to stay?</h2>
+        <div className={`hotel-search-section ${isSticky ? 'sticky' : ''}`}>
+            <div className={`search-box ${isSticky ? 'sticky' : ''}`}>
+                {!isSticky &&
+                    <div>
+                        <h2>Searching for a place to stay?</h2>
 
-                <div className="hotel-type-selection">
-                    <label>
-                        <input
-                            type="radio"
-                            name="hotelType"
-                            checked={formData.hotelType === 'single'}
-                            onChange={() => handleHotelTypeChange('single')}
-                        />
-                        <span>Single Hotel</span>
-                    </label>
-                    <label>
-                        <input
-                            type="radio"
-                            name="hotelType"
-                            checked={formData.hotelType === 'multi'}
-                            onChange={() => handleHotelTypeChange('multi')}
-                        />
-                        <span>Multi Hotel</span>
-                    </label>
-                </div>
+                        <div className="hotel-type-selection">
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="hotelType"
+                                    checked={formData.hotelType === 'single'}
+                                    onChange={() => handleHotelTypeChange('single')}
+                                />
+                                <span>Single Hotel</span>
+                            </label>
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="hotelType"
+                                    checked={formData.hotelType === 'multi'}
+                                    onChange={() => handleHotelTypeChange('multi')}
+                                />
+                                <span>Multi Hotel</span>
+                            </label>
+                        </div>
+                    </div>
+                }
 
                 <form onSubmit={handleSubmit} className="search-form">
                     <input
