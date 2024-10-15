@@ -44,6 +44,33 @@
       "price": 350,
       "currency": "USD",
       "amenities": ["spa", "pool", "gym", "restaurant"]
+    },
+    {
+      "id": "6",
+      "name": "Luxury Towers",
+      "address": "1 High Street, Bigcity",
+      "rating": 4.8,
+      "price": 350,
+      "currency": "USD",
+      "amenities": ["spa", "pool", "gym", "restaurant"]
+    },
+    {
+      "id": "7",
+      "name": "Luxury Towers",
+      "address": "1 High Street, Bigcity",
+      "rating": 4.8,
+      "price": 350,
+      "currency": "USD",
+      "amenities": ["spa", "pool", "gym", "restaurant"]
+    },
+    {
+      "id": "8",
+      "name": "Luxury Towers",
+      "address": "1 High Street, Bigcity",
+      "rating": 4.8,
+      "price": 350,
+      "currency": "USD",
+      "amenities": ["spa", "pool", "gym", "restaurant"]
     }
   ],
   "searchHotels": [
