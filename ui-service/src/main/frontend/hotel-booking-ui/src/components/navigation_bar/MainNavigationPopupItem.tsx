@@ -1,15 +1,10 @@
 import { useRef, useEffect, useState } from "react";
+import React from "react";
 
-function MainNavigationPopupItem({
-  text,
-  children,
-}: {
-  text: string;
-  children: React.ReactNode;
-}) {
+function MainNavigationPopupItem({ children }: { children: React.ReactNode }) {
   const popupRef = useRef<HTMLDivElement>(null);
   const [isPopupOpen, setIsPopupOpen] = useState<boolean>(false);
-
+  const [firstChild, secondChild] = React.Children.toArray(children);
   function handleClick() {
     setIsPopupOpen((preState) => !preState);
   }
@@ -17,7 +12,6 @@ function MainNavigationPopupItem({
   function hidePopup() {
     setIsPopupOpen(false);
   }
-  // Handle click outside of the popup to close it
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (
@@ -27,18 +21,21 @@ function MainNavigationPopupItem({
         hidePopup();
       }
     };
-    // Bind the event listener
     document.addEventListener("mousedown", handleClickOutside);
     return () => {
-      // Unbind the event listener on clean up
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
 
   return (
     <div className="popup-container" ref={popupRef}>
-      <li onClick={handleClick}>{text}</li>
-      {isPopupOpen && <div className="popup">{children}</div>}
+      <button
+        onClick={handleClick}
+        className={isPopupOpen ? "nav-button-active header-btn" : "header-btn"}
+      >
+        {firstChild}
+      </button>
+      {isPopupOpen && <>{secondChild}</>}
     </div>
   );
 }

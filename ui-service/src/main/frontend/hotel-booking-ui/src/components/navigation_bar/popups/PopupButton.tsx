@@ -16,6 +16,10 @@ export default function PopUpButton({
         width: "100%",
         marginBottom: "0.5em",
         fontWeight: "700",
+        marginTop: "8px",
+        textAlign: "center",
+        borderRadius: "999px",
+        lineHeight: "1.4",
       }}
     >
       {text}

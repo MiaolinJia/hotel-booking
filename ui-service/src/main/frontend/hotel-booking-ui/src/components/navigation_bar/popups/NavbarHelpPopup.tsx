@@ -3,9 +3,7 @@ import PopUpButton from "./PopupButton";
 export default function NavBarHelpPopUp() {
   return (
     <div className="popup">
-      <div className="popup-header">
-        <h2>Priceline Help Center</h2>
-      </div>
+      <div className="popup-header">Priceline Help Center</div>
       <ul className="popup-list">
         <li>Frequently Asked Questions</li>
         <li>Find My Trip</li>

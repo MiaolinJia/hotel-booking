@@ -2,13 +2,27 @@ import PopUpButton from "./PopupButton";
 
 export default function NavBarSignInPopUp() {
   return (
-    <div className="popup">
-      <div className="popup-header">
-        <h2>
-          Sign in, or join for free Unlock savings, loyalty perks, and more when
-          you become a VIP.
-        </h2>
+    <div className="popup" style={{ width: "358px" }}>
+      <div className="vip-header">
+        <div>
+          <div
+            className="popup-header vip-box"
+            style={{
+              padding: 0,
+              color: "#003c8a",
+            }}
+          >
+            Sign in, or join for free
+          </div>
+          <div className="vip-box" style={{ fontSize: 14 }}>
+            Unlock savings, loyalty perks, and more when you become a VIP.
+          </div>
+        </div>
+        <div>
+          <img src="/join-vip-badge.svg" alt="icon" />
+        </div>
       </div>
+
       <PopUpButton text="Sign In" backGroundColor="#0068ef" textColor="white" />
       <PopUpButton
         text="Create Account"
@@ -16,10 +30,22 @@ export default function NavBarSignInPopUp() {
         textColor="#0068ef"
       />
       <ul className="popup-list">
-        <li>VIP Benefits</li>
-        <li>My Trips</li>
-        <li>My Account</li>
-        <li>Wallet</li>
+        <li>
+          <img src="/vip-dark.svg" alt="icon" />
+          VIP Benefits
+        </li>
+        <li>
+          <img src="/my-trips.svg" alt="icon" />
+          My Trips
+        </li>
+        <li>
+          <img src="/my-account.svg" alt="icon" />
+          My Account
+        </li>
+        <li>
+          <img src="/public/wallet.svg" alt="icon" />
+          Wallet
+        </li>
       </ul>
     </div>
   );
