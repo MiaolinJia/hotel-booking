@@ -1,4 +1,4 @@
-export default function PopUpButton({
+export default function DropdownButton({
   text,
   backGroundColor,
   textColor,

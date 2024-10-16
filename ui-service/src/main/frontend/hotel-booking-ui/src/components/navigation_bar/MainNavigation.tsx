@@ -1,5 +1,5 @@
 import MainNavagationLinks from "./MainNavagationLinks";
-import MainNavagationPopups from "./MainNavagationPopups";
+import MainNavagationDropdown from "./MainNavagationDropdowns";
 import "./navigationStyle.css";
 
 const MainNavigation: React.FC = () => {
@@ -7,7 +7,7 @@ const MainNavigation: React.FC = () => {
     <header>
       <nav>
         <MainNavagationLinks />
-        <MainNavagationPopups />
+        <MainNavagationDropdown />
       </nav>
     </header>
   );

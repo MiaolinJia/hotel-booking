@@ -1,11 +1,11 @@
-import PopUpButton from "./PopupButton";
+import DropdownButton from "./DropdownButton";
 import { forwardRef } from "react";
 
-const NavBarLanguagePopUpWithRef = forwardRef<HTMLDivElement, {}>((_, ref) => {
+const NavBarLanguageDropdownWithRef = forwardRef<HTMLDivElement, object>((_, ref) => {
   return (
-    <div className="popup" ref={ref}>
-      <div className="popup-header">Select Your Language</div>
-      <ul className="popup-list">
+    <div className="dropdown" ref={ref}>
+      <div className="dropdown-header">Select Your Language</div>
+      <ul className="dropdown-list">
         <li>
           <div className="language-flag" />
           English (US)
@@ -25,7 +25,7 @@ const NavBarLanguagePopUpWithRef = forwardRef<HTMLDivElement, {}>((_, ref) => {
           Francais (CA)
         </li>
       </ul>
-      <PopUpButton
+      <DropdownButton
         text="Travel Support/Contact Us"
         backGroundColor="#0068ef"
         textColor="white"
@@ -34,4 +34,4 @@ const NavBarLanguagePopUpWithRef = forwardRef<HTMLDivElement, {}>((_, ref) => {
   );
 });
 
-export default NavBarLanguagePopUpWithRef;
+export default NavBarLanguageDropdownWithRef;

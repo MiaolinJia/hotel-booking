@@ -1,11 +1,11 @@
 import MainNavigationLinkItem from "./MainNavigationItem";
-import MainNavigationPopupItem from "./MainNavigationPopupItem";
-import NavBarLanguagePopUp from "./popups/NavbarLanguagePopup";
-import NavBarHelpPopUp from "./popups/NavbarHelpPopup";
-import NavBarFindMyTripPopUp from "./popups/NavbarFindMyTripPopup";
-import NavBarSignInPopUp from "./popups/NavBarSignInPopup";
+import MainNavigationDropdownItem from "./MainNavigationDropdownItem";
+import NavBarLanguagePopUp from "./dropdowns/NavbarLanguageDropdown";
+import NavBarHelpDropdown from "./dropdowns/NavbarHelpDropdown";
+import NavBarFindMyTripDropdown from "./dropdowns/NavbarFindMyTripDropdown";
+import NavBarSignInDropdown from "./dropdowns/NavBarSignInDropdown";
 
-export default function MainNavagationPopups() {
+export default function MainNavagationDropdown() {
   return (
     <div className="right-nav-group">
       <MainNavigationLinkItem to="/penny">
@@ -19,22 +19,22 @@ export default function MainNavagationPopups() {
         </div>
       </MainNavigationLinkItem>
       <div className="right-nav">
-        <MainNavigationPopupItem>
+        <MainNavigationDropdownItem>
           <div className="language-flag" />
           <NavBarLanguagePopUp />
-        </MainNavigationPopupItem>
+        </MainNavigationDropdownItem>
 
-        <MainNavigationPopupItem>
+        <MainNavigationDropdownItem>
           Help
-          <NavBarHelpPopUp />
-        </MainNavigationPopupItem>
+          <NavBarHelpDropdown />
+        </MainNavigationDropdownItem>
 
-        <MainNavigationPopupItem>
+        <MainNavigationDropdownItem>
           Find My Trip
-          <NavBarFindMyTripPopUp />
-        </MainNavigationPopupItem>
+          <NavBarFindMyTripDropdown />
+        </MainNavigationDropdownItem>
 
-        <MainNavigationPopupItem>
+        <MainNavigationDropdownItem>
           <div className="sign-in-vip-group">
             <img src="/join-vip-badge.svg" alt="icon" />
             <div className="sign-in-vip">
@@ -50,8 +50,8 @@ export default function MainNavagationPopups() {
               </span>
             </div>
           </div>
-          <NavBarSignInPopUp />
-        </MainNavigationPopupItem>
+          <NavBarSignInDropdown />
+        </MainNavigationDropdownItem>
       </div>
     </div>
   );

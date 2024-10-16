@@ -1,12 +1,12 @@
-import PopUpButton from "./PopupButton";
+import DropdownButton from "./DropdownButton";
 
-export default function NavBarSignInPopUp() {
+export default function NavBarSignInDropdown() {
   return (
-    <div className="popup" style={{ width: "358px" }}>
+    <div className="dropdown" style={{ width: "358px" }}>
       <div className="vip-header">
         <div>
           <div
-            className="popup-header vip-box"
+            className="dropdown-header vip-box"
             style={{
               padding: 0,
               color: "#003c8a",
@@ -23,13 +23,13 @@ export default function NavBarSignInPopUp() {
         </div>
       </div>
 
-      <PopUpButton text="Sign In" backGroundColor="#0068ef" textColor="white" />
-      <PopUpButton
+      <DropdownButton text="Sign In" backGroundColor="#0068ef" textColor="white" />
+      <DropdownButton
         text="Create Account"
         backGroundColor="#edf0f3"
         textColor="#0068ef"
       />
-      <ul className="popup-list">
+      <ul className="dropdown-list">
         <li>
           <img src="/vip-dark.svg" alt="icon" />
           VIP Benefits

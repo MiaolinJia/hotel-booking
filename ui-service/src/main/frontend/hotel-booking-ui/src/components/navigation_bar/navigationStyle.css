@@ -9,6 +9,11 @@ header {
   padding: 0px 8px 0px 0px;
 }
 
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
 nav {
   display: flex;
   letter-spacing: 0.5px;
@@ -85,7 +90,7 @@ nav li {
 }
 
 .link-active {
-  color: #646cff;
+  color: #0068ef;
 }
 
 nav li:hover {
@@ -115,12 +120,12 @@ button:hover {
   background-color: #edf0f3;
 }
 
-.popup-container {
+.dropdown-container {
   position: relative;
   display: inline;
 }
 
-.popup {
+.dropdown {
   position: absolute;
   top: 120%;
   right: 0;
@@ -133,24 +138,24 @@ button:hover {
   box-shadow: 0 8px 32px #0000003d, 0 8px 16px #0003, 0 24px 64px #0003;
 }
 
-.popup-header:not() {
+.dropdown-header:not() {
   border-bottom: 1px solid #e0e0e0;
   margin-bottom: 10px;
 }
 
-.popup-header {
+.dropdown-header {
   font-size: 20px;
   font-weight: 700;
   padding: 8px;
   width: 100%;
 }
 
-.popup-list {
+.dropdown-list {
   list-style-type: none;
   padding: 0;
 }
 
-.popup-list li {
+.dropdown-list li {
   flex-direction: row;
   justify-content: left;
   padding: 12px;
