@@ -2,9 +2,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../../store";
 import { useEffect } from "react";
 import {
-  deleteSearch,
+  deleteSearchAndSave,
   initializeRecentSearches,
-  saveRecentSearches,
 } from "../../store/modules/recentSearchesSlice";
 import ActivityCard from "./ActivityCard";
 
@@ -18,14 +17,8 @@ const RecentActivityComponent = () => {
     dispatch(initializeRecentSearches());
   }, [dispatch]);
 
-  useEffect(() => {
-    if (searches.length > 0) {
-      dispatch(saveRecentSearches(searches));
-    }
-  }, [searches, dispatch]);
-
   const handleDeleteSearch = (id: string) => {
-    dispatch(deleteSearch(id));
+    dispatch(deleteSearchAndSave(id));
   };
 
   if (searches.length === 0) {

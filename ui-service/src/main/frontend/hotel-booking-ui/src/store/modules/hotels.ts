@@ -1,8 +1,7 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import axios from "axios";
 import { AppDispatch } from "../index";
-import { addSearch } from "./recentSearchesSlice";
-import { RecentSearch } from "./recentSearchesSlice";
+import { addSearchAndSave } from "./recentSearchesSlice";
 import { FormData } from "../../components/search-components/HotelSearchSectionComponent";
 
 interface Hotel {
@@ -49,8 +48,8 @@ const fetchHotelList = () => {
 const searchHotelList = (formData: FormData) => {
   return async (dispatch: AppDispatch) => {
     try {
-      dispatch(addSearch(formData));
       const response = await axios.get("http://localhost:3004/searchHotels");
+      dispatch(addSearchAndSave(formData));
       dispatch(setHotelsList(response.data));
     } catch (error) {
       console.error("Failed to fetch hotels:", error);

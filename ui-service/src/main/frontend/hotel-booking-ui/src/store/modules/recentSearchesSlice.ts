@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { AppDispatch } from "..";
+import { AppDispatch, RootState } from "..";
 import { FormData } from "../../components/search-components/HotelSearchSectionComponent";
 
 const MAX_SEARCHES = 4;
@@ -40,43 +40,22 @@ const recentSearchesSlice = createSlice({
         adults: action.payload.adults,
         children: action.payload.children,
       };
-      state.searches = [newSearch, ...state.searches].slice(0, MAX_SEARCHES);
+      if (isDateTodayOrFuture(newSearch.startDate)) {
+        state.searches = [newSearch, ...state.searches].slice(0, MAX_SEARCHES);
+      }
     },
     deleteSearch: (state, action: PayloadAction<string>) => {
       state.searches = state.searches.filter(
         (search) => search.id !== action.payload
       );
     },
-    clearExpiredSearches: (state) => {
-      const currentDate = new Date();
-      state.searches = state.searches.filter(
-        (search) => search.startDate >= currentDate
-      );
-    },
+    // ... other reducers
   },
 });
 
-export const initializeRecentSearches = () => {
-  return (dispatch: AppDispatch) => {
-    const storedSearches = localStorage.getItem(STORAGE_KEY);
-    if (storedSearches) {
-      const parsedSearches = JSON.parse(storedSearches);
-      const currentDate = new Date();
-      const validSearches = parsedSearches
-        .map((search: any) => ({
-          ...search,
-          startDate: new Date(search.startDate),
-          endDate: new Date(search.endDate),
-        }))
-        .filter((search: RecentSearch) => search.startDate >= currentDate);
-
-      dispatch(loadSearches(validSearches));
-    }
-  };
-};
-
-export const saveRecentSearches = (searches: RecentSearch[]) => {
-  return (dispatch: AppDispatch) => {
+export const saveRecentSearches = () => {
+  return (dispatch: AppDispatch, getState: () => RootState) => {
+    const searches = getState().recentSearches.searches;
     const serializedSearches = searches.map((search) => ({
       ...search,
       startDate: search.startDate.toISOString(),
@@ -86,6 +65,43 @@ export const saveRecentSearches = (searches: RecentSearch[]) => {
   };
 };
 
-export const { loadSearches, addSearch, deleteSearch, clearExpiredSearches } =
+export const addSearchAndSave = (searchData: Omit<FormData, "id">) => {
+  return (dispatch: AppDispatch) => {
+    dispatch(addSearch(searchData));
+    dispatch(saveRecentSearches());
+  };
+};
+
+export const deleteSearchAndSave = (id: string) => {
+  return (dispatch: AppDispatch) => {
+    dispatch(deleteSearch(id));
+    dispatch(saveRecentSearches());
+  };
+};
+
+export const initializeRecentSearches = () => {
+  return (dispatch: AppDispatch) => {
+    const storedSearches = localStorage.getItem(STORAGE_KEY);
+    if (storedSearches) {
+      const parsedSearches = JSON.parse(storedSearches);
+      const validSearches = parsedSearches
+        .map((search: any) => ({
+          ...search,
+          startDate: new Date(search.startDate),
+          endDate: new Date(search.endDate),
+        }))
+        .filter((search: RecentSearch) =>
+          isDateTodayOrFuture(search.startDate)
+        );
+      dispatch(loadSearches(validSearches));
+    }
+  };
+};
+
+const isDateTodayOrFuture = (date: Date) => {
+  return date.setHours(0, 0, 0, 0) >= new Date().setHours(0, 0, 0, 0);
+};
+
+export const { loadSearches, addSearch, deleteSearch } =
   recentSearchesSlice.actions;
 export default recentSearchesSlice.reducer;
