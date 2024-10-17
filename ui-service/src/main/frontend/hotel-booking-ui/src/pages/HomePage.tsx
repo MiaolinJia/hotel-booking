@@ -1,9 +1,6 @@
 import HomePageExampleComponent from "../components/HomePageExampleComponent";
 import SearchHotelComponent from "../components/search-components/SearchComponent.tsx";
-import ActivityCard from "../components/RecentActivity/ActivityCard";
-import { useRecentActivity } from "../components/RecentActivity/useRecentActivity";
 import RecentActivityComponent from "../components/RecentActivity/RecentActivityComponent";
-import AddActivityForm from "../components/RecentActivity/AddRecentActivityForm";
 import { bundles as mockBundles } from "../components/FeaturedBundle/featuredBundlesMockData";
 import CarouselComponent from "../components/CarouselComponent/CarouselComponent";
 import FeaturedBundleCard from "../components/FeaturedBundle/FeaturedBundleCard";
@@ -11,57 +8,47 @@ import FeaturedPropertyCard from "../components/FeaturedProperties/FeaturedPrope
 import { properties as mockProperties } from "../components/FeaturedProperties/featuredPropertiesMockData";
 import { recommendedHotels as mockRecommendedHotels } from "../components/FeaturedProperties/recommendedHotelsMockData";
 import PromotionComponent from "../components/PromotionComponent/PromotionComponent";
+import { Provider } from "react-redux";
+import store from "../store/index.ts";
 
 const HomePage: React.FC = () => {
-  const { activities, addActivity, deleteActivity } = useRecentActivity();
-
   return (
     <>
-      <HomePageExampleComponent>
-        <h1>"Here is a placeholder for homepage components"</h1>
-      </HomePageExampleComponent>
+      <Provider store={store}>
+        <HomePageExampleComponent>
+          <h1>"Here is a placeholder for homepage components"</h1>
+        </HomePageExampleComponent>
 
-      <SearchHotelComponent />
-      <RecentActivityComponent
-        activities={activities}
-        deleteActivity={deleteActivity}
-      >
-        {activities.map((activity) => (
-          <ActivityCard
-            key={activity.id}
-            activity={activity}
-            onDelete={deleteActivity}
-          />
-        ))}
-      </RecentActivityComponent>
+        <SearchHotelComponent />
 
-      <CarouselComponent
-        title="Looking for the perfect stay?"
-        sliderSettings={{ slidesToShow: 4 }}
-      >
-        {mockProperties.map((item, index) => (
-          <FeaturedPropertyCard key={index} {...item} />
-        ))}
-      </CarouselComponent>
+        <RecentActivityComponent />
 
-      <CarouselComponent
-        title="Make your travel dreams come true"
-        sliderSettings={{ slidesToShow: 4 }}
-      >
-        {mockRecommendedHotels.map((item, index) => (
-          <FeaturedPropertyCard key={index} {...item} />
-        ))}
-      </CarouselComponent>
+        <CarouselComponent
+          title="Looking for the perfect stay?"
+          sliderSettings={{ slidesToShow: 4 }}
+        >
+          {mockProperties.map((item, index) => (
+            <FeaturedPropertyCard key={index} {...item} />
+          ))}
+        </CarouselComponent>
 
-      <PromotionComponent />
+        <CarouselComponent
+          title="Make your travel dreams come true"
+          sliderSettings={{ slidesToShow: 4 }}
+        >
+          {mockRecommendedHotels.map((item, index) => (
+            <FeaturedPropertyCard key={index} {...item} />
+          ))}
+        </CarouselComponent>
 
-      <CarouselComponent title="Don't miss these hotel + flight deals">
-        {mockBundles.map((item, index) => (
-          <FeaturedBundleCard key={index} {...item} />
-        ))}
-      </CarouselComponent>
+        <PromotionComponent />
 
-      <AddActivityForm addActivity={addActivity} />
+        <CarouselComponent title="Don't miss these hotel + flight deals">
+          {mockBundles.map((item, index) => (
+            <FeaturedBundleCard key={index} {...item} />
+          ))}
+        </CarouselComponent>
+      </Provider>
     </>
   );
 };

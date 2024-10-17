@@ -1,3 +1,5 @@
+import { RecentSearch } from "../../store/modules/recentSearchesSlice";
+
 export interface RecentActivity {
   id: string;
   type: "hotel";
@@ -14,7 +16,7 @@ export interface RecentActivityProps {
 }
 
 export interface ActivityCardProps {
-  activity: RecentActivity;
+  activity: RecentSearch;
   onDelete: (id: string) => void;
 }
 

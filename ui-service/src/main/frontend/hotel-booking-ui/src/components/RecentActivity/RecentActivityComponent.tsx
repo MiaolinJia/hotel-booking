@@ -1,10 +1,34 @@
-import { RecentActivityProps } from "./types";
+import { useDispatch, useSelector } from "react-redux";
+import { RootState } from "../../store";
+import { useEffect } from "react";
+import {
+  deleteSearch,
+  initializeRecentSearches,
+  saveRecentSearches,
+} from "../../store/modules/recentSearchesSlice";
+import ActivityCard from "./ActivityCard";
 
-const RecentActivityComponent = ({
-  children,
-  activities,
-}: RecentActivityProps) => {
-  if (activities.length === 0) {
+const RecentActivityComponent = () => {
+  const dispatch = useDispatch();
+  const searches = useSelector(
+    (state: RootState) => state.recentSearches.searches
+  );
+
+  useEffect(() => {
+    dispatch(initializeRecentSearches());
+  }, [dispatch]);
+
+  useEffect(() => {
+    if (searches.length > 0) {
+      dispatch(saveRecentSearches(searches));
+    }
+  }, [searches, dispatch]);
+
+  const handleDeleteSearch = (id: string) => {
+    dispatch(deleteSearch(id));
+  };
+
+  if (searches.length === 0) {
     return null;
   }
 
@@ -20,7 +44,15 @@ const RecentActivityComponent = ({
           </span>
         </div>
       </div>
-      <div className="flex space-x-4 overflow-x-auto pb-4">{children}</div>
+      <div className="flex space-x-4 overflow-x-auto pb-4">
+        {searches.map((search) => (
+          <ActivityCard
+            key={search.id}
+            activity={search}
+            onDelete={handleDeleteSearch}
+          />
+        ))}
+      </div>
     </div>
   );
 };
