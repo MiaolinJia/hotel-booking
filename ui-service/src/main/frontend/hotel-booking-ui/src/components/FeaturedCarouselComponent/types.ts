@@ -10,3 +10,10 @@ export interface FeaturedProperty {
   price: number | null;
   originalPrice: number | null;
 }
+
+export interface FeaturedBundle {
+  destination: string;
+  dates: string;
+  price: number;
+  imgSrc: string;
+}

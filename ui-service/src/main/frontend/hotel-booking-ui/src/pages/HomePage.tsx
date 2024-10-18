@@ -1,12 +1,9 @@
 import RecentSearchComponent from "../components/RecentSearch/RecentSearchComponent";
 import AddActivityForm from "../components/RecentSearch/AddRecentActivityForm";
-import { bundles as mockBundles } from "../components/FeaturedBundle/featuredBundlesMockData";
-import CarouselComponent from "../components/CarouselComponent/CarouselComponent";
-import FeaturedBundleCard from "../components/FeaturedBundle/FeaturedBundleCard";
-import FeaturedPropertyCard from "../components/FeaturedProperties/FeaturedPropertyCard";
-import { properties as mockProperties } from "../components/FeaturedProperties/featuredPropertiesMockData";
-import { recommendedHotels as mockRecommendedHotels } from "../components/FeaturedProperties/recommendedHotelsMockData";
 import PromotionComponent from "../components/PromotionComponent/PromotionComponent";
+import FeaturedPropertyCarouselComponent from "../components/FeaturedCarouselComponent/FeaturedPropertyCarouselComponent";
+import FeaturedHotelCarouselComponent from "../components/FeaturedCarouselComponent/FeaturedHotelCarouselComponent";
+import FeaturedBundleCarouselComponent from "../components/FeaturedCarouselComponent/FeaturedBundleCarouselComponent";
 
 const HomePage: React.FC = () => {
   return (
@@ -16,31 +13,13 @@ const HomePage: React.FC = () => {
 
       <RecentSearchComponent />
 
-      <CarouselComponent
-        title="Looking for the perfect stay?"
-        sliderSettings={{ slidesToShow: 4 }}
-      >
-        {mockProperties.map((item, index) => (
-          <FeaturedPropertyCard key={index} {...item} />
-        ))}
-      </CarouselComponent>
+      <FeaturedPropertyCarouselComponent />
 
-      <CarouselComponent
-        title="Make your travel dreams come true"
-        sliderSettings={{ slidesToShow: 4 }}
-      >
-        {mockRecommendedHotels.map((item, index) => (
-          <FeaturedPropertyCard key={index} {...item} />
-        ))}
-      </CarouselComponent>
+      <FeaturedHotelCarouselComponent />
 
       <PromotionComponent />
 
-      <CarouselComponent title="Don't miss these hotel + flight deals">
-        {mockBundles.map((item, index) => (
-          <FeaturedBundleCard key={index} {...item} />
-        ))}
-      </CarouselComponent>
+      <FeaturedBundleCarouselComponent />
     </>
   );
 };
