@@ -42,12 +42,15 @@ const AppDownloadSection = () => {
         7
       )}-${limited.slice(7)}`;
     } else if (limited.length === 7) {
+      // Add the dash after 7 digits
       return `+1 (${limited.slice(1, 4)}) ${limited.slice(4)}-`;
     } else if (limited.length > 4) {
       return `+1 (${limited.slice(1, 4)}) ${limited.slice(4)}`;
     } else if (limited.length === 4) {
+      // Add the parenthesis after 4 digits
       return `+1 (${limited.slice(1, 4)}) `;
     } else if (limited.length > 1) {
+      // Add country code and left parenthesis after 1 digits
       return `+1 (${limited.slice(1)}`;
     } else {
       return "";

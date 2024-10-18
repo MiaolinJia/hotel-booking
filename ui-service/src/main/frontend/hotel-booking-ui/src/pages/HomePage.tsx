@@ -1,8 +1,5 @@
-import HomePageExampleComponent from "../components/HomePageExampleComponent";
-import ActivityCard from "../components/RecentActivity/ActivityCard";
-import { useRecentActivity } from "../components/RecentActivity/useRecentActivity";
-import RecentActivityComponent from "../components/RecentActivity/RecentActivityComponent";
-import AddActivityForm from "../components/RecentActivity/AddRecentActivityForm";
+import RecentSearchComponent from "../components/RecentSearch/RecentSearchComponent";
+import AddActivityForm from "../components/RecentSearch/AddRecentActivityForm";
 import { bundles as mockBundles } from "../components/FeaturedBundle/featuredBundlesMockData";
 import CarouselComponent from "../components/CarouselComponent/CarouselComponent";
 import FeaturedBundleCard from "../components/FeaturedBundle/FeaturedBundleCard";
@@ -12,26 +9,12 @@ import { recommendedHotels as mockRecommendedHotels } from "../components/Featur
 import PromotionComponent from "../components/PromotionComponent/PromotionComponent";
 
 const HomePage: React.FC = () => {
-  const { activities, addActivity, deleteActivity } = useRecentActivity();
-
   return (
     <>
-      <HomePageExampleComponent>
-        <h1>"Here is a placeholder for homepage components"</h1>
-      </HomePageExampleComponent>
+      {/* This component is a mocking component for testing recent searches */}
+      <AddActivityForm />
 
-      <RecentActivityComponent
-        activities={activities}
-        deleteActivity={deleteActivity}
-      >
-        {activities.map((activity) => (
-          <ActivityCard
-            key={activity.id}
-            activity={activity}
-            onDelete={deleteActivity}
-          />
-        ))}
-      </RecentActivityComponent>
+      <RecentSearchComponent />
 
       <CarouselComponent
         title="Looking for the perfect stay?"
@@ -58,8 +41,6 @@ const HomePage: React.FC = () => {
           <FeaturedBundleCard key={index} {...item} />
         ))}
       </CarouselComponent>
-
-      <AddActivityForm addActivity={addActivity} />
     </>
   );
 };
