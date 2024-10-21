@@ -18,7 +18,6 @@ nav {
   display: flex;
   letter-spacing: 0.5px;
   font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  cursor: pointer;
   padding: 12px;
 }
 
@@ -164,6 +163,7 @@ button:hover {
   display: flex;
   gap: 16px;
   border: none;
+  cursor: pointer;
 }
 
 .vip-header {
