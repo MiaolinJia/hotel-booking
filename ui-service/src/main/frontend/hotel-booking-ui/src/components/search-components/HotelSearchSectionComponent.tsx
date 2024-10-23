@@ -1,25 +1,11 @@
-import {useEffect, useState} from "react";
-import DatePicker from 'react-datepicker';
+import { useEffect, useState } from "react";
 import "react-datepicker/dist/react-datepicker.css";
-import {BadgeDollarSign} from 'lucide-react';
-import {AppDispatch} from "../../store";
-import {useDispatch} from 'react-redux';
-import {searchHotelList} from '../../store/modules/hotels';
-import SearchHotelComponent from "./RoomSelectorComponent.tsx";
-
-
-interface FormData {
-    hotelType: 'single' | 'multi';
-    destination: string;
-    startDate: Date | undefined;
-    endDate: Date | undefined;
-    rooms: number;
-    adults: number;
-    children: number;
-    bundleSave: boolean;
-    addCar: boolean;
-    addFlight: boolean;
-}
+import { BadgeDollarSign } from "lucide-react";
+import { AppDispatch } from "../../store";
+import { useDispatch } from "react-redux";
+import { searchHotelList } from "../../store/modules/hotels";
+import { FormData } from "../../types/HotelSearchFormTypes.ts";
+import HotelSearchFormSection from "./HotelSearchFormSection.tsx";
 
 function HotelSearchSectionComponent() {
     const today = new Date();
@@ -31,16 +17,16 @@ function HotelSearchSectionComponent() {
     };
 
     const [formData, setFormData] = useState<FormData>({
-        hotelType: 'single',
-        destination: '',
-        startDate: today,
-        endDate: tomorrow,
+        hotelType: "single",
+        destinationAndDates: [
+            { destination: "", startDate: today, endDate: tomorrow },
+        ],
         rooms: 1,
         adults: 2,
         children: 0,
         bundleSave: false,
         addCar: false,
-        addFlight: false
+        addFlight: false,
     });
 
     const [isSticky, setIsSticky] = useState(false);
@@ -51,141 +37,191 @@ function HotelSearchSectionComponent() {
             setIsSticky(offset > 500);
         };
 
-        window.addEventListener('scroll', handleScroll);
+        window.addEventListener("scroll", handleScroll);
 
         return () => {
-            window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener("scroll", handleScroll);
         };
     }, []);
 
-
-    const handleDateChange = (dates: [Date | null, Date | null]) => {
+    const handleDateChange = (
+        index: number,
+        dates: [Date | null, Date | null]
+    ) => {
         const [start, end] = dates;
-        setFormData(prevState => ({
+        setFormData((prevState) => ({
             ...prevState,
-            startDate: start || undefined,
-            endDate: end || undefined,
+            destinationAndDates: prevState.destinationAndDates.map((item, i) =>
+                i === index
+                    ? {
+                          ...item,
+                          startDate: start || undefined,
+                          endDate: end || undefined,
+                      }
+                    : item
+            ),
         }));
     };
 
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const {name, value, type, checked} = e.target;
-        setFormData(prevState => ({
+        const { name, value, type, checked } = e.target;
+        setFormData((prevState) => ({
             ...prevState,
-            [name]: type === 'checkbox' ? checked : value
+            [name]: type === "checkbox" ? checked : value,
         }));
     };
 
-    const handleHotelTypeChange = (type: 'single' | 'multi') => {
-        setFormData(prevState => ({
+    const handleHotelTypeChange = (type: "single" | "multi") => {
+        if (type === "multi") {
+            setFormData((prevState) => ({
+                ...prevState,
+                destinationAndDates: [
+                    { destination: "", startDate: today, endDate: tomorrow },
+                    {
+                        destination: "",
+                        startDate: undefined,
+                        endDate: undefined,
+                    },
+                ],
+                hotelType: type,
+            }));
+        } else {
+            setFormData((prevState) => ({
+                ...prevState,
+                destinationAndDates: [
+                    { destination: "", startDate: today, endDate: tomorrow },
+                ],
+                hotelType: type,
+            }));
+        }
+    };
+
+    const handleRoomDataChange = (
+        key: "rooms" | "adults" | "children",
+        value: number
+    ) => {
+        setFormData((prevState) => ({
             ...prevState,
-            hotelType: type
+            [key]: value,
         }));
     };
 
-    const handleRoomDataChange = (key: 'rooms' | 'adults' | 'children', value: number) => {
-        setFormData(prevState => ({
+    const handleAddHotel = (e: React.MouseEvent<HTMLButtonElement>) => {
+        e.preventDefault();
+        setFormData((prevState) => ({
             ...prevState,
-            [key]: value
+            destinationAndDates: [
+                ...prevState.destinationAndDates,
+                { destination: "", startDate: undefined, endDate: undefined },
+            ],
         }));
+    };
+
+    const handleRemoveHotel = (
+        index: number,
+        e: React.MouseEvent<HTMLButtonElement>
+    ) => {
+        e.preventDefault();
+        setFormData((prevState) => {
+            const newDestinationAndDates = [...prevState.destinationAndDates];
+            newDestinationAndDates.splice(index, 1);
+            return {
+                ...prevState,
+                destinationAndDates: newDestinationAndDates,
+            };
+        });
     };
 
     const dispatch = useDispatch<AppDispatch>();
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        console.log('Form submitted with data:', formData);
+        console.log("Form submitted with data:", formData);
         dispatch(searchHotelList());
     };
 
+    const isSingleHotelSearch = formData.hotelType === "single";
+    const className = isSingleHotelSearch
+        ? "single-hotel-form"
+        : "multi-hotel-form";
+
     return (
-        <div className={`hotel-search-section ${isSticky ? 'sticky' : ''}`}>
-            <div className={`search-box ${isSticky ? 'sticky' : ''}`}>
-                {!isSticky &&
+        <div className={`hotel-search-section ${isSticky ? "sticky" : ""}`}>
+            <div className={`search-box ${isSticky ? "sticky" : ""}`}>
+                {!isSticky && (
                     <div>
                         <h2>Searching for a place to stay?</h2>
 
-                        <div className="hotel-type-selection">
+                        <div className='hotel-type-selection'>
                             <label>
                                 <input
-                                    type="radio"
-                                    name="hotelType"
-                                    checked={formData.hotelType === 'single'}
-                                    onChange={() => handleHotelTypeChange('single')}
+                                    type='radio'
+                                    name='hotelType'
+                                    checked={formData.hotelType === "single"}
+                                    onChange={() =>
+                                        handleHotelTypeChange("single")
+                                    }
                                 />
                                 <span>Single Hotel</span>
                             </label>
                             <label>
                                 <input
-                                    type="radio"
-                                    name="hotelType"
-                                    checked={formData.hotelType === 'multi'}
-                                    onChange={() => handleHotelTypeChange('multi')}
+                                    type='radio'
+                                    name='hotelType'
+                                    checked={formData.hotelType === "multi"}
+                                    onChange={() =>
+                                        handleHotelTypeChange("multi")
+                                    }
                                 />
                                 <span>Multi Hotel</span>
                             </label>
                         </div>
                     </div>
-                }
+                )}
 
-                <form onSubmit={handleSubmit} className="search-form">
-                    <input
-                        type="text"
-                        name="destination"
-                        placeholder="Where to?"
-                        value={formData.destination}
-                        onChange={handleInputChange}
-                        className="search-input"
-                    />
-                    <DatePicker
-                        selectsRange={true}
-                        startDate={formData.startDate}
-                        endDate={formData.endDate}
-                        onChange={handleDateChange}
-                        placeholderText="Check-in - Check-out"
-                        className="search-input date-picker-input"
-                        filterDate={isDateSelectable}
-                    />
-                    <SearchHotelComponent
-                        rooms={formData.rooms}
-                        adults={formData.adults}
-                        children={formData.children}
-                        onRoomDataChange={handleRoomDataChange}
-                    />
-                    <div className="submit-button">
-                        <button type="submit" className="search-button">Find Your Hotel</button>
-                        <p className="cancellation-text">Book a hotel with free cancellation for flexibility</p>
+                <HotelSearchFormSection
+                    className={className}
+                    formData={formData}
+                    handleInputChange={handleInputChange}
+                    handleDateChange={handleDateChange}
+                    handleRoomDataChange={handleRoomDataChange}
+                    handleSubmit={handleSubmit}
+                    isDateSelectable={isDateSelectable}
+                    handleAddHotel={handleAddHotel}
+                    handleRemoveHotel={handleRemoveHotel}
+                />
+
+                {isSingleHotelSearch && (
+                    <div className='bundle-options'>
+                        <label className='bundle-option'>
+                            <input
+                                type='checkbox'
+                                name='bundleSave'
+                                checked={formData.bundleSave}
+                                onChange={handleInputChange}
+                            />
+                            <BadgeDollarSign size={16} color='#026702' />
+                            <span className='bundle-text'>Bundle + Save</span>
+                        </label>
+                        <label className='bundle-option'>
+                            <input
+                                type='checkbox'
+                                name='addCar'
+                                checked={formData.addCar}
+                                onChange={handleInputChange}
+                            />
+                            <span>Add a car</span>
+                        </label>
+                        <label className='bundle-option'>
+                            <input
+                                type='checkbox'
+                                name='addFlight'
+                                checked={formData.addFlight}
+                                onChange={handleInputChange}
+                            />
+                            <span>Add a flight</span>
+                        </label>
                     </div>
-                </form>
-                <div className="bundle-options">
-                    <label className="bundle-option">
-                        <input
-                            type="checkbox"
-                            name="bundleSave"
-                            checked={formData.bundleSave}
-                            onChange={handleInputChange}
-                        />
-                        <BadgeDollarSign size={16} color="#026702"/>
-                        <span className="bundle-text">Bundle + Save</span>
-                    </label>
-                    <label className="bundle-option">
-                        <input
-                            type="checkbox"
-                            name="addCar"
-                            checked={formData.addCar}
-                            onChange={handleInputChange}
-                        />
-                        <span>Add a car</span>
-                    </label>
-                    <label className="bundle-option">
-                        <input
-                            type="checkbox"
-                            name="addFlight"
-                            checked={formData.addFlight}
-                            onChange={handleInputChange}
-                        />
-                        <span>Add a flight</span>
-                    </label>
-                </div>
+                )}
             </div>
         </div>
     );

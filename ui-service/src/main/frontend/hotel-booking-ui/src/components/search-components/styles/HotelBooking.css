@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     min-height: 40vh;
-    background-image: url('../../../assets/search-background.jpg');
+    background-image: url("../../../assets/search-background.jpg");
     background-size: cover;
     background-position: center;
     padding: 20px;
@@ -28,7 +28,7 @@
 .search-box h2 {
     color: #023e8b;
     margin-bottom: 15px;
-    text-align: left
+    text-align: left;
 }
 
 .search-box {
@@ -43,12 +43,72 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
-
-.search-form {
+.single-hotel-form {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
+}
+
+.multi-hotel-form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+}
+
+.label-remove-group label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.add-hotel-label {
+    font-size: 13px;
+    padding: 0px 10px;
+}
+
+.label-remove-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.label-remove-group label {
+    display: flex;
+    align-items: left;
+    padding: 10px 0px;
+}
+
+.label-remove-group button {
+    display: flex;
+    align-items: right;
+    border-radius: 9999px;
+    color: #046aef;
+    background-color: rgb(237, 240, 243);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.label-remove-group button:hover,
+.add-hotel-button:hover {
+    background-color: rgb(213, 220, 228);
+    color: rgb(0, 68, 153);
+}
+
+.destination-date-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: start;
+    width: 100%;
+}
+
+.destination-date-group span {
+    width: 50%;
 }
 
 .search-input {
@@ -59,8 +119,88 @@
     font-size: 14px;
 }
 
+.multi-search-input {
+    flex: 1;
+    padding: 14px 0px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    font-size: 14px;
+    height: 26px;
+}
+
+.search-input-size {
+    width: 100%;
+}
+
 .date-picker-input {
     min-width: 180px;
+    width: 100%;
+}
+
+.react-datepicker__input-container {
+    width: inherit;
+}
+
+.react-datepicker {
+    width: inherit;
+}
+
+.react-datepicker-wrapper {
+    width: 100%;
+}
+
+.counter-submit-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.multi-hotel-form .hotel-search-button {
+    width: 100%;
+    padding: 14px 0px;
+    height: 54px;
+    border-radius: 12px;
+}
+.multi-hotel-form .search-button {
+    width: 100%;
+    padding: 14px 0px;
+    height: 54px;
+    border-radius: 12px;
+}
+
+.add-hotel-button {
+    padding: 10px 15px;
+    color: #046aef;
+    background-color: rgb(237, 240, 243);
+    border: none;
+    border-radius: 9999px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.multi-hotel-form .hotel-search {
+    width: 50%;
+}
+
+.multi-hotel-form .submit-button {
+    width: 50%;
+}
+
+.multi-hotel-form .hotel-search-button:hover {
+    border-color: #e2e8f0;
+}
+
+.multi-hotel-form .submit-button:hover {
+    transform: scale(1.02);
+    box-shadow: rgba(0, 0, 0, 0.03) 0px -1px 0px 0px,
+        rgba(0, 0, 0, 0.16) 0px 2px 8px 0px,
+        rgba(0, 0, 0, 0.16) 0px 10px 8px -5px,
+        rgba(0, 0, 0, 0.16) 0px 12px 32px -2px;
+    transition: 0.2s ease-in-out;
 }
 
 .submit-button {
@@ -129,7 +269,7 @@
     position: relative;
     overflow: hidden;
     border-radius: 8px;
-    background-image: url('../../../assets/search-background.jpg');
+    background-image: url("../../../assets/search-background.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -146,7 +286,11 @@
     align-items: center;
     text-align: center;
     padding: 20px;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.1),
+        rgba(0, 0, 0, 0.5)
+    );
     color: white;
 }
 
