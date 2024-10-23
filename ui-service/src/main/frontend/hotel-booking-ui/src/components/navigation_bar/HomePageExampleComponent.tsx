@@ -3,7 +3,7 @@ type Props = {
 };
 
 function HomePageExampleComponent({ children }: Props) {
-  return <h2>{children}</h2>;
+  return <p>{children}</p>;
 }
 
 export default HomePageExampleComponent;
