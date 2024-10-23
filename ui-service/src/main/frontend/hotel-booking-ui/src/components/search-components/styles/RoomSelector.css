@@ -3,14 +3,6 @@
     z-index: 1000;
 }
 
-.multi-hotel-form .hotel-search {
-    width: 50%;
-}
-
-.multi-hotel-form .submit-button {
-    width: 50%;
-}
-
 .hotel-search-button {
     display: flex;
     align-items: center;
