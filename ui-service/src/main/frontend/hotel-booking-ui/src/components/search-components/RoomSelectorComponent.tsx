@@ -122,7 +122,7 @@ const SearchHotelComponent: React.FC<SearchHotelComponentProps> = ({rooms, adult
         <div className="hotel-search" ref={dropdownRef}>
             <button
                 type="button"
-                className="hotel-searchbutton"
+                className="hotel-search-button"
                 onClick={toggleDropdown}
             >
                 <User size={20}/>
