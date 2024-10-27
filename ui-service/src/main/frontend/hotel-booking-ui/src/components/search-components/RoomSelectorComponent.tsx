@@ -1,5 +1,5 @@
-import React, { useState, useRef, useEffect } from 'react';
-import { User, Minus, Plus } from 'lucide-react';
+import React, {useState, useRef, useEffect} from 'react';
+import {User, Minus, Plus} from 'lucide-react';
 import './styles/RoomSelector.css';
 
 interface SearchHotelComponentProps {
@@ -9,7 +9,7 @@ interface SearchHotelComponentProps {
     onRoomDataChange: (key: 'rooms' | 'adults' | 'children', value: number) => void;
 }
 
-const SearchHotelComponent: React.FC<SearchHotelComponentProps> = ({ rooms, adults, children, onRoomDataChange }) => {
+const SearchHotelComponent: React.FC<SearchHotelComponentProps> = ({rooms, adults, children, onRoomDataChange}) => {
 
     // selector section
     const [isOpen, setIsOpen] = useState(false);
@@ -49,7 +49,7 @@ const SearchHotelComponent: React.FC<SearchHotelComponentProps> = ({ rooms, adul
                         (key === 'children' && children <= 0)
                     }
                 >
-                    <Minus size={16} />
+                    <Minus size={16}/>
                 </button>
                 <span>{key === 'rooms' ? rooms : key === 'adults' ? adults : children}</span>
                 <button
@@ -62,7 +62,7 @@ const SearchHotelComponent: React.FC<SearchHotelComponentProps> = ({ rooms, adul
                         (key === 'children' && children === 5)
                     }
                 >
-                    <Plus size={16} />
+                    <Plus size={16}/>
                 </button>
             </div>
         </div>
@@ -79,8 +79,10 @@ const SearchHotelComponent: React.FC<SearchHotelComponentProps> = ({ rooms, adul
                 className="hotel-search-button"
                 onClick={toggleDropdown}
             >
-                <User size={20} />
-                <span>{`${adults} Adult${adults > 1 ? 's' : ''}, ${rooms} Room${rooms > 1 ? 's' : ''}`}</span>
+                <User size={20}/>
+                <span>{`${adults} Adult${adults > 1 ? 's' : ''}, 
+                ${children >= 1 ? `, ${children} ${children > 1 ? 'Children' : 'Child'}` : ''}, 
+                ${rooms} Room${rooms > 1 ? 's' : ''}`}</span>
             </button>
 
             {/* Dropdown for selecting rooms, adults, and children */}
@@ -91,7 +93,8 @@ const SearchHotelComponent: React.FC<SearchHotelComponentProps> = ({ rooms, adul
                     {renderCounter('Children', 'children')}
 
                     <p className="hotel-search-info">
-                        Add your child's age at check-in for the best deals and assistance. Each hotel has unique policies.
+                        Add your child's age at check-in for the best deals and assistance. Each hotel has unique
+                        policies.
                     </p>
 
 
