@@ -122,12 +122,12 @@ const SearchHotelComponent: React.FC<SearchHotelComponentProps> = ({rooms, adult
         <div className="hotel-search" ref={dropdownRef}>
             <button
                 type="button"
-                className="hotel-search-button"
+                className="hotel-searchbutton"
                 onClick={toggleDropdown}
             >
                 <User size={20}/>
-                <span>{`${adults} Adult${adults > 1 ? 's' : ''}, 
-                ${children >= 1 ? `, ${children} ${children > 1 ? 'Children' : 'Child'}` : ''}, 
+                <span>{`${adults} Adult${adults > 1 ? 's' : ''}
+                ${children >= 1 ? `, ${children} ${children > 1 ? 'Children' : 'Child'}` : ''} , 
                 ${rooms} Room${rooms > 1 ? 's' : ''}`}</span>
             </button>
 
