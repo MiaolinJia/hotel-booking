@@ -1,7 +1,7 @@
 import { FaRegHeart } from "react-icons/fa6";
 import { MdOutlineThumbUp } from "react-icons/md";
 import { FeaturedProperty } from "./types";
-import { Tooltip } from "@mui/material";
+import { Box, Card, CardContent, Skeleton, Tooltip } from "@mui/material";
 
 const FeaturedPropertyCard: React.FC<FeaturedProperty> = ({
   image,
@@ -92,3 +92,53 @@ const FeaturedPropertyCard: React.FC<FeaturedProperty> = ({
 };
 
 export default FeaturedPropertyCard;
+
+export const FeaturedPropertyCardSkeleton: React.FC = () => {
+  return (
+    <Card
+      sx={{
+        width: 260,
+        height: 384,
+        mb: 1,
+        display: "flex",
+        flexDirection: "column",
+        cursor: "pointer",
+        "&:hover": {
+          boxShadow: "0px 0px 15px rgba(0,0,0,0.3)",
+        },
+        transition: "box-shadow 0.3s",
+      }}
+    >
+      <Box sx={{ position: "relative", height: 192 }}>
+        <Skeleton variant="rectangular" width="100%" height="100%" />
+      </Box>
+      <CardContent
+        sx={{
+          flexGrow: 1,
+          display: "flex",
+          flexDirection: "column",
+          py: 1,
+          px: 1,
+        }}
+      >
+        <Skeleton variant="text" width="90%" height={28} sx={{ mb: 1 }} />
+        <Skeleton variant="text" width="60%" height={28} sx={{ mb: 1 }} />
+        <Box sx={{ mt: "auto" }}>
+          <Box sx={{ display: "flex", alignItems: "center", mb: 1 }}>
+            <Skeleton variant="rounded" width={36} height={28} sx={{ mr: 1 }} />
+            <Skeleton variant="text" width="70%" />
+          </Box>
+          <Box sx={{ textAlign: "right" }}>
+            <Skeleton variant="text" width="40%" sx={{ ml: "auto" }} />
+            <Skeleton
+              variant="text"
+              width="30%"
+              height={28}
+              sx={{ ml: "auto" }}
+            />
+          </Box>
+        </Box>
+      </CardContent>
+    </Card>
+  );
+};

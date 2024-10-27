@@ -1,6 +1,7 @@
 import { FeaturedBundle } from "./types";
 import { MdFlight } from "react-icons/md";
 import { FaHotel } from "react-icons/fa6";
+import { Box, Card, CardContent, Skeleton } from "@mui/material";
 
 const FeaturedBundleCard = ({
   destination,
@@ -53,3 +54,59 @@ const FeaturedBundleCard = ({
 };
 
 export default FeaturedBundleCard;
+
+export const FeaturedBundleSkeleton = () => {
+  return (
+    <Card
+      sx={{
+        maxWidth: 345,
+      }}
+    >
+      <Box sx={{ position: "relative" }}>
+        <Skeleton variant="rectangular" height={160} />
+
+        <Box
+          sx={{
+            position: "absolute",
+            bottom: 8,
+            left: 8,
+          }}
+        >
+          <Skeleton variant="text" width={120} height={32} />
+        </Box>
+      </Box>
+      <CardContent>
+        <Skeleton variant="text" width="60%" />
+        <Box sx={{ display: "flex", alignItems: "center", gap: 1, my: 1 }}>
+          <Skeleton variant="circular" width={24} height={24} />
+          <Skeleton variant="text" width="40%" />
+        </Box>
+        <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 2 }}>
+          <Skeleton variant="circular" width={24} height={24} />
+          <Skeleton variant="text" width="50%" />
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "flex-end",
+          }}
+        >
+          <Box>
+            <Skeleton
+              variant="rectangular"
+              width={80}
+              height={24}
+              sx={{ borderRadius: 12 }}
+            />
+            <Skeleton variant="text" width={120} sx={{ mt: 1 }} />
+          </Box>
+          <Box sx={{ textAlign: "right" }}>
+            <Skeleton variant="text" width={60} height={32} />
+            <Skeleton variant="text" width={80} />
+          </Box>
+        </Box>
+      </CardContent>
+    </Card>
+  );
+};
