@@ -1,5 +1,5 @@
 import React, {useState, useRef, useEffect} from 'react';
-import {User, Minus, Plus} from 'lucide-react';
+import {User, Minus, Plus, BedDouble, ChevronDown} from 'lucide-react';
 import './styles/RoomSelector.css';
 
 interface SearchHotelComponentProps {
@@ -68,6 +68,52 @@ const SearchHotelComponent: React.FC<SearchHotelComponentProps> = ({rooms, adult
         </div>
     );
 
+    const renderGroupBookingNotice = () => {
+        if (rooms >= 9) {
+            return (
+                <div className="group-notice">
+                    <div className="group-notice-content">
+                        <BedDouble className="notice-icon"/>
+                        <div className="notice-text">
+                            <p>
+                                Need more rooms? Special group rates available with our hotel partner, hotelplanner.com
+                            </p>
+                            <a href="#" className="notice-link">
+                                10 Rooms or More
+                                <ChevronDown className="notice-arrow"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+        return null;
+    };
+
+    const renderAddChildren = () => {
+        if (children === 0) return null;
+
+        const getAgeText = (age: number) => {
+            if (age === 0) return 'Infant';
+            return `${age} ${age === 1 ? 'yr' : 'yrs'}`;
+        };
+
+        return Array.from({ length: children }).map((_, index) => (
+            <div key={`child-${index}`} className="child-age-selector">
+                <span className="child-age-label">Age of Child {index + 1}</span>
+                <div className="child-age-dropdown">
+                    <select className="age-select">
+                        <option value="">Age Needed</option>
+                        {Array.from({ length: 18 }, (_, i) => (
+                            <option key={i} value={i}>{getAgeText(i)}</option>
+                        ))}
+                    </select>
+                    <ChevronDown className="dropdown-icon" />
+                </div>
+            </div>
+        ));
+    };
+
     const toggleDropdown = () => {
         setIsOpen(prevState => !prevState);
     };
@@ -89,9 +135,10 @@ const SearchHotelComponent: React.FC<SearchHotelComponentProps> = ({rooms, adult
             {isOpen && (
                 <div className="hotel-search-dropdown">
                     {renderCounter('Rooms', 'rooms')}
+                    {renderGroupBookingNotice()}
                     {renderCounter('Adults', 'adults')}
                     {renderCounter('Children', 'children')}
-
+                    {renderAddChildren()}
                     <p className="hotel-search-info">
                         Add your child's age at check-in for the best deals and assistance. Each hotel has unique
                         policies.
