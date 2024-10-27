@@ -1,10 +1,10 @@
-import { useEffect, useState } from "react";
+import {useEffect, useState} from "react";
 import "react-datepicker/dist/react-datepicker.css";
-import { BadgeDollarSign } from "lucide-react";
-import { AppDispatch } from "../../store";
-import { useDispatch } from "react-redux";
-import { searchHotelList } from "../../store/modules/hotels";
-import { FormData } from "../../types/HotelSearchFormTypes.ts";
+import {BadgeDollarSign} from "lucide-react";
+import {AppDispatch} from "../../store";
+import {useDispatch} from "react-redux";
+import {searchHotelList} from "../../store/modules/hotels";
+import {FormData} from "../../types/HotelSearchFormTypes.ts";
 import HotelSearchFormSection from "./HotelSearchFormSection.tsx";
 
 function HotelSearchSectionComponent() {
@@ -19,7 +19,7 @@ function HotelSearchSectionComponent() {
     const [formData, setFormData] = useState<FormData>({
         hotelType: "single",
         destinationAndDates: [
-            { destination: "", startDate: today, endDate: tomorrow },
+            {destination: "", startDate: today, endDate: tomorrow},
         ],
         rooms: 1,
         adults: 2,
@@ -33,8 +33,12 @@ function HotelSearchSectionComponent() {
 
     useEffect(() => {
         const handleScroll = () => {
-            const offset = window.scrollY;
-            setIsSticky(offset > 500);
+            if (formData.hotelType === "single") {
+                const offset = window.scrollY;
+                setIsSticky(offset > 500);
+            } else {
+                setIsSticky(false);
+            }
         };
 
         window.addEventListener("scroll", handleScroll);
@@ -54,17 +58,17 @@ function HotelSearchSectionComponent() {
             destinationAndDates: prevState.destinationAndDates.map((item, i) =>
                 i === index
                     ? {
-                          ...item,
-                          startDate: start || undefined,
-                          endDate: end || undefined,
-                      }
+                        ...item,
+                        startDate: start || undefined,
+                        endDate: end || undefined,
+                    }
                     : item
             ),
         }));
     };
 
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const { name, value, type, checked } = e.target;
+        const {name, value, type, checked} = e.target;
         setFormData((prevState) => ({
             ...prevState,
             [name]: type === "checkbox" ? checked : value,
@@ -76,7 +80,7 @@ function HotelSearchSectionComponent() {
             setFormData((prevState) => ({
                 ...prevState,
                 destinationAndDates: [
-                    { destination: "", startDate: today, endDate: tomorrow },
+                    {destination: "", startDate: today, endDate: tomorrow},
                     {
                         destination: "",
                         startDate: undefined,
@@ -89,7 +93,7 @@ function HotelSearchSectionComponent() {
             setFormData((prevState) => ({
                 ...prevState,
                 destinationAndDates: [
-                    { destination: "", startDate: today, endDate: tomorrow },
+                    {destination: "", startDate: today, endDate: tomorrow},
                 ],
                 hotelType: type,
             }));
@@ -112,7 +116,7 @@ function HotelSearchSectionComponent() {
             ...prevState,
             destinationAndDates: [
                 ...prevState.destinationAndDates,
-                { destination: "", startDate: undefined, endDate: undefined },
+                {destination: "", startDate: undefined, endDate: undefined},
             ],
         }));
     };
@@ -144,10 +148,12 @@ function HotelSearchSectionComponent() {
         ? "single-hotel-form"
         : "multi-hotel-form";
 
+    const stickyClass = isSingleHotelSearch && isSticky ? "sticky" : "";
+
     return (
-        <div className={`hotel-search-section ${isSticky ? "sticky" : ""}`}>
-            <div className={`search-box ${isSticky ? "sticky" : ""}`}>
-                {!isSticky && (
+        <div className={`hotel-search-section ${stickyClass}`}>
+            <div className={`search-box ${stickyClass}`}>
+                {(!isSticky || !isSingleHotelSearch) && (
                     <div>
                         <h2>Searching for a place to stay?</h2>
 
@@ -199,7 +205,7 @@ function HotelSearchSectionComponent() {
                                 checked={formData.bundleSave}
                                 onChange={handleInputChange}
                             />
-                            <BadgeDollarSign size={16} color='#026702' />
+                            <BadgeDollarSign size={16} color='#026702'/>
                             <span className='bundle-text'>Bundle + Save</span>
                         </label>
                         <label className='bundle-option'>
