@@ -10,7 +10,6 @@ export interface FormData {
     rooms: number;
     adults: number;
     children: number;
-    bundleSave: boolean;
     addCar: boolean;
     addFlight: boolean;
 }

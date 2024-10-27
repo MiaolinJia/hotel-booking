@@ -22,9 +22,8 @@ function HotelSearchSectionComponent() {
             {destination: "", startDate: today, endDate: tomorrow},
         ],
         rooms: 1,
-        adults: 2,
+        adults: 1,
         children: 0,
-        bundleSave: false,
         addCar: false,
         addFlight: false,
     });
@@ -199,12 +198,6 @@ function HotelSearchSectionComponent() {
                 {isSingleHotelSearch && (
                     <div className='bundle-options'>
                         <label className='bundle-option'>
-                            <input
-                                type='checkbox'
-                                name='bundleSave'
-                                checked={formData.bundleSave}
-                                onChange={handleInputChange}
-                            />
                             <BadgeDollarSign size={16} color='#026702'/>
                             <span className='bundle-text'>Bundle + Save</span>
                         </label>

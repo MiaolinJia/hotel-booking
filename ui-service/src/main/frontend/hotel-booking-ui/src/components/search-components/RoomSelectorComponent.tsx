@@ -45,7 +45,7 @@ const SearchHotelComponent: React.FC<SearchHotelComponentProps> = ({ rooms, adul
                     className="hotel-search-control-button"
                     disabled={
                         (key === 'rooms' && rooms <= 1) ||
-                        (key === 'adults' && adults <= 0) ||
+                        (key === 'adults' && adults <= 1) ||
                         (key === 'children' && children <= 0)
                     }
                 >
@@ -57,7 +57,7 @@ const SearchHotelComponent: React.FC<SearchHotelComponentProps> = ({ rooms, adul
                     onClick={() => handleChange(key, true)}
                     className="hotel-search-control-button"
                     disabled={
-                        (key === 'rooms' && rooms === 5) ||
+                        (key === 'rooms' && rooms === 9) ||
                         (key === 'adults' && adults === 5) ||
                         (key === 'children' && children === 5)
                     }
@@ -69,7 +69,7 @@ const SearchHotelComponent: React.FC<SearchHotelComponentProps> = ({ rooms, adul
     );
 
     const toggleDropdown = () => {
-        setIsOpen(!isOpen);
+        setIsOpen(prevState => !prevState);
     };
 
     return (
@@ -80,7 +80,7 @@ const SearchHotelComponent: React.FC<SearchHotelComponentProps> = ({ rooms, adul
                 onClick={toggleDropdown}
             >
                 <User size={20} />
-                <span>{`${adults} Adults, ${children} Children, ${rooms} Room${rooms > 1 ? 's' : ''}`}</span>
+                <span>{`${adults} Adult${adults > 1 ? 's' : ''}, ${rooms} Room${rooms > 1 ? 's' : ''}`}</span>
             </button>
 
             {/* Dropdown for selecting rooms, adults, and children */}
