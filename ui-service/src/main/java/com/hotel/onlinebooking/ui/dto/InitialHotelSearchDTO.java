@@ -4,7 +4,6 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
-import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
@@ -41,19 +40,6 @@ public class InitialHotelSearchDTO {
         @NotNull(message = "Check-out date is required")
         @JsonFormat(pattern = "yyyy-MM-dd")
         private Date checkOutDate;
-    }
-
-    @Data
-    public static class LocationInfo {
-        @NotBlank(message = "City is required")
-        private String city;
-        
-        private String state; // Optional for non-US locations
-        
-        @NotBlank(message = "Country is required")
-        private String country;
-        
-        private String postalCode;
     }
 
     @Data
