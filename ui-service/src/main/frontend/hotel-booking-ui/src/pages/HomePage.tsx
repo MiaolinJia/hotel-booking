@@ -1,27 +1,28 @@
 import RecentSearchComponent from "../components/RecentSearch/RecentSearchComponent";
-import AddActivityForm from "../components/RecentSearch/AddRecentActivityForm";
 import PromotionComponent from "../components/PromotionComponent/PromotionComponent";
-import FeaturedPropertyCarouselComponent from "../components/FeaturedCarouselComponent/FeaturedPropertyCarouselComponent";
+import FeaturedPropertyCarouselComponent
+    from "../components/FeaturedCarouselComponent/FeaturedPropertyCarouselComponent";
 import FeaturedHotelCarouselComponent from "../components/FeaturedCarouselComponent/FeaturedHotelCarouselComponent";
 import FeaturedBundleCarouselComponent from "../components/FeaturedCarouselComponent/FeaturedBundleCarouselComponent";
+import React from "react";
+import SearchHotelComponent from "../components/search-components/SearchComponent.tsx";
 
 const HomePage: React.FC = () => {
-  return (
-    <>
-      {/* This component is a mocking component for testing recent searches */}
-      <AddActivityForm />
+    return (
+        <>
+            <SearchHotelComponent/>
 
-      <RecentSearchComponent />
+            <RecentSearchComponent/>
 
-      <FeaturedPropertyCarouselComponent />
+            <FeaturedPropertyCarouselComponent/>
 
-      <FeaturedHotelCarouselComponent />
+            <FeaturedHotelCarouselComponent/>
 
-      <PromotionComponent />
+            <PromotionComponent/>
 
-      <FeaturedBundleCarouselComponent />
-    </>
-  );
+            <FeaturedBundleCarouselComponent/>
+        </>
+    );
 };
 
 export default HomePage;
