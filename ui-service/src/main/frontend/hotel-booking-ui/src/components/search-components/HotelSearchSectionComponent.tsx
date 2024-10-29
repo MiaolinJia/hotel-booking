@@ -74,6 +74,19 @@ function HotelSearchSectionComponent() {
         }));
     };
 
+    const handleDestinationChange = (
+        index: number,
+        e: React.ChangeEvent<HTMLInputElement>
+    ) => {
+        setFormData(prevState => ({
+            ...prevState,
+            destinationAndDates: prevState.destinationAndDates.map((item, i) =>
+                i === index ? {...item, destination: e.target.value} : item
+            ),
+        }));
+    };
+
+
     const handleHotelTypeChange = (type: "single" | "multi") => {
         if (type === "multi") {
             setFormData((prevState) => ({
@@ -187,6 +200,7 @@ function HotelSearchSectionComponent() {
                     className={className}
                     formData={formData}
                     handleInputChange={handleInputChange}
+                    handleDestinationChange={handleDestinationChange}
                     handleDateChange={handleDateChange}
                     handleRoomDataChange={handleRoomDataChange}
                     handleSubmit={handleSubmit}

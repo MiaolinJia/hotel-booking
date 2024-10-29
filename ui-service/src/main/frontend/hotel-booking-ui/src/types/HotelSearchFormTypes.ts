@@ -17,6 +17,10 @@ export interface FormData {
 export interface HotelSearchFormSectionProps {
     className: string;
     formData: FormData;
+    handleDestinationChange: (
+        index: number,
+        event: React.ChangeEvent<HTMLInputElement>
+    ) => void;
     handleInputChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
     handleDateChange: (
         index: number,

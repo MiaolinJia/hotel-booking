@@ -1,18 +1,18 @@
 import DatePicker from "react-datepicker";
 import SearchHotelComponent from "./RoomSelectorComponent.tsx";
-import { HotelSearchFormSectionProps } from "../../types/HotelSearchFormTypes.ts";
+import {HotelSearchFormSectionProps} from "../../types/HotelSearchFormTypes.ts";
 
 export default function HotelSearchFormSection({
-    className,
-    formData,
-    handleInputChange,
-    handleDateChange,
-    handleRoomDataChange,
-    handleSubmit,
-    isDateSelectable,
-    handleAddHotel,
-    handleRemoveHotel,
-}: HotelSearchFormSectionProps) {
+                                                   className,
+                                                   formData,
+                                                   handleDestinationChange,
+                                                   handleDateChange,
+                                                   handleRoomDataChange,
+                                                   handleSubmit,
+                                                   isDateSelectable,
+                                                   handleAddHotel,
+                                                   handleRemoveHotel,
+                                               }: HotelSearchFormSectionProps) {
     const isMulti = formData.hotelType === "multi";
     return (
         <form onSubmit={handleSubmit} className={className}>
@@ -41,7 +41,7 @@ export default function HotelSearchFormSection({
                                 name='destination'
                                 placeholder='Where to?'
                                 value={destinationAndDates.destination}
-                                onChange={handleInputChange}
+                                onChange={(e) => handleDestinationChange(index, e)}
                                 className={
                                     isMulti
                                         ? "multi-search-input search-input-size"
