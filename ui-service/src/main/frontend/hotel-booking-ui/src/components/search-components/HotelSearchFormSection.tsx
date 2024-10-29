@@ -65,6 +65,7 @@ export default function HotelSearchFormSection({
                                         : "search-input"
                                 }`}
                                 filterDate={isDateSelectable}
+                                monthsShown={2}
                             />
                         </span>
                     </div>

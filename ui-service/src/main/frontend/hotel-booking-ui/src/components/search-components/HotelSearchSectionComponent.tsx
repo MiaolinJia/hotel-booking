@@ -167,7 +167,7 @@ function HotelSearchSectionComponent() {
             <div className={`search-box ${stickyClass}`}>
                 {(!isSticky || !isSingleHotelSearch) && (
                     <div>
-                        <h2>Searching for a place to stay?</h2>
+                        <div className={"search-box-title"}>Searching for a place to stay?</div>
 
                         <div className='hotel-type-selection'>
                             <label>

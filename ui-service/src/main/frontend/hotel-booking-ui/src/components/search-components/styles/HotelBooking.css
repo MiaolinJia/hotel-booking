@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 40vh;
+    min-height: 50vh;
     background-image: url("../../../assets/search-background.jpg");
     background-size: cover;
     background-position: center;
@@ -10,8 +10,8 @@
 }
 
 .hotel-search-section {
-    width: 100%;
-    max-width: 1200px;
+    max-width: 1500px;
+    width: 800px;
     margin: 0 auto;
     transition: all 0.3s ease;
 }
@@ -21,14 +21,17 @@
     top: 0;
     left: 0;
     right: 0;
-    margin: 0 auto;
     z-index: 1000;
 }
 
-.search-box h2 {
+.search-box-title  {
     color: #023e8b;
-    margin-bottom: 15px;
+    margin: 0px;
+    font-family: Montserrat, Helvetica, Arial, serif;
     text-align: left;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 40px;
 }
 
 .search-box {
@@ -36,17 +39,18 @@
     border-radius: 30px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+
 }
 
 .sticky .search-box {
     border-radius: 0 0 30px 30px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
 }
 
 .single-hotel-form {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     gap: 10px;
 }
 
@@ -262,10 +266,9 @@
 }
 
 .vip-ad-container {
-    width: 300px;
+    width: 20%;
     height: 200px;
     margin: 50px;
-    padding: 20px;
     position: relative;
     overflow: hidden;
     border-radius: 8px;
@@ -285,7 +288,6 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 20px;
     background: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0.1),
