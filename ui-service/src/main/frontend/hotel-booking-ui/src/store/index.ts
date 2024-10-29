@@ -1,12 +1,12 @@
-import hotelReducer from './modules/hotels'
-import {configureStore} from "@reduxjs/toolkit";
+import { configureStore } from "@reduxjs/toolkit";
+import recentSearchReducer from "./modules/recentSearches";
 
 const store = configureStore({
-    reducer: {
-        hotels: hotelReducer
-    }
-})
+  reducer: {
+    recentSearches: recentSearchReducer,
+  },
+});
 
 export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;
-export default store
+export default store;

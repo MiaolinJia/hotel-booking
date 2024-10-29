@@ -1,0 +1,246 @@
+:root {
+  line-height: 1.4;
+}
+
+header {
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow-x: clip;
+  padding: 0px 8px 0px 0px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  letter-spacing: 0.5px;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 12px;
+}
+
+nav li {
+  list-style: none;
+}
+
+.left-nav li {
+  display: flex;
+  padding: 12px;
+  align-items: center;
+}
+
+.priceline-icon {
+  width: "87px";
+  height: "22px";
+  display: flex;
+  align-items: center;
+}
+
+.left-nav {
+  height: 40px;
+  font-size: 14px;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  width: 60%;
+  gap: 8px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.right-nav-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  height: 40px;
+  width: 40%;
+  font-family: Montserrat;
+  margin-top: 0;
+  margin-bottom: 0;
+  gap: 8px;
+  font-family: inherit;
+}
+
+.right-nav {
+  display: flex;
+  align-items: stretch;
+  gap: 8px;
+}
+
+.header-btn {
+  border: 1px solid #e0e5ea;
+  border-radius: 999px;
+  color: #0068ef;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  padding: 0 12px;
+  background-color: #fff;
+  align-items: center;
+  white-space: nowrap;
+  font-size: 12px;
+  font-family: inherit;
+  line-height: 16px;
+  word-spacing: 0.5px;
+  font-weight: 450;
+}
+
+.link-active {
+  color: #0068ef;
+}
+
+nav li:hover {
+  background-color: #f0f0f0;
+  border-radius: 999px;
+}
+
+a {
+  font-weight: 450;
+  color: black;
+  text-decoration: inherit;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  background-color: #edf0f3;
+}
+
+.dropdown-container {
+  position: relative;
+  display: inline;
+}
+
+.dropdown {
+  position: absolute;
+  top: 120%;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 24px;
+  width: 330px;
+  padding: 16px;
+  z-index: 115;
+  box-shadow: 0 8px 32px #0000003d, 0 8px 16px #0003, 0 24px 64px #0003;
+}
+
+.dropdown-header:not() {
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 10px;
+}
+
+.dropdown-header {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 8px;
+  width: 100%;
+}
+
+.dropdown-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.dropdown-list li {
+  flex-direction: row;
+  justify-content: left;
+  padding: 12px;
+  color: #001832;
+  font-size: 14px;
+  display: flex;
+  gap: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.vip-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.vip-box {
+  width: 262px;
+  box-sizing: content-box;
+  width: 100%;
+}
+
+.vip-header img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+}
+
+.sign-in-vip-group {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.sign-in-vip {
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: content-box;
+}
+
+.vip-btn-box {
+  display: flex;
+  box-sizing: content-box;
+  width: 100%;
+}
+
+.penny-group {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #e0e5ea;
+  border-radius: 999px;
+  color: #0068ef;
+  height: 38px;
+  width: 100%;
+  font-size: 12px;
+}
+
+.nav-button-active {
+  box-shadow: 0 8px 32px #0000003d, 0 8px 16px #0003, 0 24px 64px #0003;
+}
+
+.language-flag {
+  display: inline-block;
+  width: 32px;
+  height: 24px;
+  background-image: url(https://s1.pclncdn.com/design-assets/gwc/flags-smartling-redesign.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
