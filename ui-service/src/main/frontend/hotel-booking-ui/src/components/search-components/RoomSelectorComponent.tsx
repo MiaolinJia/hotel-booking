@@ -90,6 +90,8 @@ const SearchHotelComponent: React.FC<SearchHotelComponentProps> = ({
         return `${age} ${age === 1 ? 'yr' : 'yrs'}`;
     };
 
+    const totalGuests = adults + children;
+    const maxTotalGuests = 36;
     const renderCounter = (label: string, key: 'rooms' | 'adults' | 'children') => (
         <div className="hotel-search-counter">
             <span className="hotel-search-label">{label}</span>
@@ -113,8 +115,8 @@ const SearchHotelComponent: React.FC<SearchHotelComponentProps> = ({
                     className="hotel-search-control-button"
                     disabled={
                         (key === 'rooms' && rooms >= 9) ||
-                        (key === 'adults' && adults >= 5) ||
-                        (key === 'children' && children >= 5)
+                        (key === 'adults' && (totalGuests >= maxTotalGuests)) ||
+                        (key === 'children' && (children >= 8 || (totalGuests >= maxTotalGuests)))
                     }
                 >
                     <Plus size={16}/>

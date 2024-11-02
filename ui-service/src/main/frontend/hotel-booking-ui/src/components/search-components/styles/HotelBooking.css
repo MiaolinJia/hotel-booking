@@ -215,8 +215,10 @@
     border: none;
     border-radius: 5px;
     font-size: 14px;
+    font-weight: bold;
     cursor: pointer;
     white-space: nowrap;
+    transition: background-color 0.3s;
 }
 
 .search-button:hover {

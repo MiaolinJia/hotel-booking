@@ -7,6 +7,9 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-size: clamp(10px, 4vw, 14px);
+    flex: 1;
+    min-width: 0;
 }
 
 .hotel-search-button {
@@ -18,6 +21,7 @@
     padding: 8px;
     background-color: white;
     cursor: pointer;
+    width: 100%;
 }
 
 .hotel-search-dropdown {
@@ -68,11 +72,20 @@
 
 .hotel-search-done-button {
     width: 100%;
-    background-color: #066bef;
     color: white;
-    border-radius: 8px;
-    padding: 8px 0;
     cursor: pointer;
+    padding: 10px 15px;
+    background-color: #046aef;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    white-space: nowrap;
+    transition: background-color 0.3s;
+}
+
+.hotel-search-done-button:hover {
+    background-color: #023e8b;
 }
 
 .group-notice {
@@ -144,6 +157,7 @@
 .child-age-label {
     font-size: 14px;
     color: #4b5563;
+    width: 50%;
 }
 
 .child-age-dropdown {
@@ -188,10 +202,11 @@
     padding: 8px 16px;
     border-radius: 4px;
     font-size: 14px;
+    font-weight: 700;
     margin-top: 8px;
     z-index: 1000;
     text-align: center;
-    width: 140%;
+    width: 120%;
     white-space: normal;
     max-width: 300px;
     overflow-wrap: break-word;
