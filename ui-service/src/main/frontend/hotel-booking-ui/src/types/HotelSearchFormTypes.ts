@@ -4,12 +4,18 @@ export interface DestinationAndDate {
     endDate: Date | undefined;
 }
 
+export interface ChildAge {
+    id: number;
+    age: number | null;
+}
+
 export interface FormData {
     hotelType: "single" | "multi";
     destinationAndDates: DestinationAndDate[];
     rooms: number;
     adults: number;
     children: number;
+    childrenAges: ChildAge[];
     addCar: boolean;
     addFlight: boolean;
 }
@@ -28,7 +34,12 @@ export interface HotelSearchFormSectionProps {
     ) => void;
     handleRoomDataChange: (
         key: "rooms" | "adults" | "children",
-        value: number
+        value: number,
+        childrenAges?: ChildAge[]
+    ) => void;
+    handleChildAgeChange: (
+        childId: number,
+        age: number | null
     ) => void;
     handleSubmit: (event: React.FormEvent<HTMLFormElement>) => void;
     isDateSelectable: (date: Date) => boolean;
@@ -37,4 +48,9 @@ export interface HotelSearchFormSectionProps {
         index: number,
         event: React.MouseEvent<HTMLButtonElement>
     ) => void;
+}
+
+export interface ChildAge {
+    id: number;
+    age: number | null;
 }

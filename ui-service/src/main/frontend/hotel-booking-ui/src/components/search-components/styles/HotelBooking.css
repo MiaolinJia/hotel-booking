@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 50vh;
     background-image: url("../../../assets/search-background.jpg");
     background-size: cover;
     background-position: center;
@@ -10,9 +9,6 @@
 }
 
 .hotel-search-section {
-    max-width: 1500px;
-    width: 800px;
-    margin: 0 auto;
     transition: all 0.3s ease;
 }
 
@@ -22,6 +18,7 @@
     left: 0;
     right: 0;
     z-index: 1000;
+    margin: 0 auto;
 }
 
 .search-box-title  {

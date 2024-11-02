@@ -3,6 +3,12 @@
     z-index: 1000;
 }
 
+.room-info{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .hotel-search-button {
     display: flex;
     align-items: center;
@@ -172,4 +178,32 @@
     height: 16px;
     color: #3b82f6;
     pointer-events: none;
+}
+.age-error-message {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #dc2626;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-top: 8px;
+    z-index: 1000;
+    text-align: center;
+    width: 140%;
+    white-space: normal;
+    max-width: 300px;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+}
+
+.age-error-message::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    right: 20px;
+    border-width: 0 8px 8px 8px;
+    border-style: solid;
+    border-color: transparent transparent #dc2626 transparent;
 }

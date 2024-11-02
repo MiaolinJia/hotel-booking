@@ -4,7 +4,7 @@ import {BadgeDollarSign} from "lucide-react";
 import {AppDispatch} from "../../store";
 import {useDispatch} from "react-redux";
 import {searchHotelList} from "../../store/modules/hotels";
-import {FormData} from "../../types/HotelSearchFormTypes.ts";
+import {ChildAge, FormData} from "../../types/HotelSearchFormTypes.ts";
 import HotelSearchFormSection from "./HotelSearchFormSection.tsx";
 
 function HotelSearchSectionComponent() {
@@ -22,8 +22,9 @@ function HotelSearchSectionComponent() {
             {destination: "", startDate: today, endDate: tomorrow},
         ],
         rooms: 1,
-        adults: 1,
+        adults: 2,
         children: 0,
+        childrenAges: [],
         addCar: false,
         addFlight: false,
     });
@@ -112,15 +113,27 @@ function HotelSearchSectionComponent() {
         }
     };
 
-    const handleRoomDataChange = (
-        key: "rooms" | "adults" | "children",
-        value: number
-    ) => {
-        setFormData((prevState) => ({
+    const handleChildAgeChange = (childId: number, age: number | null) => {
+        setFormData(prevState => ({
             ...prevState,
-            [key]: value,
+            childrenAges: prevState.childrenAges.map(child =>
+                child.id === childId ? { ...child, age } : child
+            )
         }));
     };
+
+    const handleRoomDataChange = (
+        key: 'rooms' | 'adults' | 'children',
+        value: number,
+        childrenAges?: ChildAge[]
+    ) => {
+        setFormData(prev => ({
+            ...prev,
+            [key]: value,
+            ...(childrenAges ? { childrenAges } : {})
+        }));
+    };
+
 
     const handleAddHotel = (e: React.MouseEvent<HTMLButtonElement>) => {
         e.preventDefault();
@@ -203,6 +216,7 @@ function HotelSearchSectionComponent() {
                     handleDestinationChange={handleDestinationChange}
                     handleDateChange={handleDateChange}
                     handleRoomDataChange={handleRoomDataChange}
+                    handleChildAgeChange={handleChildAgeChange}
                     handleSubmit={handleSubmit}
                     isDateSelectable={isDateSelectable}
                     handleAddHotel={handleAddHotel}
