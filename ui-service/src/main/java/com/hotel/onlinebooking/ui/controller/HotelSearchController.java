@@ -7,14 +7,12 @@ import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @Slf4j
+@CrossOrigin
 @RestController
 @RequestMapping("/api/hotels")
 public class HotelSearchController {
@@ -25,9 +23,8 @@ public class HotelSearchController {
         this.searchService = searchService;
     }
 
-    @PostMapping("/initial-search")
-    public ResponseEntity<List<PropertyListingDTO>> initialSearch(
-            @Valid @RequestBody InitialSearchDTO searchRequest) {
+    @PostMapping("/initial_search")
+    public ResponseEntity<List<PropertyListingDTO>> initialSearch(@Valid @RequestBody InitialSearchDTO searchRequest) {
         log.info("Fetching property listings with search Request: {}", searchRequest);
         return ResponseEntity.ok(searchService.getProperties());
     }

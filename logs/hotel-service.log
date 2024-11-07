@@ -657,3 +657,720 @@ Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 6 out of bounds for l
 2024-11-07 15:48:34.457 [SpringApplicationShutdownHook] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
 2024-11-07 15:48:34.459 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2024-11-07 15:48:34.464 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-11-07 16:03:45.279 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-11-07 16:03:45.298 [restartedMain] INFO  c.h.onlinebooking.ui.UiApplication - Starting UiApplication using Java 21.0.4 with PID 11072 (D:\hbo\study\2024\Project\hotel-booking\ui-service\build\classes\java\main started by hbo in D:\hbo\study\2024\Project\hotel-booking)
+2024-11-07 16:03:45.298 [restartedMain] INFO  c.h.onlinebooking.ui.UiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-07 16:03:45.344 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\hbo\.gradle\caches\modules-2\files-2.1\org.glassfish.hk2\hk2\3.0.6\12187beb6321e6a7fdc2ef4d196e16c8c58a3a1\hk2-3.0.6.jar referenced one or more files that do not exist: file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-utils.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/jakarta.annotation-api.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/jakarta.inject-api.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-api.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/aopalliance-repackaged.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-core.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-locator.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/javassist.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-runlevel.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/class-model.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm-analysis.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm-commons.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm-tree.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm-util.jar
+2024-11-07 16:03:45.344 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-07 16:03:45.344 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-07 16:03:46.645 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-07 16:03:46.671 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 JPA repository interfaces.
+2024-11-07 16:03:47.623 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 80 (http)
+2024-11-07 16:03:47.646 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2024-11-07 16:03:47.649 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-07 16:03:47.649 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-07 16:03:47.714 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-07 16:03:47.715 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2370 ms
+2024-11-07 16:03:47.875 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-07 16:03:48.065 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:8d5ffc42-cc41-4b85-a4e8-d6fa6c012ecc user=SA
+2024-11-07 16:03:48.067 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-07 16:03:48.078 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:8d5ffc42-cc41-4b85-a4e8-d6fa6c012ecc'
+2024-11-07 16:03:48.333 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-07 16:03:48.398 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-07 16:03:48.434 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-11-07 16:03:48.804 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-07 16:03:49.287 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-07 16:03:49.294 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-07 16:03:49.430 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-07 16:03:49.602 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2024-11-07 16:03:50.156 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2024-11-07 16:03:51.465 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-11-07 16:03:51.526 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2024-11-07 16:03:51.546 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 80 (http) with context path '/'
+2024-11-07 16:03:51.580 [restartedMain] INFO  c.h.onlinebooking.ui.UiApplication - Started UiApplication in 6.844 seconds (process running for 8.159)
+2024-11-07 16:03:52.007 [RMI TCP Connection(2)-10.84.5.73] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-07 16:03:52.007 [RMI TCP Connection(2)-10.84.5.73] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-11-07 16:03:52.009 [RMI TCP Connection(2)-10.84.5.73] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-11-07 16:08:14.535 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-07 16:08:14.563 [SpringApplicationShutdownHook] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-11-07 16:08:14.565 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-11-07 16:08:14.569 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-11-07 16:08:19.192 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-11-07 16:08:19.227 [restartedMain] INFO  c.h.onlinebooking.ui.UiApplication - Starting UiApplication using Java 21.0.4 with PID 34444 (D:\hbo\study\2024\Project\hotel-booking\ui-service\build\classes\java\main started by hbo in D:\hbo\study\2024\Project\hotel-booking)
+2024-11-07 16:08:19.228 [restartedMain] INFO  c.h.onlinebooking.ui.UiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-07 16:08:19.278 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\hbo\.gradle\caches\modules-2\files-2.1\org.glassfish.hk2\hk2\3.0.6\12187beb6321e6a7fdc2ef4d196e16c8c58a3a1\hk2-3.0.6.jar referenced one or more files that do not exist: file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-utils.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/jakarta.annotation-api.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/jakarta.inject-api.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-api.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/aopalliance-repackaged.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-core.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-locator.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/javassist.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-runlevel.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/class-model.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm-analysis.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm-commons.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm-tree.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm-util.jar
+2024-11-07 16:08:19.278 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-07 16:08:19.278 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-07 16:08:20.679 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-07 16:08:20.705 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 JPA repository interfaces.
+2024-11-07 16:08:21.685 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 80 (http)
+2024-11-07 16:08:21.705 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2024-11-07 16:08:21.714 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-07 16:08:21.714 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-07 16:08:21.787 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-07 16:08:21.788 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2509 ms
+2024-11-07 16:08:21.968 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-07 16:08:22.209 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:4ee48dcf-7487-4af4-8663-1ca41a4045d1 user=SA
+2024-11-07 16:08:22.210 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-07 16:08:22.233 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:4ee48dcf-7487-4af4-8663-1ca41a4045d1'
+2024-11-07 16:08:22.479 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-07 16:08:22.562 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-07 16:08:22.599 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-11-07 16:08:23.013 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-07 16:08:23.425 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-07 16:08:23.430 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-07 16:08:23.605 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-07 16:08:23.803 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2024-11-07 16:08:24.248 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2024-11-07 16:08:25.336 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-11-07 16:08:25.424 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2024-11-07 16:08:25.455 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 80 (http) with context path '/'
+2024-11-07 16:08:25.477 [restartedMain] INFO  c.h.onlinebooking.ui.UiApplication - Started UiApplication in 6.703 seconds (process running for 7.804)
+2024-11-07 16:08:25.731 [RMI TCP Connection(1)-10.84.5.73] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-07 16:08:25.731 [RMI TCP Connection(1)-10.84.5.73] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-11-07 16:08:25.734 [RMI TCP Connection(1)-10.84.5.73] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2024-11-07 16:49:40.010 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-07 16:50:13.854 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-11-07 16:50:13.896 [restartedMain] INFO  c.h.onlinebooking.ui.UiApplication - Starting UiApplication using Java 21.0.4 with PID 12404 (D:\hbo\study\2024\Project\hotel-booking\ui-service\build\classes\java\main started by hbo in D:\hbo\study\2024\Project\hotel-booking)
+2024-11-07 16:50:13.896 [restartedMain] INFO  c.h.onlinebooking.ui.UiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-07 16:50:13.946 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\hbo\.gradle\caches\modules-2\files-2.1\org.glassfish.hk2\hk2\3.0.6\12187beb6321e6a7fdc2ef4d196e16c8c58a3a1\hk2-3.0.6.jar referenced one or more files that do not exist: file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-utils.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/jakarta.annotation-api.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/jakarta.inject-api.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-api.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/aopalliance-repackaged.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-core.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-locator.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/javassist.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-runlevel.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/class-model.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm-analysis.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm-commons.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm-tree.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm-util.jar
+2024-11-07 16:50:13.946 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-07 16:50:13.946 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-07 16:50:15.238 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-07 16:50:15.264 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 JPA repository interfaces.
+2024-11-07 16:50:16.355 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 80 (http)
+2024-11-07 16:50:16.372 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2024-11-07 16:50:16.380 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-07 16:50:16.381 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-07 16:50:16.446 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-07 16:50:16.446 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2500 ms
+2024-11-07 16:50:16.619 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-07 16:50:16.836 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:73289f5c-32a2-41dc-ae31-5234bd4bd5e0 user=SA
+2024-11-07 16:50:16.837 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-07 16:50:16.854 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:73289f5c-32a2-41dc-ae31-5234bd4bd5e0'
+2024-11-07 16:50:17.150 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-07 16:50:17.215 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-07 16:50:17.258 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-11-07 16:50:17.691 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-07 16:50:18.187 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-07 16:50:18.198 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-07 16:50:18.308 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-07 16:50:18.471 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2024-11-07 16:50:18.980 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2024-11-07 16:50:22.450 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-11-07 16:50:22.522 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2024-11-07 16:50:22.547 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 80 (http) with context path '/'
+2024-11-07 16:50:22.569 [restartedMain] INFO  c.h.onlinebooking.ui.UiApplication - Started UiApplication in 9.121 seconds (process running for 10.371)
+2024-11-07 16:50:22.791 [RMI TCP Connection(2)-10.84.5.73] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-07 16:50:22.791 [RMI TCP Connection(2)-10.84.5.73] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-11-07 16:50:22.792 [RMI TCP Connection(2)-10.84.5.73] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-11-07 16:51:57.464 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-07 16:51:57.475 [SpringApplicationShutdownHook] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-11-07 16:51:57.476 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-11-07 16:51:57.481 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-11-07 16:52:02.415 [restartedMain] INFO  c.h.onlinebooking.ui.UiApplication - Starting UiApplication using Java 21.0.4 with PID 21900 (D:\hbo\study\2024\Project\hotel-booking\ui-service\build\classes\java\main started by hbo in D:\hbo\study\2024\Project\hotel-booking)
+2024-11-07 16:52:02.418 [restartedMain] INFO  c.h.onlinebooking.ui.UiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-07 16:52:02.420 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-11-07 16:52:02.478 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\hbo\.gradle\caches\modules-2\files-2.1\org.glassfish.hk2\hk2\3.0.6\12187beb6321e6a7fdc2ef4d196e16c8c58a3a1\hk2-3.0.6.jar referenced one or more files that do not exist: file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-utils.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/jakarta.annotation-api.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/jakarta.inject-api.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-api.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/aopalliance-repackaged.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-core.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-locator.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/javassist.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-runlevel.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/class-model.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm-analysis.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm-commons.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm-tree.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm-util.jar
+2024-11-07 16:52:02.479 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-07 16:52:02.479 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-07 16:52:03.854 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-07 16:52:03.898 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 0 JPA repository interfaces.
+2024-11-07 16:52:05.031 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 80 (http)
+2024-11-07 16:52:05.043 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2024-11-07 16:52:05.051 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-07 16:52:05.052 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-07 16:52:05.114 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-07 16:52:05.114 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2635 ms
+2024-11-07 16:52:05.253 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-07 16:52:05.498 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:ab3adf73-5feb-4423-bb6e-ab9bdb65dd41 user=SA
+2024-11-07 16:52:05.502 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-07 16:52:05.521 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:ab3adf73-5feb-4423-bb6e-ab9bdb65dd41'
+2024-11-07 16:52:05.774 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-07 16:52:05.848 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-07 16:52:05.903 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-11-07 16:52:06.299 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-07 16:52:06.773 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-07 16:52:06.786 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-07 16:52:06.936 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-07 16:52:07.095 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2024-11-07 16:52:07.560 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2024-11-07 16:52:09.285 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-11-07 16:52:09.376 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2024-11-07 16:52:09.399 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 80 (http) with context path '/'
+2024-11-07 16:52:09.422 [restartedMain] INFO  c.h.onlinebooking.ui.UiApplication - Started UiApplication in 7.498 seconds (process running for 8.944)
+2024-11-07 16:52:10.074 [RMI TCP Connection(3)-10.84.5.73] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-07 16:52:10.075 [RMI TCP Connection(3)-10.84.5.73] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-11-07 16:52:10.078 [RMI TCP Connection(3)-10.84.5.73] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-11-07 16:52:41.789 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-11-07 16:52:41.798 [Thread-7] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-80"]
+2024-11-07 16:52:41.818 [Thread-7] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-07 16:52:41.829 [Thread-7] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-11-07 16:52:41.830 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-11-07 16:52:41.833 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-11-07 16:52:41.969 [restartedMain] INFO  c.h.onlinebooking.ui.UiApplication - Starting UiApplication using Java 21.0.4 with PID 21900 (D:\hbo\study\2024\Project\hotel-booking\ui-service\build\classes\java\main started by hbo in D:\hbo\study\2024\Project\hotel-booking)
+2024-11-07 16:52:41.969 [restartedMain] INFO  c.h.onlinebooking.ui.UiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-07 16:52:42.350 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-07 16:52:42.356 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2024-11-07 16:52:42.511 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 80 (http)
+2024-11-07 16:52:42.512 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2024-11-07 16:52:42.512 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-07 16:52:42.512 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-07 16:52:42.540 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-07 16:52:42.540 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 569 ms
+2024-11-07 16:52:42.591 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2024-11-07 16:52:42.593 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:076b7d55-469d-4c55-9e1a-94643b4f7197 user=SA
+2024-11-07 16:52:42.593 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2024-11-07 16:52:42.593 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:076b7d55-469d-4c55-9e1a-94643b4f7197'
+2024-11-07 16:52:42.686 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-07 16:52:42.694 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-11-07 16:52:42.706 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-07 16:52:42.728 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-07 16:52:42.728 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-07 16:52:42.779 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-07 16:52:42.817 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2024-11-07 16:52:43.007 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2024-11-07 16:52:44.077 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-11-07 16:52:44.091 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2024-11-07 16:52:44.104 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 80 (http) with context path '/'
+2024-11-07 16:52:44.113 [restartedMain] INFO  c.h.onlinebooking.ui.UiApplication - Started UiApplication in 2.183 seconds (process running for 43.635)
+2024-11-07 16:52:44.115 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-11-07 16:52:45.619 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-11-07 16:52:45.624 [Thread-9] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-80"]
+2024-11-07 16:52:45.647 [Thread-9] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-07 16:52:45.649 [Thread-9] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-11-07 16:52:45.650 [Thread-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2024-11-07 16:52:45.654 [Thread-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2024-11-07 16:52:45.845 [restartedMain] INFO  c.h.onlinebooking.ui.UiApplication - Starting UiApplication using Java 21.0.4 with PID 21900 (D:\hbo\study\2024\Project\hotel-booking\ui-service\build\classes\java\main started by hbo in D:\hbo\study\2024\Project\hotel-booking)
+2024-11-07 16:52:45.846 [restartedMain] INFO  c.h.onlinebooking.ui.UiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-07 16:52:46.225 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-07 16:52:46.229 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2024-11-07 16:52:46.352 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 80 (http)
+2024-11-07 16:52:46.353 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2024-11-07 16:52:46.353 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-07 16:52:46.353 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-07 16:52:46.380 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-07 16:52:46.380 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 531 ms
+2024-11-07 16:52:46.431 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2024-11-07 16:52:46.433 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection conn20: url=jdbc:h2:mem:db5efd40-9ce1-48c0-9347-37da2ba0089b user=SA
+2024-11-07 16:52:46.433 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2024-11-07 16:52:46.433 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:db5efd40-9ce1-48c0-9347-37da2ba0089b'
+2024-11-07 16:52:46.493 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-07 16:52:46.496 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-11-07 16:52:46.504 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-07 16:52:46.523 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-07 16:52:46.523 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-07 16:52:46.572 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-07 16:52:46.632 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2024-11-07 16:52:46.813 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2024-11-07 16:52:48.489 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-11-07 16:52:48.502 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2024-11-07 16:52:48.515 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 80 (http) with context path '/'
+2024-11-07 16:52:48.531 [restartedMain] INFO  c.h.onlinebooking.ui.UiApplication - Started UiApplication in 2.733 seconds (process running for 48.052)
+2024-11-07 16:52:48.534 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-11-07 16:52:54.147 [http-nio-80-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-07 16:52:54.147 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-11-07 16:52:54.150 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2024-11-07 16:57:06.177 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-07 16:57:06.179 [SpringApplicationShutdownHook] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-11-07 16:57:06.181 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2024-11-07 16:57:06.185 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2024-11-07 16:57:11.799 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-11-07 16:57:11.812 [restartedMain] INFO  c.h.onlinebooking.ui.UiApplication - Starting UiApplication using Java 21.0.4 with PID 56124 (D:\hbo\study\2024\Project\hotel-booking\ui-service\build\classes\java\main started by hbo in D:\hbo\study\2024\Project\hotel-booking)
+2024-11-07 16:57:11.813 [restartedMain] INFO  c.h.onlinebooking.ui.UiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-07 16:57:11.873 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\hbo\.gradle\caches\modules-2\files-2.1\org.glassfish.hk2\hk2\3.0.6\12187beb6321e6a7fdc2ef4d196e16c8c58a3a1\hk2-3.0.6.jar referenced one or more files that do not exist: file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-utils.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/jakarta.annotation-api.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/jakarta.inject-api.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-api.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/aopalliance-repackaged.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-core.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-locator.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/javassist.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-runlevel.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/class-model.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm-analysis.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm-commons.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm-tree.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm-util.jar
+2024-11-07 16:57:11.873 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-07 16:57:11.873 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-07 16:57:13.497 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-07 16:57:13.538 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 0 JPA repository interfaces.
+2024-11-07 16:57:14.635 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 80 (http)
+2024-11-07 16:57:14.647 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2024-11-07 16:57:14.652 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-07 16:57:14.652 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-07 16:57:14.765 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-07 16:57:14.765 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2891 ms
+2024-11-07 16:57:14.916 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-07 16:57:15.135 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:4cde309e-0e0b-49db-ba0d-75658c958793 user=SA
+2024-11-07 16:57:15.137 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-07 16:57:15.146 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:4cde309e-0e0b-49db-ba0d-75658c958793'
+2024-11-07 16:57:15.304 [restartedMain] DEBUG o.s.w.f.ServerHttpObservationFilter - Filter 'webMvcObservationFilter' configured for use
+2024-11-07 16:57:15.469 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-07 16:57:15.570 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-07 16:57:15.624 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-11-07 16:57:16.040 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-07 16:57:16.511 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-07 16:57:16.516 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-07 16:57:16.660 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-07 16:57:16.810 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2024-11-07 16:57:16.914 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+2024-11-07 16:57:17.114 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-11-07 16:57:17.456 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2024-11-07 16:57:17.770 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-07 16:57:17.822 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-07 16:57:19.126 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-11-07 16:57:19.220 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2024-11-07 16:57:19.255 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 80 (http) with context path '/'
+2024-11-07 16:57:19.276 [restartedMain] INFO  c.h.onlinebooking.ui.UiApplication - Started UiApplication in 7.945 seconds (process running for 9.39)
+2024-11-07 16:57:20.013 [RMI TCP Connection(2)-10.84.5.73] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-07 16:57:20.013 [RMI TCP Connection(2)-10.84.5.73] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-11-07 16:57:20.013 [RMI TCP Connection(2)-10.84.5.73] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2024-11-07 16:57:20.013 [RMI TCP Connection(2)-10.84.5.73] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2024-11-07 16:57:20.013 [RMI TCP Connection(2)-10.84.5.73] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2024-11-07 16:57:20.015 [RMI TCP Connection(2)-10.84.5.73] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@74690465
+2024-11-07 16:57:20.015 [RMI TCP Connection(2)-10.84.5.73] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@59e7cea5
+2024-11-07 16:57:20.016 [RMI TCP Connection(2)-10.84.5.73] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-11-07 16:57:20.016 [RMI TCP Connection(2)-10.84.5.73] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2024-11-07 16:57:25.835 [http-nio-80-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for POST "/error", parameters={}
+2024-11-07 16:57:25.837 [http-nio-80-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-11-07 16:57:25.890 [http-nio-80-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-11-07 16:57:25.892 [http-nio-80-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Thu Nov 07 16:57:25 EST 2024, status=403, error=Forbidden, message=Forbidden, path=/api/h (truncated)...]
+2024-11-07 16:57:25.919 [http-nio-80-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 403
+2024-11-07 16:58:36.433 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-07 16:58:36.448 [SpringApplicationShutdownHook] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-11-07 16:58:36.450 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-11-07 16:58:36.456 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-11-07 16:58:39.954 [restartedMain] INFO  c.h.onlinebooking.ui.UiApplication - Starting UiApplication using Java 21.0.4 with PID 21196 (D:\hbo\study\2024\Project\hotel-booking\ui-service\build\classes\java\main started by hbo in D:\hbo\study\2024\Project\hotel-booking)
+2024-11-07 16:58:39.958 [restartedMain] INFO  c.h.onlinebooking.ui.UiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-07 16:58:39.954 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-11-07 16:58:40.016 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\hbo\.gradle\caches\modules-2\files-2.1\org.glassfish.hk2\hk2\3.0.6\12187beb6321e6a7fdc2ef4d196e16c8c58a3a1\hk2-3.0.6.jar referenced one or more files that do not exist: file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-utils.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/jakarta.annotation-api.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/jakarta.inject-api.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-api.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/aopalliance-repackaged.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-core.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-locator.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/javassist.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-runlevel.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/class-model.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm-analysis.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm-commons.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm-tree.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm-util.jar
+2024-11-07 16:58:40.016 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-07 16:58:40.016 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-07 16:58:41.419 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-07 16:58:41.443 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 JPA repository interfaces.
+2024-11-07 16:58:42.507 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 80 (http)
+2024-11-07 16:58:42.517 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2024-11-07 16:58:42.526 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-07 16:58:42.526 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-07 16:58:42.611 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-07 16:58:42.611 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2595 ms
+2024-11-07 16:58:42.783 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-07 16:58:43.014 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:c868d72f-956d-4e4f-9844-f9f4d2611abc user=SA
+2024-11-07 16:58:43.015 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-07 16:58:43.032 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:c868d72f-956d-4e4f-9844-f9f4d2611abc'
+2024-11-07 16:58:43.179 [restartedMain] DEBUG o.s.w.f.ServerHttpObservationFilter - Filter 'webMvcObservationFilter' configured for use
+2024-11-07 16:58:43.325 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-07 16:58:43.413 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-07 16:58:43.464 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-11-07 16:58:43.807 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-07 16:58:44.281 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-07 16:58:44.286 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-07 16:58:44.419 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-07 16:58:44.484 [restartedMain] DEBUG o.s.s.c.a.a.c.AuthenticationConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2024-11-07 16:58:44.585 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2024-11-07 16:58:44.661 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+2024-11-07 16:58:44.846 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-11-07 16:58:45.109 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2024-11-07 16:58:45.222 [restartedMain] DEBUG o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CsrfFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-11-07 16:58:45.427 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-07 16:58:45.509 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-07 16:58:46.655 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-11-07 16:58:46.760 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2024-11-07 16:58:46.790 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 80 (http) with context path '/'
+2024-11-07 16:58:46.813 [restartedMain] INFO  c.h.onlinebooking.ui.UiApplication - Started UiApplication in 7.4 seconds (process running for 8.713)
+2024-11-07 16:58:47.189 [RMI TCP Connection(3)-10.84.5.73] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-07 16:58:47.190 [RMI TCP Connection(3)-10.84.5.73] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-11-07 16:58:47.190 [RMI TCP Connection(3)-10.84.5.73] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2024-11-07 16:58:47.190 [RMI TCP Connection(3)-10.84.5.73] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2024-11-07 16:58:47.190 [RMI TCP Connection(3)-10.84.5.73] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2024-11-07 16:58:47.192 [RMI TCP Connection(3)-10.84.5.73] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4cc4bb59
+2024-11-07 16:58:47.193 [RMI TCP Connection(3)-10.84.5.73] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@464ebc4d
+2024-11-07 16:58:47.194 [RMI TCP Connection(3)-10.84.5.73] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-11-07 16:58:47.194 [RMI TCP Connection(3)-10.84.5.73] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2024-11-07 16:58:49.146 [http-nio-80-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/hotels/initial_search
+2024-11-07 16:58:49.161 [http-nio-80-exec-2] DEBUG o.s.security.web.csrf.CsrfFilter - Invalid CSRF token found for http://localhost/api/hotels/initial_search
+2024-11-07 16:58:49.161 [http-nio-80-exec-2] DEBUG o.s.s.w.a.AccessDeniedHandlerImpl - Responding with 403 status code
+2024-11-07 16:58:49.174 [http-nio-80-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing POST /error
+2024-11-07 16:58:49.180 [http-nio-80-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured POST /error
+2024-11-07 16:58:49.183 [http-nio-80-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for POST "/error", parameters={}
+2024-11-07 16:58:49.185 [http-nio-80-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-11-07 16:58:49.266 [http-nio-80-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-11-07 16:58:49.268 [http-nio-80-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Thu Nov 07 16:58:49 EST 2024, status=403, error=Forbidden, message=Forbidden, path=/api/h (truncated)...]
+2024-11-07 16:58:49.292 [http-nio-80-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 403
+2024-11-07 16:58:49.294 [http-nio-80-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-07 17:01:11.749 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-07 17:01:11.760 [SpringApplicationShutdownHook] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-11-07 17:01:11.761 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-11-07 17:01:11.764 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-11-07 17:01:16.348 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-11-07 17:01:16.385 [restartedMain] INFO  c.h.onlinebooking.ui.UiApplication - Starting UiApplication using Java 21.0.4 with PID 41092 (D:\hbo\study\2024\Project\hotel-booking\ui-service\build\classes\java\main started by hbo in D:\hbo\study\2024\Project\hotel-booking)
+2024-11-07 17:01:16.386 [restartedMain] INFO  c.h.onlinebooking.ui.UiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-07 17:01:16.456 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\hbo\.gradle\caches\modules-2\files-2.1\org.glassfish.hk2\hk2\3.0.6\12187beb6321e6a7fdc2ef4d196e16c8c58a3a1\hk2-3.0.6.jar referenced one or more files that do not exist: file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-utils.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/jakarta.annotation-api.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/jakarta.inject-api.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-api.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/aopalliance-repackaged.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-core.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-locator.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/javassist.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-runlevel.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/class-model.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm-analysis.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm-commons.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm-tree.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm-util.jar
+2024-11-07 17:01:16.456 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-07 17:01:16.456 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-07 17:01:17.892 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-07 17:01:17.943 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 0 JPA repository interfaces.
+2024-11-07 17:01:18.999 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 80 (http)
+2024-11-07 17:01:19.009 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2024-11-07 17:01:19.013 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-07 17:01:19.014 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-07 17:01:19.073 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-07 17:01:19.073 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2616 ms
+2024-11-07 17:01:19.209 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-07 17:01:19.419 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:3ac0dde9-5684-4e0f-9c7c-44cf691ccdda user=SA
+2024-11-07 17:01:19.420 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-07 17:01:19.447 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:3ac0dde9-5684-4e0f-9c7c-44cf691ccdda'
+2024-11-07 17:01:19.583 [restartedMain] DEBUG o.s.w.f.ServerHttpObservationFilter - Filter 'webMvcObservationFilter' configured for use
+2024-11-07 17:01:19.760 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-07 17:01:19.815 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-07 17:01:19.849 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-11-07 17:01:20.228 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-07 17:01:20.623 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-07 17:01:20.633 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-07 17:01:20.769 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-07 17:01:20.814 [restartedMain] DEBUG o.s.s.c.a.a.c.AuthenticationConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2024-11-07 17:01:20.896 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2024-11-07 17:01:20.959 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+2024-11-07 17:01:21.160 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-11-07 17:01:21.354 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2024-11-07 17:01:21.465 [restartedMain] DEBUG o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-11-07 17:01:21.667 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-07 17:01:21.724 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-07 17:01:23.225 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-11-07 17:01:23.313 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2024-11-07 17:01:23.342 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 80 (http) with context path '/'
+2024-11-07 17:01:23.353 [restartedMain] INFO  c.h.onlinebooking.ui.UiApplication - Started UiApplication in 7.436 seconds (process running for 8.661)
+2024-11-07 17:01:23.839 [RMI TCP Connection(3)-10.84.5.73] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-07 17:01:23.839 [RMI TCP Connection(3)-10.84.5.73] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-11-07 17:01:23.840 [RMI TCP Connection(3)-10.84.5.73] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2024-11-07 17:01:23.840 [RMI TCP Connection(3)-10.84.5.73] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2024-11-07 17:01:23.840 [RMI TCP Connection(3)-10.84.5.73] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2024-11-07 17:01:23.842 [RMI TCP Connection(3)-10.84.5.73] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@52a50b6e
+2024-11-07 17:01:23.843 [RMI TCP Connection(3)-10.84.5.73] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@2932daad
+2024-11-07 17:01:23.844 [RMI TCP Connection(3)-10.84.5.73] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-11-07 17:01:23.844 [RMI TCP Connection(3)-10.84.5.73] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2024-11-07 17:01:25.414 [http-nio-80-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/hotels/initial_search
+2024-11-07 17:01:25.430 [http-nio-80-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/hotels/initial_search
+2024-11-07 17:01:25.434 [http-nio-80-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/hotels/initial_search", parameters={}
+2024-11-07 17:01:25.438 [http-nio-80-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.HotelSearchController#initialSearch(InitialSearchDTO)
+2024-11-07 17:01:25.570 [http-nio-80-exec-2] DEBUG o.s.web.method.HandlerMethod - Could not resolve parameter [0] in public org.springframework.http.ResponseEntity<java.util.List<com.hotel.onlinebooking.ui.dto.hotelListing.PropertyListingDTO>> com.hotel.onlinebooking.ui.controller.HotelSearchController.initialSearch(com.hotel.onlinebooking.ui.dto.search.InitialSearchDTO): JSON parse error: Cannot deserialize value of type `java.util.Date` from String "2024-11-07 16:06:58": not a valid representation (error: Failed to parse Date value '2024-11-07 16:06:58': Cannot parse date "2024-11-07 16:06:58": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSX', parsing fails (leniency? null))
+2024-11-07 17:01:25.573 [http-nio-80-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.util.Date` from String "2024-11-07 16:06:58": not a valid representation (error: Failed to parse Date value '2024-11-07 16:06:58': Cannot parse date "2024-11-07 16:06:58": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSX', parsing fails (leniency? null))]
+2024-11-07 17:01:25.574 [http-nio-80-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2024-11-07 17:01:25.575 [http-nio-80-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-07 17:01:25.583 [http-nio-80-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing POST /error
+2024-11-07 17:01:25.585 [http-nio-80-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured POST /error
+2024-11-07 17:01:25.586 [http-nio-80-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for POST "/error", parameters={}
+2024-11-07 17:01:25.586 [http-nio-80-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-11-07 17:01:25.595 [http-nio-80-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-11-07 17:01:25.596 [http-nio-80-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Thu Nov 07 17:01:25 EST 2024, status=400, error=Bad Request, trace=org.springframework.ht (truncated)...]
+2024-11-07 17:01:25.610 [http-nio-80-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 400
+2024-11-07 17:01:25.610 [http-nio-80-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-07 17:02:35.878 [http-nio-80-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/hotels/initial_search
+2024-11-07 17:02:35.881 [http-nio-80-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/hotels/initial_search
+2024-11-07 17:02:35.881 [http-nio-80-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/hotels/initial_search", parameters={}
+2024-11-07 17:02:35.882 [http-nio-80-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.HotelSearchController#initialSearch(InitialSearchDTO)
+2024-11-07 17:02:35.884 [http-nio-80-exec-4] DEBUG o.s.web.method.HandlerMethod - Could not resolve parameter [0] in public org.springframework.http.ResponseEntity<java.util.List<com.hotel.onlinebooking.ui.dto.hotelListing.PropertyListingDTO>> com.hotel.onlinebooking.ui.controller.HotelSearchController.initialSearch(com.hotel.onlinebooking.ui.dto.search.InitialSearchDTO): JSON parse error: Cannot deserialize value of type `java.util.Date` from String "2024-11-07'T'16:06:58": not a valid representation (error: Failed to parse Date value '2024-11-07'T'16:06:58': Cannot parse date "2024-11-07'T'16:06:58": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSX', parsing fails (leniency? null))
+2024-11-07 17:02:35.885 [http-nio-80-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.util.Date` from String "2024-11-07'T'16:06:58": not a valid representation (error: Failed to parse Date value '2024-11-07'T'16:06:58': Cannot parse date "2024-11-07'T'16:06:58": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSX', parsing fails (leniency? null))]
+2024-11-07 17:02:35.886 [http-nio-80-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2024-11-07 17:02:35.886 [http-nio-80-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-07 17:02:35.888 [http-nio-80-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing POST /error
+2024-11-07 17:02:35.890 [http-nio-80-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured POST /error
+2024-11-07 17:02:35.890 [http-nio-80-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for POST "/error", parameters={}
+2024-11-07 17:02:35.891 [http-nio-80-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-11-07 17:02:35.894 [http-nio-80-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-11-07 17:02:35.895 [http-nio-80-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Thu Nov 07 17:02:35 EST 2024, status=400, error=Bad Request, trace=org.springframework.ht (truncated)...]
+2024-11-07 17:02:35.899 [http-nio-80-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 400
+2024-11-07 17:02:35.899 [http-nio-80-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-07 17:03:28.832 [http-nio-80-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/hotels/initial_search
+2024-11-07 17:03:28.833 [http-nio-80-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/hotels/initial_search
+2024-11-07 17:03:28.833 [http-nio-80-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/hotels/initial_search", parameters={}
+2024-11-07 17:03:28.833 [http-nio-80-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.HotelSearchController#initialSearch(InitialSearchDTO)
+2024-11-07 17:03:28.835 [http-nio-80-exec-6] DEBUG o.s.web.method.HandlerMethod - Could not resolve parameter [0] in public org.springframework.http.ResponseEntity<java.util.List<com.hotel.onlinebooking.ui.dto.hotelListing.PropertyListingDTO>> com.hotel.onlinebooking.ui.controller.HotelSearchController.initialSearch(com.hotel.onlinebooking.ui.dto.search.InitialSearchDTO): JSON parse error: Cannot construct instance of `com.hotel.onlinebooking.ui.dto.search.ChildAge` (although at least one Creator exists): cannot deserialize from Object value (no delegate- or property-based Creator)
+2024-11-07 17:03:28.835 [http-nio-80-exec-6] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `com.hotel.onlinebooking.ui.dto.search.ChildAge` (although at least one Creator exists): cannot deserialize from Object value (no delegate- or property-based Creator)]
+2024-11-07 17:03:28.835 [http-nio-80-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2024-11-07 17:03:28.835 [http-nio-80-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-07 17:03:28.836 [http-nio-80-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing POST /error
+2024-11-07 17:03:28.837 [http-nio-80-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured POST /error
+2024-11-07 17:03:28.837 [http-nio-80-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for POST "/error", parameters={}
+2024-11-07 17:03:28.837 [http-nio-80-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-11-07 17:03:28.839 [http-nio-80-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-11-07 17:03:28.839 [http-nio-80-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Thu Nov 07 17:03:28 EST 2024, status=400, error=Bad Request, trace=org.springframework.ht (truncated)...]
+2024-11-07 17:03:28.841 [http-nio-80-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 400
+2024-11-07 17:03:28.841 [http-nio-80-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-07 17:05:31.443 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-07 17:05:31.463 [SpringApplicationShutdownHook] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-11-07 17:05:31.466 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-11-07 17:05:31.473 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-11-07 17:05:36.514 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-11-07 17:05:36.539 [restartedMain] INFO  c.h.onlinebooking.ui.UiApplication - Starting UiApplication using Java 21.0.4 with PID 33100 (D:\hbo\study\2024\Project\hotel-booking\ui-service\build\classes\java\main started by hbo in D:\hbo\study\2024\Project\hotel-booking)
+2024-11-07 17:05:36.540 [restartedMain] INFO  c.h.onlinebooking.ui.UiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-07 17:05:36.597 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\hbo\.gradle\caches\modules-2\files-2.1\org.glassfish.hk2\hk2\3.0.6\12187beb6321e6a7fdc2ef4d196e16c8c58a3a1\hk2-3.0.6.jar referenced one or more files that do not exist: file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-utils.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/jakarta.annotation-api.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/jakarta.inject-api.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-api.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/aopalliance-repackaged.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-core.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-locator.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/javassist.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-runlevel.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/class-model.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm-analysis.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm-commons.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm-tree.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm-util.jar
+2024-11-07 17:05:36.597 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-07 17:05:36.597 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-07 17:05:38.110 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-07 17:05:38.133 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 JPA repository interfaces.
+2024-11-07 17:05:39.262 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 80 (http)
+2024-11-07 17:05:39.283 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2024-11-07 17:05:39.288 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-07 17:05:39.288 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-07 17:05:39.364 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-07 17:05:39.364 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2766 ms
+2024-11-07 17:05:39.511 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-07 17:05:39.728 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:994e7bc8-a76b-4888-8f4a-997c764c0591 user=SA
+2024-11-07 17:05:39.732 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-07 17:05:39.755 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:994e7bc8-a76b-4888-8f4a-997c764c0591'
+2024-11-07 17:05:39.889 [restartedMain] DEBUG o.s.w.f.ServerHttpObservationFilter - Filter 'webMvcObservationFilter' configured for use
+2024-11-07 17:05:40.024 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-07 17:05:40.075 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-07 17:05:40.129 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-11-07 17:05:40.519 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-07 17:05:41.028 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-07 17:05:41.038 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-07 17:05:41.178 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-07 17:05:41.234 [restartedMain] DEBUG o.s.s.c.a.a.c.AuthenticationConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2024-11-07 17:05:41.337 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2024-11-07 17:05:41.409 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+2024-11-07 17:05:41.599 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-11-07 17:05:41.876 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2024-11-07 17:05:41.997 [restartedMain] DEBUG o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-11-07 17:05:42.165 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-07 17:05:42.230 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-07 17:05:44.026 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-11-07 17:05:44.099 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2024-11-07 17:05:44.120 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 80 (http) with context path '/'
+2024-11-07 17:05:44.142 [restartedMain] INFO  c.h.onlinebooking.ui.UiApplication - Started UiApplication in 8.048 seconds (process running for 9.353)
+2024-11-07 17:05:44.363 [RMI TCP Connection(1)-10.84.5.73] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-07 17:05:44.363 [RMI TCP Connection(1)-10.84.5.73] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-11-07 17:05:44.363 [RMI TCP Connection(1)-10.84.5.73] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2024-11-07 17:05:44.363 [RMI TCP Connection(1)-10.84.5.73] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2024-11-07 17:05:44.363 [RMI TCP Connection(1)-10.84.5.73] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2024-11-07 17:05:44.365 [RMI TCP Connection(1)-10.84.5.73] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@323f596b
+2024-11-07 17:05:44.365 [RMI TCP Connection(1)-10.84.5.73] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@2f6d486a
+2024-11-07 17:05:44.365 [RMI TCP Connection(1)-10.84.5.73] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-11-07 17:05:44.365 [RMI TCP Connection(1)-10.84.5.73] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-11-07 17:05:46.556 [http-nio-80-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/hotels/initial_search
+2024-11-07 17:05:46.579 [http-nio-80-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/hotels/initial_search
+2024-11-07 17:05:46.583 [http-nio-80-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/hotels/initial_search", parameters={}
+2024-11-07 17:05:46.588 [http-nio-80-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.HotelSearchController#initialSearch(InitialSearchDTO)
+2024-11-07 17:05:46.765 [http-nio-80-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [InitialSearchDTO(hotelType=SINGLE, stays=[StayInfo(location=LocationInfo(city=New York, state=NY, co (truncated)...]
+2024-11-07 17:05:46.776 [http-nio-80-exec-3] INFO  c.h.o.u.c.HotelSearchController - Fetching property listings with search Request: InitialSearchDTO(hotelType=SINGLE, stays=[StayInfo(location=LocationInfo(city=New York, state=NY, country=USA, postalCode=02134, neighborhoodName=Stuvytown, latitude=1.11, longitude=2.22), checkInDate=Wed Nov 06 19:00:00 EST 2024, checkOutDate=Fri Nov 08 19:00:00 EST 2024)], occupancy=OccupancyDetail(rooms=1, adults=2, children=1, childrenAges=[ChildAge(age=15)]))
+2024-11-07 17:05:46.800 [http-nio-80-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-11-07 17:05:46.819 [http-nio-80-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[PropertyListingDTO(amenityList=[Amenity(amenityIcon=wifi-icon, amenityName=Free WiFi), Amenity(amen (truncated)...]
+2024-11-07 17:05:46.862 [http-nio-80-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-07 17:05:46.864 [http-nio-80-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-07 17:07:17.504 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-07 17:07:17.523 [SpringApplicationShutdownHook] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-11-07 17:07:17.526 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-11-07 17:07:17.533 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-11-07 17:07:21.975 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-11-07 17:07:22.005 [restartedMain] INFO  c.h.onlinebooking.ui.UiApplication - Starting UiApplication using Java 21.0.4 with PID 34976 (D:\hbo\study\2024\Project\hotel-booking\ui-service\build\classes\java\main started by hbo in D:\hbo\study\2024\Project\hotel-booking)
+2024-11-07 17:07:22.006 [restartedMain] INFO  c.h.onlinebooking.ui.UiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-07 17:07:22.074 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\hbo\.gradle\caches\modules-2\files-2.1\org.glassfish.hk2\hk2\3.0.6\12187beb6321e6a7fdc2ef4d196e16c8c58a3a1\hk2-3.0.6.jar referenced one or more files that do not exist: file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-utils.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/jakarta.annotation-api.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/jakarta.inject-api.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-api.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/aopalliance-repackaged.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-core.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-locator.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/javassist.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-runlevel.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/class-model.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm-analysis.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm-commons.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm-tree.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm-util.jar
+2024-11-07 17:07:22.074 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-07 17:07:22.074 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-07 17:07:23.595 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-07 17:07:23.637 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 0 JPA repository interfaces.
+2024-11-07 17:07:24.793 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 80 (http)
+2024-11-07 17:07:24.803 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2024-11-07 17:07:24.812 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-07 17:07:24.813 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-07 17:07:24.907 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-07 17:07:24.908 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2833 ms
+2024-11-07 17:07:25.080 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-07 17:07:25.312 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:d874ca48-3438-4fa4-a462-25032399ed01 user=SA
+2024-11-07 17:07:25.316 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-07 17:07:25.342 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:d874ca48-3438-4fa4-a462-25032399ed01'
+2024-11-07 17:07:25.518 [restartedMain] DEBUG o.s.w.f.ServerHttpObservationFilter - Filter 'webMvcObservationFilter' configured for use
+2024-11-07 17:07:25.688 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-07 17:07:25.791 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-07 17:07:25.827 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-11-07 17:07:26.206 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-07 17:07:26.769 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-07 17:07:26.774 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-07 17:07:26.874 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-07 17:07:26.916 [restartedMain] DEBUG o.s.s.c.a.a.c.AuthenticationConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2024-11-07 17:07:27.024 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2024-11-07 17:07:27.111 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+2024-11-07 17:07:27.274 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-11-07 17:07:27.654 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2024-11-07 17:07:27.805 [restartedMain] DEBUG o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-11-07 17:07:28.131 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-07 17:07:28.232 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-07 17:07:30.473 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-11-07 17:07:30.538 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2024-11-07 17:07:30.560 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 80 (http) with context path '/'
+2024-11-07 17:07:30.571 [restartedMain] INFO  c.h.onlinebooking.ui.UiApplication - Started UiApplication in 8.979 seconds (process running for 10.123)
+2024-11-07 17:07:30.913 [http-nio-80-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-07 17:07:30.913 [http-nio-80-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-11-07 17:07:30.913 [http-nio-80-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2024-11-07 17:07:30.914 [http-nio-80-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2024-11-07 17:07:30.914 [http-nio-80-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2024-11-07 17:07:30.916 [http-nio-80-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@c96618d
+2024-11-07 17:07:30.916 [http-nio-80-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@1d36f8ed
+2024-11-07 17:07:30.917 [http-nio-80-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-11-07 17:07:30.917 [http-nio-80-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2024-11-07 17:07:30.949 [http-nio-80-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/hotels/initial_search
+2024-11-07 17:07:30.978 [http-nio-80-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/hotels/initial_search
+2024-11-07 17:07:30.980 [http-nio-80-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/hotels/initial_search", parameters={}
+2024-11-07 17:07:30.982 [http-nio-80-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.HotelSearchController#initialSearch(InitialSearchDTO)
+2024-11-07 17:07:31.112 [http-nio-80-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [InitialSearchDTO(hotelType=SINGLE, stays=[StayInfo(location=LocationInfo(city=New York, state=NY, co (truncated)...]
+2024-11-07 17:07:31.127 [http-nio-80-exec-2] INFO  c.h.o.u.c.HotelSearchController - Fetching property listings with search Request: InitialSearchDTO(hotelType=SINGLE, stays=[StayInfo(location=LocationInfo(city=New York, state=NY, country=USA, postalCode=02134, neighborhoodName=Stuvytown, latitude=1.11, longitude=2.22), checkInDate=Wed Nov 06 19:00:00 EST 2024, checkOutDate=Fri Nov 08 19:00:00 EST 2024)], occupancy=OccupancyDetail(rooms=1, adults=2, children=1, childrenAges=[ChildAge(age=15)]))
+2024-11-07 17:07:31.144 [http-nio-80-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-11-07 17:07:31.158 [http-nio-80-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[PropertyListingDTO(amenityList=[Amenity(amenityIcon=wifi-icon, amenityName=Free WiFi), Amenity(amen (truncated)...]
+2024-11-07 17:07:31.183 [http-nio-80-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-07 17:07:31.184 [http-nio-80-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-07 17:07:35.652 [http-nio-80-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/hotels/initial_search
+2024-11-07 17:07:35.654 [http-nio-80-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/hotels/initial_search
+2024-11-07 17:07:35.654 [http-nio-80-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/hotels/initial_search", parameters={}
+2024-11-07 17:07:35.655 [http-nio-80-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.HotelSearchController#initialSearch(InitialSearchDTO)
+2024-11-07 17:07:35.658 [http-nio-80-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [InitialSearchDTO(hotelType=SINGLE, stays=[StayInfo(location=LocationInfo(city=New York, state=NY, co (truncated)...]
+2024-11-07 17:07:35.659 [http-nio-80-exec-3] INFO  c.h.o.u.c.HotelSearchController - Fetching property listings with search Request: InitialSearchDTO(hotelType=SINGLE, stays=[StayInfo(location=LocationInfo(city=New York, state=NY, country=USA, postalCode=02134, neighborhoodName=Stuvytown, latitude=1.11, longitude=2.22), checkInDate=Wed Nov 06 19:00:00 EST 2024, checkOutDate=Fri Nov 08 19:00:00 EST 2024)], occupancy=OccupancyDetail(rooms=1, adults=2, children=1, childrenAges=[ChildAge(age=15)]))
+2024-11-07 17:07:35.660 [http-nio-80-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-11-07 17:07:35.661 [http-nio-80-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[PropertyListingDTO(amenityList=[Amenity(amenityIcon=wifi-icon, amenityName=Free WiFi), Amenity(amen (truncated)...]
+2024-11-07 17:07:35.664 [http-nio-80-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-07 17:07:35.664 [http-nio-80-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-07 17:08:02.743 [http-nio-80-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/recommendation/recommended_properties
+2024-11-07 17:08:02.744 [http-nio-80-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/recommendation/recommended_properties
+2024-11-07 17:08:02.744 [http-nio-80-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/recommendation/recommended_properties", parameters={}
+2024-11-07 17:08:02.744 [http-nio-80-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.RecommendationController#getRecommendedProperties()
+2024-11-07 17:08:02.751 [http-nio-80-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-11-07 17:08:02.756 [http-nio-80-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[RecommendedPropertyDTO(cityName=Neuruppin, country=Germany, countryCode=de, imageUrl=http://cf.bsta (truncated)...]
+2024-11-07 17:08:02.759 [http-nio-80-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-07 17:08:02.760 [http-nio-80-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-07 17:08:04.166 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-11-07 17:08:04.174 [Thread-7] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-80"]
+2024-11-07 17:08:04.202 [Thread-7] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-07 17:08:04.220 [Thread-7] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-11-07 17:08:04.223 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-11-07 17:08:04.229 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-11-07 17:08:04.366 [restartedMain] INFO  c.h.onlinebooking.ui.UiApplication - Starting UiApplication using Java 21.0.4 with PID 34976 (D:\hbo\study\2024\Project\hotel-booking\ui-service\build\classes\java\main started by hbo in D:\hbo\study\2024\Project\hotel-booking)
+2024-11-07 17:08:04.366 [restartedMain] INFO  c.h.onlinebooking.ui.UiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-07 17:08:04.765 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-07 17:08:04.770 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2024-11-07 17:08:04.955 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 80 (http)
+2024-11-07 17:08:04.956 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2024-11-07 17:08:04.956 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-07 17:08:04.956 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-07 17:08:04.982 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-07 17:08:04.982 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 612 ms
+2024-11-07 17:08:05.035 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2024-11-07 17:08:05.037 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:15f92de6-4d58-41fd-8c5a-0488565468e0 user=SA
+2024-11-07 17:08:05.037 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2024-11-07 17:08:05.037 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:15f92de6-4d58-41fd-8c5a-0488565468e0'
+2024-11-07 17:08:05.069 [restartedMain] DEBUG o.s.w.f.ServerHttpObservationFilter - Filter 'webMvcObservationFilter' configured for use
+2024-11-07 17:08:05.096 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-07 17:08:05.100 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-11-07 17:08:05.108 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-07 17:08:05.138 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-07 17:08:05.138 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-07 17:08:05.194 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-07 17:08:05.244 [restartedMain] DEBUG o.s.s.c.a.a.c.AuthenticationConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2024-11-07 17:08:05.261 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2024-11-07 17:08:05.279 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+2024-11-07 17:08:05.364 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-11-07 17:08:05.454 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2024-11-07 17:08:05.499 [restartedMain] DEBUG o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-11-07 17:08:05.609 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-07 17:08:05.627 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-07 17:08:06.596 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-11-07 17:08:06.614 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2024-11-07 17:08:06.627 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 80 (http) with context path '/'
+2024-11-07 17:08:06.633 [restartedMain] INFO  c.h.onlinebooking.ui.UiApplication - Started UiApplication in 2.302 seconds (process running for 46.184)
+2024-11-07 17:08:06.635 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-11-07 17:08:08.144 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-11-07 17:08:08.147 [Thread-9] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-80"]
+2024-11-07 17:08:08.169 [Thread-9] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-07 17:08:08.170 [Thread-9] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-11-07 17:08:08.171 [Thread-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2024-11-07 17:08:08.175 [Thread-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2024-11-07 17:08:08.299 [restartedMain] INFO  c.h.onlinebooking.ui.UiApplication - Starting UiApplication using Java 21.0.4 with PID 34976 (D:\hbo\study\2024\Project\hotel-booking\ui-service\build\classes\java\main started by hbo in D:\hbo\study\2024\Project\hotel-booking)
+2024-11-07 17:08:08.299 [restartedMain] INFO  c.h.onlinebooking.ui.UiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-07 17:08:08.699 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-07 17:08:08.705 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2024-11-07 17:08:08.840 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 80 (http)
+2024-11-07 17:08:08.840 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2024-11-07 17:08:08.841 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-07 17:08:08.841 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-07 17:08:08.864 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-07 17:08:08.865 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 564 ms
+2024-11-07 17:08:08.920 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2024-11-07 17:08:08.922 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection conn20: url=jdbc:h2:mem:e3a38945-cb3f-43dd-a4a7-09e0050e0f73 user=SA
+2024-11-07 17:08:08.923 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2024-11-07 17:08:08.923 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:e3a38945-cb3f-43dd-a4a7-09e0050e0f73'
+2024-11-07 17:08:08.959 [restartedMain] DEBUG o.s.w.f.ServerHttpObservationFilter - Filter 'webMvcObservationFilter' configured for use
+2024-11-07 17:08:08.990 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-07 17:08:08.994 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-11-07 17:08:09.002 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-07 17:08:09.052 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-07 17:08:09.053 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-07 17:08:09.105 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-07 17:08:09.130 [restartedMain] DEBUG o.s.s.c.a.a.c.AuthenticationConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2024-11-07 17:08:09.147 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2024-11-07 17:08:09.173 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+2024-11-07 17:08:09.240 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-11-07 17:08:09.314 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2024-11-07 17:08:09.346 [restartedMain] DEBUG o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-11-07 17:08:09.404 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-07 17:08:09.413 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-07 17:08:09.995 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-11-07 17:08:10.009 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2024-11-07 17:08:10.014 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 80 (http) with context path '/'
+2024-11-07 17:08:10.020 [restartedMain] INFO  c.h.onlinebooking.ui.UiApplication - Started UiApplication in 1.765 seconds (process running for 49.571)
+2024-11-07 17:08:10.021 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-11-07 17:08:12.027 [http-nio-80-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-07 17:08:12.027 [http-nio-80-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-11-07 17:08:12.027 [http-nio-80-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2024-11-07 17:08:12.027 [http-nio-80-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2024-11-07 17:08:12.027 [http-nio-80-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2024-11-07 17:08:12.029 [http-nio-80-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4c87690a
+2024-11-07 17:08:12.029 [http-nio-80-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@651c1485
+2024-11-07 17:08:12.029 [http-nio-80-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-11-07 17:08:12.029 [http-nio-80-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-11-07 17:08:12.031 [http-nio-80-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/recommendation/recommended_properties
+2024-11-07 17:08:12.032 [http-nio-80-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/recommendation/recommended_properties
+2024-11-07 17:08:12.032 [http-nio-80-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/recommendation/recommended_properties", parameters={}
+2024-11-07 17:08:12.032 [http-nio-80-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.RecommendationController#getRecommendedProperties()
+2024-11-07 17:08:12.037 [http-nio-80-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-11-07 17:08:12.038 [http-nio-80-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[RecommendedPropertyDTO(cityName=Neuruppin, country=Germany, countryCode=de, imageUrl=http://cf.bsta (truncated)...]
+2024-11-07 17:08:12.042 [http-nio-80-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-07 17:08:12.042 [http-nio-80-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-07 17:08:24.197 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-07 17:08:24.199 [SpringApplicationShutdownHook] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-11-07 17:08:24.200 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2024-11-07 17:08:24.203 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2024-11-07 17:08:52.188 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-11-07 17:08:52.258 [restartedMain] INFO  c.h.onlinebooking.ui.UiApplication - Starting UiApplication using Java 21.0.4 with PID 29524 (D:\hbo\study\2024\Project\hotel-booking\ui-service\build\classes\java\main started by hbo in D:\hbo\study\2024\Project\hotel-booking)
+2024-11-07 17:08:52.260 [restartedMain] INFO  c.h.onlinebooking.ui.UiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-07 17:08:52.332 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\hbo\.gradle\caches\modules-2\files-2.1\org.glassfish.hk2\hk2\3.0.6\12187beb6321e6a7fdc2ef4d196e16c8c58a3a1\hk2-3.0.6.jar referenced one or more files that do not exist: file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-utils.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/jakarta.annotation-api.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/jakarta.inject-api.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-api.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/aopalliance-repackaged.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-core.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-locator.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/javassist.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-runlevel.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/class-model.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm-analysis.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm-commons.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm-tree.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm-util.jar
+2024-11-07 17:08:52.333 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-07 17:08:52.333 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-07 17:08:53.984 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-07 17:08:54.018 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27 ms. Found 0 JPA repository interfaces.
+2024-11-07 17:08:55.142 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 80 (http)
+2024-11-07 17:08:55.151 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2024-11-07 17:08:55.154 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-07 17:08:55.155 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-07 17:08:55.231 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-07 17:08:55.231 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2898 ms
+2024-11-07 17:08:55.446 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-07 17:08:55.628 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:18f23a26-8bc3-4eeb-a9bd-2af0091920de user=SA
+2024-11-07 17:08:55.631 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-07 17:08:55.648 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:18f23a26-8bc3-4eeb-a9bd-2af0091920de'
+2024-11-07 17:08:55.815 [restartedMain] DEBUG o.s.w.f.ServerHttpObservationFilter - Filter 'webMvcObservationFilter' configured for use
+2024-11-07 17:08:55.989 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-07 17:08:56.041 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-07 17:08:56.070 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-11-07 17:08:56.452 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-07 17:08:56.960 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-07 17:08:56.964 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-07 17:08:57.061 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-07 17:08:57.105 [restartedMain] DEBUG o.s.s.c.a.a.c.AuthenticationConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2024-11-07 17:08:57.209 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2024-11-07 17:08:57.283 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+2024-11-07 17:08:57.520 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-11-07 17:08:57.797 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2024-11-07 17:08:57.924 [restartedMain] DEBUG o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-11-07 17:08:58.130 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-07 17:08:58.166 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-07 17:08:59.734 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-11-07 17:08:59.823 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2024-11-07 17:08:59.875 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 80 (http) with context path '/'
+2024-11-07 17:08:59.904 [restartedMain] INFO  c.h.onlinebooking.ui.UiApplication - Started UiApplication in 8.314 seconds (process running for 9.467)
+2024-11-07 17:09:00.575 [RMI TCP Connection(2)-10.84.5.73] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-07 17:09:00.575 [RMI TCP Connection(2)-10.84.5.73] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-11-07 17:09:00.575 [RMI TCP Connection(2)-10.84.5.73] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2024-11-07 17:09:00.576 [RMI TCP Connection(2)-10.84.5.73] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2024-11-07 17:09:00.576 [RMI TCP Connection(2)-10.84.5.73] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2024-11-07 17:09:00.577 [RMI TCP Connection(2)-10.84.5.73] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5130b46a
+2024-11-07 17:09:00.578 [RMI TCP Connection(2)-10.84.5.73] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@3c6dbbd9
+2024-11-07 17:09:00.578 [RMI TCP Connection(2)-10.84.5.73] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-11-07 17:09:00.578 [RMI TCP Connection(2)-10.84.5.73] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
