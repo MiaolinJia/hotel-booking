@@ -15,13 +15,4 @@ public class RecommendedPropertyDTO {
     private boolean isGenius;
     private int nbWishList;
     private Review review;
-
-    @Data
-    @Builder
-    public static class Review {
-        String rating;
-        double score;
-        int reviewCount;
-        String formattedReviewCount;
-    }
 }

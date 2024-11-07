@@ -13,23 +13,4 @@ public class RecommendedDealDTO {
     private boolean isGenius;
     private Review review;
     private Price price;
-
-    @Data
-    @Builder
-    public static class Review {
-        String rating;
-        double score;
-        int reviewCount;
-        String formattedReviewCount;
-    }
-
-    @Data
-    @Builder
-    public static class Price {
-        String formattedPrice;
-        String formattedCrossedOutPrice;
-        String priceText;
-        String priceTextEnd;
-    }
-
 }
