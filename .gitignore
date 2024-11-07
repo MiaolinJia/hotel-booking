@@ -42,3 +42,6 @@ out/
 
 ### Frontend ###
 **/static/*
+
+### Backend ###
+logs/hotel-service.log

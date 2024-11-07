@@ -11,9 +11,14 @@ export interface FeaturedProperty {
   originalPrice: number | null;
 }
 
-export interface FeaturedBundle {
-  destination: string;
-  dates: string;
-  price: number;
-  imgSrc: string;
+export interface RecommendedBundle {
+  cityName: string;
+  cityImageUrl: string;
+  priceAmount: number;
+  retailPriceAmount: number;
+  startDate: string;
+  endDate: string;
+  searchLink: string;
+  productName: string;
+  description: string;
 }

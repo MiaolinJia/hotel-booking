@@ -3,24 +3,36 @@ import CarouselComponent from "../CarouselComponent/CarouselComponent";
 import FeaturedBundleCard, {
   FeaturedBundleSkeleton,
 } from "./FeaturedBundleCard";
-import { bundles } from "./featuredBundlesMockData";
+import { RecommendedBundle } from "./types";
+import { recommendationService } from "../../store/service/recommendationService";
 
-const FeaturedBundleCarouselComponent = () => {
-  const [isLoading, setIsLoading] = useState(false);
+const RecommendedBundleCarouselComponent = () => {
+  const [bundles, setBundles] = useState<RecommendedBundle[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    setIsLoading(true);
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 1000);
+    const fetchBundles = async () => {
+      try {
+        setLoading(true);
+        const data = await recommendationService.getRecommendedBundles();
+        setBundles(data);
+      } catch (err) {
+        setError("Failed to load travel deals. Please try again later. " + err);
+      } finally {
+        setLoading(false);
+      }
+    };
 
-    return () => clearTimeout(timer);
+    fetchBundles();
   }, []);
+
+  if (error) return;
 
   return (
     <CarouselComponent title="Don't miss these hotel + flight deals">
       {bundles.map((item, index) =>
-        isLoading ? (
+        loading ? (
           <FeaturedBundleSkeleton key={index} />
         ) : (
           <FeaturedBundleCard key={index} {...item} />
@@ -30,4 +42,4 @@ const FeaturedBundleCarouselComponent = () => {
   );
 };
 
-export default FeaturedBundleCarouselComponent;
+export default RecommendedBundleCarouselComponent;
