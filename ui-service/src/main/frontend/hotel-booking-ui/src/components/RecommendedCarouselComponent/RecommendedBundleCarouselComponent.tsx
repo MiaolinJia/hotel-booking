@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import CarouselComponent from "../CarouselComponent/CarouselComponent";
-import FeaturedBundleCard, {
-  FeaturedBundleSkeleton,
-} from "./FeaturedBundleCard";
+import RecommendedBundleCard, {
+  RecommendedBundleSkeleton,
+} from "./RecommendedBundleCard";
 import { RecommendedBundle } from "./types";
 import { recommendationService } from "../../store/service/recommendationService";
 
@@ -33,9 +33,9 @@ const RecommendedBundleCarouselComponent = () => {
     <CarouselComponent title="Don't miss these hotel + flight deals">
       {bundles.map((item, index) =>
         loading ? (
-          <FeaturedBundleSkeleton key={index} />
+          <RecommendedBundleSkeleton key={index} />
         ) : (
-          <FeaturedBundleCard key={index} {...item} />
+          <RecommendedBundleCard key={index} {...item} />
         )
       )}
     </CarouselComponent>

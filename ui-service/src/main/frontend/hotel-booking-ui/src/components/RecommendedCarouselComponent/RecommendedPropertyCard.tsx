@@ -1,43 +1,43 @@
-import { FaRegHeart } from "react-icons/fa6";
+import { FaRegHeart, FaHeart } from "react-icons/fa6";
 import { MdOutlineThumbUp } from "react-icons/md";
-import { FeaturedProperty } from "./types";
+import { RecommendedProperty } from "./types";
 import { Box, Card, CardContent, Skeleton, Tooltip } from "@mui/material";
 
-const FeaturedPropertyCard: React.FC<FeaturedProperty> = ({
-  image,
-  showWishlist = false,
-  propertyType = null,
-  isGenius = false,
-  name,
-  location = null,
-  rating,
-  reviewCount,
-  price = null,
-  originalPrice = null,
-}) => {
-  const formatNumber = (num: number) => {
-    return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-  };
-
-  const getRatingDescription = (rating: number) => {
-    if (rating >= 9) return "Excellent";
-    if (rating >= 8) return "Very Good";
-    if (rating >= 7) return "Good";
-    if (rating >= 6) return "Pleasant";
-    return "Fair";
-  };
-
+const RecommendedPropertyCard: React.FC<RecommendedProperty> = ({
+  cityName,
+  country,
+  countryCode,
+  imageUrl,
+  propertyName,
+  propertyType,
+  isGenius,
+  nbWishList,
+  review,
+  price,
+}: RecommendedProperty) => {
   return (
     <div
       className="w-65 h-96 mb-2 rounded-lg overflow-hidden shadow-md flex flex-col 
     cursor-pointer hover:shadow-[rgba(0,0,0,0.4)] transition-shadow duration-300"
     >
       <div className="relative h-48">
-        <img className="w-full h-full object-cover" src={image} alt={name} />
-        {showWishlist && (
+        <img
+          className="w-full h-full object-cover"
+          src={imageUrl}
+          alt={propertyName}
+        />
+        {nbWishList == 0 ? (
+          <></>
+        ) : nbWishList == 1 ? (
           <Tooltip title={"Save to wish list"} placement="top">
             <button className="absolute top-2 right-2 p-2 bg-white rounded-full hover:bg-slate-50">
               <FaRegHeart className="h-6 w-6 text-gray-600" />
+            </button>
+          </Tooltip>
+        ) : (
+          <Tooltip title={"In wish list"} placement="top">
+            <button className="absolute top-2 right-2 p-2 bg-white rounded-full hover:bg-slate-50">
+              <FaHeart className="h-6 w-6 text-red-600" />
             </button>
           </Tooltip>
         )}
@@ -62,27 +62,26 @@ const FeaturedPropertyCard: React.FC<FeaturedProperty> = ({
           </div>
         )}
         <div className="font-bold text-xl mb-2 line-clamp-2 overflow-hidden">
-          {name}
+          {propertyName}
         </div>
-        {location && <p className="text-gray-700 text-base mb-2">{location}</p>}
+        {cityName && <p className="text-gray-700 text-base mb-2">{cityName}</p>}
         <div className="mt-auto">
           <div className="flex items-center">
             <span className="bg-blue-500 text-white font-bold py-1 px-2 rounded">
-              {rating.toFixed(1)}
+              {review?.rateScore}
             </span>
             <span className="ml-2 text-sm text-gray-600">
-              {getRatingDescription(rating)} · {formatNumber(reviewCount)}{" "}
-              reviews
+              {review?.rateText} · {review?.formattedReviewCount} reviews
             </span>
           </div>
           {price && (
             <div className="mt-2 text-right">
-              {originalPrice && (
+              {price.formattedCrossedOutPrice && (
                 <span className="line-through text-gray-500 mr-2">
-                  ${formatNumber(originalPrice)}
+                  {price.formattedCrossedOutPrice}
                 </span>
               )}
-              <span className="font-bold text-lg">${formatNumber(price)}</span>
+              <span className="font-bold text-lg">{price.formattedPrice}</span>
             </div>
           )}
         </div>
@@ -91,7 +90,7 @@ const FeaturedPropertyCard: React.FC<FeaturedProperty> = ({
   );
 };
 
-export default FeaturedPropertyCard;
+export default RecommendedPropertyCard;
 
 export const FeaturedPropertyCardSkeleton: React.FC = () => {
   return (

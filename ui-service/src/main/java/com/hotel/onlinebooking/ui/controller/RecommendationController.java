@@ -35,7 +35,7 @@ public class RecommendationController {
         return ResponseEntity.ok(recommendationService.getRecommendedDeals());
     }
 
-    @GetMapping("/recommended_Bundles")
+    @GetMapping("/recommended_bundles")
     public ResponseEntity<List<RecommendedBundleDTO>> getRecommendedBundles() {
         return ResponseEntity.ok(recommendationService.getRecommendedBundles());
     }

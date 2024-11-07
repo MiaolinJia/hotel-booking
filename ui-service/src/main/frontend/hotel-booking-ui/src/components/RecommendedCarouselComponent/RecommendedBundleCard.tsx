@@ -3,7 +3,7 @@ import { MdFlight } from "react-icons/md";
 import { FaHotel } from "react-icons/fa6";
 import { Box, Card, CardContent, Skeleton } from "@mui/material";
 
-const FeaturedBundleCard = ({
+const RecommendedBundleCard = ({
   cityName,
   cityImageUrl,
   priceAmount,
@@ -76,9 +76,9 @@ const FeaturedBundleCard = ({
   );
 };
 
-export default FeaturedBundleCard;
+export default RecommendedBundleCard;
 
-export const FeaturedBundleSkeleton = () => {
+export const RecommendedBundleSkeleton = () => {
   return (
     <Card
       sx={{

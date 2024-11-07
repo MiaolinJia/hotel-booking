@@ -1,28 +1,27 @@
 import RecentSearchComponent from "../components/RecentSearch/RecentSearchComponent";
 import PromotionComponent from "../components/PromotionComponent/PromotionComponent";
-import FeaturedPropertyCarouselComponent
-    from "../components/FeaturedCarouselComponent/FeaturedPropertyCarouselComponent";
-import FeaturedHotelCarouselComponent from "../components/FeaturedCarouselComponent/FeaturedHotelCarouselComponent";
-import FeaturedBundleCarouselComponent from "../components/FeaturedCarouselComponent/FeaturedBundleCarouselComponent";
 import React from "react";
 import SearchHotelComponent from "../components/search-components/SearchComponent.tsx";
+import RecommendedPropertyCarouselComponent from "../components/RecommendedCarouselComponent/RecommendedPropertyCarouselComponent";
+import RecommendedHotelCarouselComponent from "../components/RecommendedCarouselComponent/RecommendedHotelCarouselComponent";
+import RecommendedBundleCarouselComponent from "../components/RecommendedCarouselComponent/RecommendedBundleCarouselComponent.tsx";
 
 const HomePage: React.FC = () => {
-    return (
-        <>
-            <SearchHotelComponent/>
+  return (
+    <>
+      <SearchHotelComponent />
 
-            <RecentSearchComponent/>
+      <RecentSearchComponent />
 
-            <FeaturedPropertyCarouselComponent/>
+      <RecommendedPropertyCarouselComponent />
 
-            <FeaturedHotelCarouselComponent/>
+      <RecommendedHotelCarouselComponent />
 
-            <PromotionComponent/>
+      <PromotionComponent />
 
-            <FeaturedBundleCarouselComponent/>
-        </>
-    );
+      <RecommendedBundleCarouselComponent />
+    </>
+  );
 };
 
 export default HomePage;

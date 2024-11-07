@@ -6,8 +6,8 @@ import lombok.Data;
 @Data
 @Builder
 public class Review {
-    String rating;
-    double score;
+    String rateText;
+    double rateScore;
     int reviewCount;
     String formattedReviewCount;
 }
