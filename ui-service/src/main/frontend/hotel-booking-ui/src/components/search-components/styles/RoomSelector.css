@@ -1,0 +1,224 @@
+.hotel-search {
+    position: relative;
+    z-index: 1000;
+}
+
+.room-info{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: clamp(10px, 4vw, 14px);
+    flex: 1;
+    min-width: 0;
+}
+
+.hotel-search-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 8px;
+    background-color: white;
+    cursor: pointer;
+    width: 100%;
+}
+
+.hotel-search-dropdown {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    padding: 16px;
+    width: 256px;
+}
+
+.hotel-search-counter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.hotel-search-label {
+    font-weight: 600;
+}
+
+.hotel-search-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.hotel-search-control-button {
+    padding: 4px;
+    border-radius: 50%;
+    background-color: #edf2f7;
+    cursor: pointer;
+}
+
+.hotel-search-control-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.hotel-search-info {
+    font-size: 14px;
+    color: #4a5568;
+    margin-bottom: 16px;
+}
+
+.hotel-search-done-button {
+    width: 100%;
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    background-color: #046aef;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    white-space: nowrap;
+    transition: background-color 0.3s;
+}
+
+.hotel-search-done-button:hover {
+    background-color: #023e8b;
+}
+
+.group-notice {
+    margin: 16px 0 8px 0;
+    padding: 12px;
+    background-color: #fefce8;
+    border: 1px solid #fef08a;
+    border-radius: 8px;
+}
+
+.group-notice-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.notice-icon {
+    width: 20px;
+    height: 20px;
+    color: #4b5563;
+    margin-top: 2px;
+}
+
+.notice-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.notice-text p {
+    font-size: 14px;
+    color: #4b5563;
+    margin: 0;
+    text-align: left;
+    line-height: 1.4;
+    width: 100%;
+}
+
+.notice-link {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 8px;
+    font-size: 14px;
+    color: #3b82f6;
+    text-decoration: none;
+    align-self: flex-start;
+}
+
+.notice-link:hover {
+    color: #2563eb;
+}
+
+.notice-arrow {
+    width: 16px;
+    height: 16px;
+    margin-left: 4px;
+    transform: rotate(270deg);
+}
+
+.child-age-selector {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+.child-age-label {
+    font-size: 14px;
+    color: #4b5563;
+    width: 50%;
+}
+
+.child-age-dropdown {
+    position: relative;
+    width: 140px;
+}
+
+.age-select {
+    width: 100%;
+    padding: 8px 12px;
+    padding-right: 32px;
+    font-size: 14px;
+    color: #3b82f6;
+    background-color: #eff6ff;
+    border: none;
+    border-radius: 8px;
+    appearance: none;
+    cursor: pointer;
+}
+
+.age-select:focus {
+    outline: 2px solid #3b82f6;
+    outline-offset: 2px;
+}
+
+.dropdown-icon {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    color: #3b82f6;
+    pointer-events: none;
+}
+.age-error-message {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #dc2626;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 8px;
+    z-index: 1000;
+    text-align: center;
+    width: 120%;
+    white-space: normal;
+    max-width: 300px;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+}
+
+.age-error-message::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    right: 20px;
+    border-width: 0 8px 8px 8px;
+    border-style: solid;
+    border-color: transparent transparent #dc2626 transparent;
+}

@@ -1,0 +1,350 @@
+.hotel-search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../../assets/search-background.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+.hotel-search-section {
+    transition: all 0.3s ease;
+}
+
+.hotel-search-section.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    margin: 0 auto;
+}
+
+.search-box-title  {
+    color: #023e8b;
+    margin: 0px;
+    font-family: Montserrat, Helvetica, Arial, serif;
+    text-align: left;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 40px;
+}
+
+.search-box {
+    background-color: white;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+
+}
+
+.sticky .search-box {
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+}
+
+.single-hotel-form {
+    display: flex;
+    gap: 10px;
+}
+
+.multi-hotel-form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+}
+
+.label-remove-group label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.add-hotel-label {
+    font-size: 13px;
+    padding: 0px 10px;
+}
+
+.label-remove-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.label-remove-group label {
+    display: flex;
+    align-items: left;
+    padding: 10px 0px;
+}
+
+.label-remove-group button {
+    display: flex;
+    align-items: right;
+    border-radius: 9999px;
+    color: #046aef;
+    background-color: rgb(237, 240, 243);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.label-remove-group button:hover,
+.add-hotel-button:hover {
+    background-color: rgb(213, 220, 228);
+    color: rgb(0, 68, 153);
+}
+
+.destination-date-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: start;
+    width: 100%;
+}
+
+.destination-date-group span {
+    width: 50%;
+}
+
+.search-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.multi-search-input {
+    flex: 1;
+    padding: 14px 0px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    font-size: 14px;
+    height: 26px;
+}
+
+.search-input-size {
+    width: 100%;
+}
+
+.date-picker-input {
+    min-width: 180px;
+    width: 100%;
+}
+
+.react-datepicker__input-container {
+    width: inherit;
+}
+
+.react-datepicker {
+    width: inherit;
+}
+
+.react-datepicker-wrapper {
+    width: 100%;
+}
+
+.counter-submit-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.multi-hotel-form .hotel-search-button {
+    width: 100%;
+    padding: 14px 0px;
+    height: 54px;
+    border-radius: 12px;
+}
+.multi-hotel-form .search-button {
+    width: 100%;
+    padding: 14px 0px;
+    height: 54px;
+    border-radius: 12px;
+}
+
+.add-hotel-button {
+    padding: 10px 15px;
+    color: #046aef;
+    background-color: rgb(237, 240, 243);
+    border: none;
+    border-radius: 9999px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.multi-hotel-form .hotel-search {
+    width: 50%;
+}
+
+.multi-hotel-form .submit-button {
+    width: 50%;
+}
+
+.multi-hotel-form .hotel-search-button:hover {
+    border-color: #e2e8f0;
+}
+
+.multi-hotel-form .submit-button:hover {
+    transform: scale(1.02);
+    box-shadow: rgba(0, 0, 0, 0.03) 0px -1px 0px 0px,
+        rgba(0, 0, 0, 0.16) 0px 2px 8px 0px,
+        rgba(0, 0, 0, 0.16) 0px 10px 8px -5px,
+        rgba(0, 0, 0, 0.16) 0px 12px 32px -2px;
+    transition: 0.2s ease-in-out;
+}
+
+.submit-button {
+    position: relative;
+}
+
+.search-button {
+    padding: 10px 15px;
+    background-color: #046aef;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.3s;
+}
+
+.search-button:hover {
+    background-color: #023e8b;
+}
+
+.cancellation-text {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12px;
+    position: absolute;
+    top: 80%;
+    width: auto;
+    color: #8d9696;
+}
+
+.bundle-options {
+    display: flex;
+    width: 60%;
+    margin-top: 10px;
+    gap: 15px;
+    padding: 10px;
+    background-color: #d0f1ad;
+    border-radius: 5px;
+}
+
+.bundle-option {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.bundle-option input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.bundle-text {
+    font-weight: bold;
+    color: #026702;
+}
+
+.bundle-option svg {
+    margin-right: 5px;
+}
+
+.vip-ad-container {
+    width: 20%;
+    height: 200px;
+    margin: 50px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    background-image: url("../../../assets/search-background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.vip-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.1),
+        rgba(0, 0, 0, 0.5)
+    );
+    color: white;
+}
+
+.book-more {
+    background-color: #a3e635;
+    color: black;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.priceline-vip {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+
+.unlock-savings {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.join-now-btn {
+    background-color: #0269ef;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.join-now-btn:hover {
+    background-color: #023e8b;
+}
+
+.hotel-type-selection {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.hotel-type-selection label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.hotel-type-selection input[type="radio"] {
+    margin-right: 5px;
+}
