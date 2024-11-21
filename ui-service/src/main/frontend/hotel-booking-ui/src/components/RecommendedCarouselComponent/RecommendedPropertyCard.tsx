@@ -5,8 +5,6 @@ import { Box, Card, CardContent, Skeleton, Tooltip } from "@mui/material";
 
 const RecommendedPropertyCard: React.FC<RecommendedProperty> = ({
   cityName,
-  country,
-  countryCode,
   imageUrl,
   propertyName,
   propertyType,

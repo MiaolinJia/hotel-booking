@@ -12,8 +12,11 @@ public class InitialSearchDTO {
     private HotelType hotelType;
 
     @Valid
-    private List<StayInfo> stays;
+    private List<StayInfo> destinationAndDates;
 
     @Valid
     private OccupancyDetail occupancy;
+
+    private boolean addCar;
+    private boolean addFlight;
 }

@@ -13,7 +13,7 @@ import java.util.Date;
 public class StayInfo {
     @Valid
     @NotNull(message = "Location information is required")
-    private LocationInfo location;
+    private Location location;
 
     @NotNull(message = "Check-in date is required")
     @JsonFormat(pattern = "yyyy-MM-dd")
