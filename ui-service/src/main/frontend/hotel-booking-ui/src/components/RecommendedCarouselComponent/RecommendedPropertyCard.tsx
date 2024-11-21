@@ -1,6 +1,6 @@
 import { FaRegHeart, FaHeart } from "react-icons/fa6";
 import { MdOutlineThumbUp } from "react-icons/md";
-import { RecommendedProperty } from "./types";
+import { RecommendedProperty } from "../../types/RecommendedCarouselComponentTypesypes";
 import { Box, Card, CardContent, Skeleton, Tooltip } from "@mui/material";
 
 const RecommendedPropertyCard: React.FC<RecommendedProperty> = ({

@@ -3,8 +3,8 @@ import { AppDispatch, RootState } from "..";
 import {
   RecentSearch,
   RecentSearchesState,
-  SearchFormData,
-} from "../../components/RecentSearch/types";
+} from "../../types/RecenSearchTypes";
+import { FormData } from "../../types/HotelSearchFormTypes";
 
 const MAX_SEARCHES = 4;
 const STORAGE_KEY = "recentSearch";
@@ -45,22 +45,32 @@ export const saveRecentSearches = () => {
   };
 };
 
-export const addSearchAndSave = (searchData: Omit<SearchFormData, "id">) => {
+export const addSearchAndSave = (searchData: Omit<FormData, "id">) => {
   return (dispatch: AppDispatch) => {
-    const newSearch: RecentSearch = {
-      id: Date.now().toString(),
-      destination: searchData.destination,
-      startDate: searchData.startDate.toISOString(),
-      endDate: searchData.endDate.toISOString(),
-      rooms: searchData.rooms,
-      adults: searchData.adults,
-      children: searchData.children,
-    };
-
-    if (isDateStringTodayOrFuture(newSearch.startDate)) {
-      dispatch(addSearch(newSearch));
-      dispatch(saveRecentSearches());
-    }
+    searchData.destinationAndDates
+      .filter(
+        (stay) =>
+          stay.location &&
+          stay.checkInDate &&
+          stay.checkOutDate &&
+          stay.checkInDate.getTime() >= new Date().setHours(0, 0, 0, 0)
+      )
+      .map((stay) => {
+        const newSearch: RecentSearch = {
+          id: Date.now().toString(),
+          destination: stay.location!.city,
+          startDate: stay.checkInDate!.toISOString(),
+          endDate: stay.checkOutDate!.toISOString(),
+          rooms: searchData.occupancy.rooms,
+          adults: searchData.occupancy.adults,
+          children: searchData.occupancy.children,
+        };
+        return newSearch;
+      })
+      .forEach((newSearch) => {
+        dispatch(addSearch(newSearch));
+        dispatch(saveRecentSearches());
+      });
   };
 };
 

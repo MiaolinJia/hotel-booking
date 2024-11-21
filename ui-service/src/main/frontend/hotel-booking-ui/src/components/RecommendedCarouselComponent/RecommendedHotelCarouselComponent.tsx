@@ -3,7 +3,7 @@ import CarouselComponent from "../CarouselComponent/CarouselComponent";
 import RecommendedPropertyCard, {
   FeaturedPropertyCardSkeleton,
 } from "./RecommendedPropertyCard";
-import { RecommendedProperty } from "./types";
+import { RecommendedProperty } from "../../types/RecommendedCarouselComponentTypesypes";
 import { recommendationService } from "../../store/service/recommendationService";
 
 const RecommendedHotelCarouselComponent = () => {

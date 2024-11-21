@@ -1,4 +1,4 @@
-import { RecentSearchCardProps } from "./types";
+import { RecentSearchCardProps } from "../../types/RecenSearchTypes";
 import { MdClose, MdHotel } from "react-icons/md";
 
 const RecentSearchCard = ({ search, onDelete }: RecentSearchCardProps) => {

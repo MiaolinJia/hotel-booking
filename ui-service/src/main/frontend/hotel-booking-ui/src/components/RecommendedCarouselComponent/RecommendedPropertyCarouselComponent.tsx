@@ -4,7 +4,7 @@ import RecommendedPropertyCard, {
   FeaturedPropertyCardSkeleton,
 } from "./RecommendedPropertyCard";
 import { recommendationService } from "../../store/service/recommendationService";
-import { RecommendedProperty } from "./types";
+import { RecommendedProperty } from "../../types/RecommendedCarouselComponentTypesypes";
 
 const RecommendedPropertyCarouselComponent = () => {
   const [properties, setProperties] = useState<RecommendedProperty[]>([]);

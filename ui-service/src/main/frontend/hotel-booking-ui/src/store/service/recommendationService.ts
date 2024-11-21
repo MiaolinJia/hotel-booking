@@ -2,7 +2,7 @@ import axios from "axios";
 import {
   RecommendedBundle,
   RecommendedProperty,
-} from "../../components/RecommendedCarouselComponent/types";
+} from "../../types/RecommendedCarouselComponentTypesypes";
 
 class RecommendationService {
   private readonly apiUrl: string;

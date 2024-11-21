@@ -3,7 +3,7 @@ import CarouselComponent from "../CarouselComponent/CarouselComponent";
 import RecommendedBundleCard, {
   RecommendedBundleSkeleton,
 } from "./RecommendedBundleCard";
-import { RecommendedBundle } from "./types";
+import { RecommendedBundle } from "../../types/RecommendedCarouselComponentTypesypes";
 import { recommendationService } from "../../store/service/recommendationService";
 
 const RecommendedBundleCarouselComponent = () => {

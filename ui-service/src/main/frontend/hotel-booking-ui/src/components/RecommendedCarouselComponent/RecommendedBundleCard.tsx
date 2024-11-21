@@ -1,4 +1,4 @@
-import { RecommendedBundle } from "./types";
+import { RecommendedBundle } from "../../types/RecommendedCarouselComponentTypesypes";
 import { MdFlight } from "react-icons/md";
 import { FaHotel } from "react-icons/fa6";
 import { Box, Card, CardContent, Skeleton } from "@mui/material";

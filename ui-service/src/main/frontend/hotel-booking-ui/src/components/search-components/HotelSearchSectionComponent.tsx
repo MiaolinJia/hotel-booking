@@ -6,6 +6,7 @@ import { useDispatch } from "react-redux";
 import { searchHotelList } from "../../store/modules/hotels";
 import { ChildAge, FormData } from "../../types/HotelSearchFormTypes.ts";
 import HotelSearchFormSection from "./HotelSearchFormSection.tsx";
+import { addSearchAndSave } from "../../store/modules/recentSearches.ts";
 
 function HotelSearchSectionComponent() {
   const today = new Date();
@@ -189,6 +190,7 @@ function HotelSearchSectionComponent() {
     e.preventDefault();
     console.log("Form submitted with data:", formData);
     dispatch(searchHotelList(formData));
+    dispatch(addSearchAndSave(formData));
   };
 
   const isSingleHotelSearch = formData.hotelType === "SINGLE";
