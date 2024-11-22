@@ -2674,3 +2674,629 @@ Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 6 out of bounds for l
 2024-11-21 10:59:44.204 [http-nio-80-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[PropertyListingDTO(amenityList=[Amenity(amenityIcon=wifi-icon, amenityName=Free WiFi), Amenity(amen (truncated)...]
 2024-11-21 10:59:44.205 [http-nio-80-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
 2024-11-21 10:59:44.205 [http-nio-80-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:08:31.481 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-11-21 14:08:31.508 [restartedMain] INFO  c.h.onlinebooking.ui.UiApplication - Starting UiApplication using Java 21.0.4 with PID 47308 (D:\hbo\study\2024\Project\hotel-booking\ui-service\build\classes\java\main started by hbo in D:\hbo\study\2024\Project\hotel-booking)
+2024-11-21 14:08:31.509 [restartedMain] INFO  c.h.onlinebooking.ui.UiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-21 14:08:31.563 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\hbo\.gradle\caches\modules-2\files-2.1\org.glassfish.hk2\hk2\3.0.6\12187beb6321e6a7fdc2ef4d196e16c8c58a3a1\hk2-3.0.6.jar referenced one or more files that do not exist: file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-utils.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/jakarta.annotation-api.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/jakarta.inject-api.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-api.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/aopalliance-repackaged.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-core.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-locator.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/javassist.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-runlevel.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/class-model.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm-analysis.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm-commons.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm-tree.jar,file:/C:/Users/hbo/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm-util.jar
+2024-11-21 14:08:31.564 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-21 14:08:31.564 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-21 14:08:32.851 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-21 14:08:32.887 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29 ms. Found 0 JPA repository interfaces.
+2024-11-21 14:08:33.896 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 80 (http)
+2024-11-21 14:08:33.908 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2024-11-21 14:08:33.912 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-21 14:08:33.912 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-21 14:08:33.972 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-21 14:08:33.972 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2408 ms
+2024-11-21 14:08:34.125 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-21 14:08:34.319 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:27224d5a-711d-4574-ad77-224119e416a8 user=SA
+2024-11-21 14:08:34.320 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-21 14:08:34.340 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:27224d5a-711d-4574-ad77-224119e416a8'
+2024-11-21 14:08:34.433 [restartedMain] DEBUG o.s.w.f.ServerHttpObservationFilter - Filter 'webMvcObservationFilter' configured for use
+2024-11-21 14:08:34.587 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-21 14:08:34.667 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-21 14:08:34.712 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-11-21 14:08:35.108 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-21 14:08:35.522 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-21 14:08:35.528 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-21 14:08:35.656 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-21 14:08:35.697 [restartedMain] DEBUG o.s.s.c.a.a.c.AuthenticationConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2024-11-21 14:08:35.793 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2024-11-21 14:08:35.862 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+2024-11-21 14:08:36.032 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-11-21 14:08:36.254 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2024-11-21 14:08:36.341 [restartedMain] DEBUG o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-11-21 14:08:36.495 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-21 14:08:36.533 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-21 14:08:39.051 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-11-21 14:08:39.129 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2024-11-21 14:08:39.161 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 80 (http) with context path '/'
+2024-11-21 14:08:39.181 [restartedMain] INFO  c.h.onlinebooking.ui.UiApplication - Started UiApplication in 8.051 seconds (process running for 9.292)
+2024-11-21 14:08:39.514 [RMI TCP Connection(2)-10.84.5.73] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-21 14:08:39.515 [RMI TCP Connection(2)-10.84.5.73] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-11-21 14:08:39.515 [RMI TCP Connection(2)-10.84.5.73] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2024-11-21 14:08:39.515 [RMI TCP Connection(2)-10.84.5.73] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2024-11-21 14:08:39.515 [RMI TCP Connection(2)-10.84.5.73] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2024-11-21 14:08:39.516 [RMI TCP Connection(2)-10.84.5.73] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2ad51803
+2024-11-21 14:08:39.516 [RMI TCP Connection(2)-10.84.5.73] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@76f9b87d
+2024-11-21 14:08:39.517 [RMI TCP Connection(2)-10.84.5.73] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-11-21 14:08:39.517 [RMI TCP Connection(2)-10.84.5.73] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-11-21 14:08:48.577 [http-nio-80-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/hotels/initial_search
+2024-11-21 14:08:48.592 [http-nio-80-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured OPTIONS /api/hotels/initial_search
+2024-11-21 14:08:48.594 [http-nio-80-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - OPTIONS "/api/hotels/initial_search", parameters={}
+2024-11-21 14:08:48.596 [http-nio-80-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.HotelSearchController#initialSearch(InitialSearchDTO)
+2024-11-21 14:08:48.692 [http-nio-80-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:08:48.693 [http-nio-80-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:08:48.706 [http-nio-80-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/hotels/initial_search
+2024-11-21 14:08:48.710 [http-nio-80-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/hotels/initial_search
+2024-11-21 14:08:48.710 [http-nio-80-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/hotels/initial_search", parameters={}
+2024-11-21 14:08:48.710 [http-nio-80-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.HotelSearchController#initialSearch(InitialSearchDTO)
+2024-11-21 14:08:48.846 [http-nio-80-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [InitialSearchDTO(hotelType=SINGLE, destinationAndDates=[StayInfo(location=Location(city=ads, state=, (truncated)...]
+2024-11-21 14:08:49.052 [http-nio-80-exec-2] INFO  c.h.o.u.c.HotelSearchController - Fetching property listings with search Request: InitialSearchDTO(hotelType=SINGLE, destinationAndDates=[StayInfo(location=Location(city=ads, state=, country=, postalCode=, neighborhoodName=, latitude=0.0, longitude=0.0), checkInDate=Thu Nov 21 00:00:00 EST 2024, checkOutDate=Fri Nov 22 14:07:42 EST 2024)], occupancy=OccupancyDetail(rooms=1, adults=2, children=0, childrenAges=[]), addCar=false, addFlight=false)
+2024-11-21 14:08:49.075 [http-nio-80-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:08:49.094 [http-nio-80-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[PropertyListingDTO(amenityList=[Amenity(amenityIcon=wifi-icon, amenityName=Free WiFi), Amenity(amen (truncated)...]
+2024-11-21 14:08:49.138 [http-nio-80-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:08:49.139 [http-nio-80-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:08:52.283 [http-nio-80-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/hotels/initial_search
+2024-11-21 14:08:52.284 [http-nio-80-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/hotels/initial_search
+2024-11-21 14:08:52.284 [http-nio-80-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/hotels/initial_search", parameters={}
+2024-11-21 14:08:52.285 [http-nio-80-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.HotelSearchController#initialSearch(InitialSearchDTO)
+2024-11-21 14:08:52.287 [http-nio-80-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [InitialSearchDTO(hotelType=SINGLE, destinationAndDates=[StayInfo(location=Location(city=1, state=, c (truncated)...]
+2024-11-21 14:08:52.288 [http-nio-80-exec-3] INFO  c.h.o.u.c.HotelSearchController - Fetching property listings with search Request: InitialSearchDTO(hotelType=SINGLE, destinationAndDates=[StayInfo(location=Location(city=1, state=, country=, postalCode=, neighborhoodName=, latitude=0.0, longitude=0.0), checkInDate=Thu Nov 21 00:00:00 EST 2024, checkOutDate=Fri Nov 22 14:07:42 EST 2024)], occupancy=OccupancyDetail(rooms=1, adults=2, children=0, childrenAges=[]), addCar=false, addFlight=false)
+2024-11-21 14:08:52.289 [http-nio-80-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:08:52.290 [http-nio-80-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[PropertyListingDTO(amenityList=[Amenity(amenityIcon=wifi-icon, amenityName=Free WiFi), Amenity(amen (truncated)...]
+2024-11-21 14:08:52.292 [http-nio-80-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:08:52.292 [http-nio-80-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:08:54.098 [http-nio-80-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/hotels/initial_search
+2024-11-21 14:08:54.100 [http-nio-80-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/hotels/initial_search
+2024-11-21 14:08:54.100 [http-nio-80-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/hotels/initial_search", parameters={}
+2024-11-21 14:08:54.101 [http-nio-80-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.HotelSearchController#initialSearch(InitialSearchDTO)
+2024-11-21 14:08:54.103 [http-nio-80-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [InitialSearchDTO(hotelType=SINGLE, destinationAndDates=[StayInfo(location=Location(city=2, state=, c (truncated)...]
+2024-11-21 14:08:54.104 [http-nio-80-exec-4] INFO  c.h.o.u.c.HotelSearchController - Fetching property listings with search Request: InitialSearchDTO(hotelType=SINGLE, destinationAndDates=[StayInfo(location=Location(city=2, state=, country=, postalCode=, neighborhoodName=, latitude=0.0, longitude=0.0), checkInDate=Thu Nov 21 00:00:00 EST 2024, checkOutDate=Fri Nov 22 14:07:42 EST 2024)], occupancy=OccupancyDetail(rooms=1, adults=2, children=0, childrenAges=[]), addCar=false, addFlight=false)
+2024-11-21 14:08:54.105 [http-nio-80-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:08:54.105 [http-nio-80-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[PropertyListingDTO(amenityList=[Amenity(amenityIcon=wifi-icon, amenityName=Free WiFi), Amenity(amen (truncated)...]
+2024-11-21 14:08:54.107 [http-nio-80-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:08:54.107 [http-nio-80-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:08:55.538 [http-nio-80-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/hotels/initial_search
+2024-11-21 14:08:55.539 [http-nio-80-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/hotels/initial_search
+2024-11-21 14:08:55.539 [http-nio-80-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/hotels/initial_search", parameters={}
+2024-11-21 14:08:55.539 [http-nio-80-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.HotelSearchController#initialSearch(InitialSearchDTO)
+2024-11-21 14:08:55.541 [http-nio-80-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [InitialSearchDTO(hotelType=SINGLE, destinationAndDates=[StayInfo(location=Location(city=3, state=, c (truncated)...]
+2024-11-21 14:08:55.542 [http-nio-80-exec-5] INFO  c.h.o.u.c.HotelSearchController - Fetching property listings with search Request: InitialSearchDTO(hotelType=SINGLE, destinationAndDates=[StayInfo(location=Location(city=3, state=, country=, postalCode=, neighborhoodName=, latitude=0.0, longitude=0.0), checkInDate=Thu Nov 21 00:00:00 EST 2024, checkOutDate=Fri Nov 22 14:07:42 EST 2024)], occupancy=OccupancyDetail(rooms=1, adults=2, children=0, childrenAges=[]), addCar=false, addFlight=false)
+2024-11-21 14:08:55.543 [http-nio-80-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:08:55.544 [http-nio-80-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[PropertyListingDTO(amenityList=[Amenity(amenityIcon=wifi-icon, amenityName=Free WiFi), Amenity(amen (truncated)...]
+2024-11-21 14:08:55.545 [http-nio-80-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:08:55.545 [http-nio-80-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:08:57.273 [http-nio-80-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/hotels/initial_search
+2024-11-21 14:08:57.275 [http-nio-80-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/hotels/initial_search
+2024-11-21 14:08:57.275 [http-nio-80-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/hotels/initial_search", parameters={}
+2024-11-21 14:08:57.276 [http-nio-80-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.HotelSearchController#initialSearch(InitialSearchDTO)
+2024-11-21 14:08:57.278 [http-nio-80-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [InitialSearchDTO(hotelType=SINGLE, destinationAndDates=[StayInfo(location=Location(city=4, state=, c (truncated)...]
+2024-11-21 14:08:57.279 [http-nio-80-exec-6] INFO  c.h.o.u.c.HotelSearchController - Fetching property listings with search Request: InitialSearchDTO(hotelType=SINGLE, destinationAndDates=[StayInfo(location=Location(city=4, state=, country=, postalCode=, neighborhoodName=, latitude=0.0, longitude=0.0), checkInDate=Thu Nov 21 00:00:00 EST 2024, checkOutDate=Fri Nov 22 14:07:42 EST 2024)], occupancy=OccupancyDetail(rooms=1, adults=2, children=0, childrenAges=[]), addCar=false, addFlight=false)
+2024-11-21 14:08:57.279 [http-nio-80-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:08:57.280 [http-nio-80-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[PropertyListingDTO(amenityList=[Amenity(amenityIcon=wifi-icon, amenityName=Free WiFi), Amenity(amen (truncated)...]
+2024-11-21 14:08:57.281 [http-nio-80-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:08:57.282 [http-nio-80-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:09:07.110 [http-nio-80-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/recommendation/recommended_properties
+2024-11-21 14:09:07.110 [http-nio-80-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/recommendation/recommended_hotels
+2024-11-21 14:09:07.111 [http-nio-80-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/recommendation/recommended_properties
+2024-11-21 14:09:07.111 [http-nio-80-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/recommendation/recommended_properties", parameters={}
+2024-11-21 14:09:07.112 [http-nio-80-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.RecommendationController#getRecommendedProperties()
+2024-11-21 14:09:07.113 [http-nio-80-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/recommendation/recommended_hotels
+2024-11-21 14:09:07.113 [http-nio-80-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/recommendation/recommended_hotels", parameters={}
+2024-11-21 14:09:07.114 [http-nio-80-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.RecommendationController#getRecommendedDeals()
+2024-11-21 14:09:07.114 [http-nio-80-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/recommendation/recommended_bundles
+2024-11-21 14:09:07.115 [http-nio-80-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/recommendation/recommended_bundles
+2024-11-21 14:09:07.115 [http-nio-80-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/recommendation/recommended_bundles", parameters={}
+2024-11-21 14:09:07.115 [http-nio-80-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.RecommendationController#getRecommendedBundles()
+2024-11-21 14:09:07.124 [http-nio-80-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:09:07.124 [http-nio-80-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:09:07.124 [http-nio-80-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[RecommendedBundleDTO(cityName=Las Vegas, NV, cityImageUrl=//s1.pclncdn.com/cityimages/thumb/w600/LA (truncated)...]
+2024-11-21 14:09:07.125 [http-nio-80-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:09:07.130 [http-nio-80-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:09:07.130 [http-nio-80-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:09:07.134 [http-nio-80-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/recommendation/recommended_bundles
+2024-11-21 14:09:07.134 [http-nio-80-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/recommendation/recommended_bundles
+2024-11-21 14:09:07.135 [http-nio-80-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/recommendation/recommended_bundles", parameters={}
+2024-11-21 14:09:07.135 [http-nio-80-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.RecommendationController#getRecommendedBundles()
+2024-11-21 14:09:07.135 [http-nio-80-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[RecommendedDealDTO(cityName=New York, imageUrl=http://cf.bstatic.com/xdata/images/hotel/square240/1 (truncated)...]
+2024-11-21 14:09:07.136 [http-nio-80-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:09:07.136 [http-nio-80-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[RecommendedPropertyDTO(cityName=Neuruppin, country=Germany, countryCode=de, imageUrl=http://cf.bsta (truncated)...]
+2024-11-21 14:09:07.137 [http-nio-80-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[RecommendedBundleDTO(cityName=Las Vegas, NV, cityImageUrl=//s1.pclncdn.com/cityimages/thumb/w600/LA (truncated)...]
+2024-11-21 14:09:07.140 [http-nio-80-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:09:07.140 [http-nio-80-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:09:07.140 [http-nio-80-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:09:07.141 [http-nio-80-exec-10] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:09:07.141 [http-nio-80-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:09:07.141 [http-nio-80-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:09:07.144 [http-nio-80-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/recommendation/recommended_properties
+2024-11-21 14:09:07.144 [http-nio-80-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/recommendation/recommended_hotels
+2024-11-21 14:09:07.145 [http-nio-80-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/recommendation/recommended_properties
+2024-11-21 14:09:07.145 [http-nio-80-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/recommendation/recommended_properties", parameters={}
+2024-11-21 14:09:07.145 [http-nio-80-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/recommendation/recommended_hotels
+2024-11-21 14:09:07.145 [http-nio-80-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/recommendation/recommended_hotels", parameters={}
+2024-11-21 14:09:07.145 [http-nio-80-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.RecommendationController#getRecommendedProperties()
+2024-11-21 14:09:07.146 [http-nio-80-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.RecommendationController#getRecommendedDeals()
+2024-11-21 14:09:07.147 [http-nio-80-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:09:07.147 [http-nio-80-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:09:07.147 [http-nio-80-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[RecommendedDealDTO(cityName=New York, imageUrl=http://cf.bstatic.com/xdata/images/hotel/square240/1 (truncated)...]
+2024-11-21 14:09:07.147 [http-nio-80-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[RecommendedPropertyDTO(cityName=Neuruppin, country=Germany, countryCode=de, imageUrl=http://cf.bsta (truncated)...]
+2024-11-21 14:09:07.148 [http-nio-80-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:09:07.148 [http-nio-80-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:09:07.148 [http-nio-80-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:09:07.148 [http-nio-80-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:09:12.110 [http-nio-80-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/recommendation/recommended_properties
+2024-11-21 14:09:12.110 [http-nio-80-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/recommendation/recommended_bundles
+2024-11-21 14:09:12.110 [http-nio-80-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/recommendation/recommended_hotels
+2024-11-21 14:09:12.111 [http-nio-80-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/recommendation/recommended_properties
+2024-11-21 14:09:12.111 [http-nio-80-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/recommendation/recommended_properties", parameters={}
+2024-11-21 14:09:12.112 [http-nio-80-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/recommendation/recommended_hotels
+2024-11-21 14:09:12.112 [http-nio-80-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/recommendation/recommended_bundles
+2024-11-21 14:09:12.112 [http-nio-80-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.RecommendationController#getRecommendedProperties()
+2024-11-21 14:09:12.112 [http-nio-80-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/recommendation/recommended_bundles", parameters={}
+2024-11-21 14:09:12.112 [http-nio-80-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/recommendation/recommended_hotels", parameters={}
+2024-11-21 14:09:12.112 [http-nio-80-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.RecommendationController#getRecommendedBundles()
+2024-11-21 14:09:12.112 [http-nio-80-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.RecommendationController#getRecommendedDeals()
+2024-11-21 14:09:12.113 [http-nio-80-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:09:12.113 [http-nio-80-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:09:12.113 [http-nio-80-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[RecommendedBundleDTO(cityName=Las Vegas, NV, cityImageUrl=//s1.pclncdn.com/cityimages/thumb/w600/LA (truncated)...]
+2024-11-21 14:09:12.113 [http-nio-80-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[RecommendedPropertyDTO(cityName=Neuruppin, country=Germany, countryCode=de, imageUrl=http://cf.bsta (truncated)...]
+2024-11-21 14:09:12.114 [http-nio-80-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:09:12.114 [http-nio-80-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:09:12.114 [http-nio-80-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:09:12.114 [http-nio-80-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[RecommendedDealDTO(cityName=New York, imageUrl=http://cf.bstatic.com/xdata/images/hotel/square240/1 (truncated)...]
+2024-11-21 14:09:12.115 [http-nio-80-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:09:12.115 [http-nio-80-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:09:12.116 [http-nio-80-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:09:12.116 [http-nio-80-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:09:12.117 [http-nio-80-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/recommendation/recommended_bundles
+2024-11-21 14:09:12.118 [http-nio-80-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/recommendation/recommended_properties
+2024-11-21 14:09:12.119 [http-nio-80-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/recommendation/recommended_bundles
+2024-11-21 14:09:12.119 [http-nio-80-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/recommendation/recommended_bundles", parameters={}
+2024-11-21 14:09:12.119 [http-nio-80-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/recommendation/recommended_properties
+2024-11-21 14:09:12.119 [http-nio-80-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/recommendation/recommended_properties", parameters={}
+2024-11-21 14:09:12.120 [http-nio-80-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/recommendation/recommended_hotels
+2024-11-21 14:09:12.120 [http-nio-80-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.RecommendationController#getRecommendedProperties()
+2024-11-21 14:09:12.120 [http-nio-80-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.RecommendationController#getRecommendedBundles()
+2024-11-21 14:09:12.120 [http-nio-80-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/recommendation/recommended_hotels
+2024-11-21 14:09:12.120 [http-nio-80-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/recommendation/recommended_hotels", parameters={}
+2024-11-21 14:09:12.121 [http-nio-80-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.RecommendationController#getRecommendedDeals()
+2024-11-21 14:09:12.121 [http-nio-80-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:09:12.121 [http-nio-80-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:09:12.122 [http-nio-80-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[RecommendedDealDTO(cityName=New York, imageUrl=http://cf.bstatic.com/xdata/images/hotel/square240/1 (truncated)...]
+2024-11-21 14:09:12.122 [http-nio-80-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:09:12.122 [http-nio-80-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[RecommendedPropertyDTO(cityName=Neuruppin, country=Germany, countryCode=de, imageUrl=http://cf.bsta (truncated)...]
+2024-11-21 14:09:12.122 [http-nio-80-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[RecommendedBundleDTO(cityName=Las Vegas, NV, cityImageUrl=//s1.pclncdn.com/cityimages/thumb/w600/LA (truncated)...]
+2024-11-21 14:09:12.123 [http-nio-80-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:09:12.123 [http-nio-80-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:09:12.124 [http-nio-80-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:09:12.124 [http-nio-80-exec-10] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:09:12.124 [http-nio-80-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:09:12.124 [http-nio-80-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:09:26.425 [http-nio-80-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/hotels/initial_search
+2024-11-21 14:09:26.426 [http-nio-80-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/hotels/initial_search
+2024-11-21 14:09:26.427 [http-nio-80-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/hotels/initial_search", parameters={}
+2024-11-21 14:09:26.427 [http-nio-80-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.HotelSearchController#initialSearch(InitialSearchDTO)
+2024-11-21 14:09:26.429 [http-nio-80-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [InitialSearchDTO(hotelType=MULTI, destinationAndDates=[StayInfo(location=Location(city=1, state=, co (truncated)...]
+2024-11-21 14:09:26.430 [http-nio-80-exec-7] INFO  c.h.o.u.c.HotelSearchController - Fetching property listings with search Request: InitialSearchDTO(hotelType=MULTI, destinationAndDates=[StayInfo(location=Location(city=1, state=, country=, postalCode=, neighborhoodName=, latitude=0.0, longitude=0.0), checkInDate=Thu Nov 21 00:00:00 EST 2024, checkOutDate=Fri Nov 22 14:09:12 EST 2024), StayInfo(location=Location(city=2, state=, country=, postalCode=, neighborhoodName=, latitude=0.0, longitude=0.0), checkInDate=Thu Nov 21 00:00:00 EST 2024, checkOutDate=Fri Nov 22 00:00:00 EST 2024), StayInfo(location=Location(city=3, state=, country=, postalCode=, neighborhoodName=, latitude=0.0, longitude=0.0), checkInDate=Thu Nov 21 00:00:00 EST 2024, checkOutDate=Fri Nov 22 00:00:00 EST 2024), StayInfo(location=Location(city=4, state=, country=, postalCode=, neighborhoodName=, latitude=0.0, longitude=0.0), checkInDate=Thu Nov 21 00:00:00 EST 2024, checkOutDate=Fri Nov 22 00:00:00 EST 2024)], occupancy=OccupancyDetail(rooms=1, adults=2, children=0, childrenAges=[]), addCar=false, addFlight=false)
+2024-11-21 14:09:26.431 [http-nio-80-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:09:26.431 [http-nio-80-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[PropertyListingDTO(amenityList=[Amenity(amenityIcon=wifi-icon, amenityName=Free WiFi), Amenity(amen (truncated)...]
+2024-11-21 14:09:26.432 [http-nio-80-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:09:26.433 [http-nio-80-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:09:43.075 [http-nio-80-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/recommendation/recommended_properties
+2024-11-21 14:09:43.076 [http-nio-80-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/recommendation/recommended_properties
+2024-11-21 14:09:43.077 [http-nio-80-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/recommendation/recommended_properties", parameters={}
+2024-11-21 14:09:43.077 [http-nio-80-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/recommendation/recommended_bundles
+2024-11-21 14:09:43.077 [http-nio-80-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/recommendation/recommended_hotels
+2024-11-21 14:09:43.077 [http-nio-80-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.RecommendationController#getRecommendedProperties()
+2024-11-21 14:09:43.077 [http-nio-80-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/recommendation/recommended_bundles
+2024-11-21 14:09:43.077 [http-nio-80-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/recommendation/recommended_bundles", parameters={}
+2024-11-21 14:09:43.078 [http-nio-80-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.RecommendationController#getRecommendedBundles()
+2024-11-21 14:09:43.078 [http-nio-80-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/recommendation/recommended_hotels
+2024-11-21 14:09:43.078 [http-nio-80-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/recommendation/recommended_hotels", parameters={}
+2024-11-21 14:09:43.078 [http-nio-80-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:09:43.078 [http-nio-80-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.RecommendationController#getRecommendedDeals()
+2024-11-21 14:09:43.078 [http-nio-80-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:09:43.078 [http-nio-80-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[RecommendedPropertyDTO(cityName=Neuruppin, country=Germany, countryCode=de, imageUrl=http://cf.bsta (truncated)...]
+2024-11-21 14:09:43.078 [http-nio-80-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[RecommendedBundleDTO(cityName=Las Vegas, NV, cityImageUrl=//s1.pclncdn.com/cityimages/thumb/w600/LA (truncated)...]
+2024-11-21 14:09:43.080 [http-nio-80-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:09:43.080 [http-nio-80-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:09:43.080 [http-nio-80-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:09:43.080 [http-nio-80-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:09:43.080 [http-nio-80-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:09:43.080 [http-nio-80-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[RecommendedDealDTO(cityName=New York, imageUrl=http://cf.bstatic.com/xdata/images/hotel/square240/1 (truncated)...]
+2024-11-21 14:09:43.081 [http-nio-80-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:09:43.081 [http-nio-80-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:09:43.082 [http-nio-80-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/recommendation/recommended_properties
+2024-11-21 14:09:43.083 [http-nio-80-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/recommendation/recommended_properties
+2024-11-21 14:09:43.083 [http-nio-80-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/recommendation/recommended_properties", parameters={}
+2024-11-21 14:09:43.084 [http-nio-80-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.RecommendationController#getRecommendedProperties()
+2024-11-21 14:09:43.085 [http-nio-80-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:09:43.085 [http-nio-80-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/recommendation/recommended_hotels
+2024-11-21 14:09:43.085 [http-nio-80-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[RecommendedPropertyDTO(cityName=Neuruppin, country=Germany, countryCode=de, imageUrl=http://cf.bsta (truncated)...]
+2024-11-21 14:09:43.085 [http-nio-80-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/recommendation/recommended_bundles
+2024-11-21 14:09:43.086 [http-nio-80-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/recommendation/recommended_hotels
+2024-11-21 14:09:43.086 [http-nio-80-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/recommendation/recommended_hotels", parameters={}
+2024-11-21 14:09:43.086 [http-nio-80-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/recommendation/recommended_bundles
+2024-11-21 14:09:43.086 [http-nio-80-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:09:43.086 [http-nio-80-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:09:43.086 [http-nio-80-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.RecommendationController#getRecommendedDeals()
+2024-11-21 14:09:43.086 [http-nio-80-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/recommendation/recommended_bundles", parameters={}
+2024-11-21 14:09:43.087 [http-nio-80-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.RecommendationController#getRecommendedBundles()
+2024-11-21 14:09:43.088 [http-nio-80-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:09:43.088 [http-nio-80-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[RecommendedDealDTO(cityName=New York, imageUrl=http://cf.bstatic.com/xdata/images/hotel/square240/1 (truncated)...]
+2024-11-21 14:09:43.088 [http-nio-80-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:09:43.089 [http-nio-80-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[RecommendedBundleDTO(cityName=Las Vegas, NV, cityImageUrl=//s1.pclncdn.com/cityimages/thumb/w600/LA (truncated)...]
+2024-11-21 14:09:43.089 [http-nio-80-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:09:43.089 [http-nio-80-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:09:43.090 [http-nio-80-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:09:43.090 [http-nio-80-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:10:12.769 [http-nio-80-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/hotels/initial_search
+2024-11-21 14:10:12.770 [http-nio-80-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/hotels/initial_search
+2024-11-21 14:10:12.770 [http-nio-80-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/hotels/initial_search", parameters={}
+2024-11-21 14:10:12.770 [http-nio-80-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.HotelSearchController#initialSearch(InitialSearchDTO)
+2024-11-21 14:10:12.773 [http-nio-80-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [InitialSearchDTO(hotelType=MULTI, destinationAndDates=[StayInfo(location=null, checkInDate=Thu Nov 2 (truncated)...]
+2024-11-21 14:10:12.784 [http-nio-80-exec-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.util.List<com.hotel.onlinebooking.ui.dto.hotelListing.PropertyListingDTO>> com.hotel.onlinebooking.ui.controller.HotelSearchController.initialSearch(com.hotel.onlinebooking.ui.dto.search.InitialSearchDTO): [Field error in object 'initialSearchDTO' on field 'destinationAndDates[0].location': rejected value [null]; codes [NotNull.initialSearchDTO.destinationAndDates[0].location,NotNull.initialSearchDTO.destinationAndDates.location,NotNull.destinationAndDates[0].location,NotNull.destinationAndDates.location,NotNull.location,NotNull.com.hotel.onlinebooking.ui.dto.search.Location,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [initialSearchDTO.destinationAndDates[0].location,destinationAndDates[0].location]; arguments []; default message [destinationAndDates[0].location]]; default message [Location information is required]] ]
+2024-11-21 14:10:12.784 [http-nio-80-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2024-11-21 14:10:12.785 [http-nio-80-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:10:12.792 [http-nio-80-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing POST /error
+2024-11-21 14:10:12.793 [http-nio-80-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured POST /error
+2024-11-21 14:10:12.794 [http-nio-80-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for POST "/error", parameters={}
+2024-11-21 14:10:12.794 [http-nio-80-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-11-21 14:10:12.799 [http-nio-80-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:10:12.799 [http-nio-80-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Thu Nov 21 14:10:12 EST 2024, status=400, error=Bad Request, trace=org.springframework.we (truncated)...]
+2024-11-21 14:10:12.811 [http-nio-80-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 400
+2024-11-21 14:10:12.811 [http-nio-80-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:10:30.010 [http-nio-80-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/hotels/initial_search
+2024-11-21 14:10:30.011 [http-nio-80-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/hotels/initial_search
+2024-11-21 14:10:30.011 [http-nio-80-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/hotels/initial_search", parameters={}
+2024-11-21 14:10:30.011 [http-nio-80-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.HotelSearchController#initialSearch(InitialSearchDTO)
+2024-11-21 14:10:30.013 [http-nio-80-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [InitialSearchDTO(hotelType=MULTI, destinationAndDates=[StayInfo(location=null, checkInDate=Thu Nov 2 (truncated)...]
+2024-11-21 14:10:30.015 [http-nio-80-exec-9] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.util.List<com.hotel.onlinebooking.ui.dto.hotelListing.PropertyListingDTO>> com.hotel.onlinebooking.ui.controller.HotelSearchController.initialSearch(com.hotel.onlinebooking.ui.dto.search.InitialSearchDTO): [Field error in object 'initialSearchDTO' on field 'destinationAndDates[0].location': rejected value [null]; codes [NotNull.initialSearchDTO.destinationAndDates[0].location,NotNull.initialSearchDTO.destinationAndDates.location,NotNull.destinationAndDates[0].location,NotNull.destinationAndDates.location,NotNull.location,NotNull.com.hotel.onlinebooking.ui.dto.search.Location,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [initialSearchDTO.destinationAndDates[0].location,destinationAndDates[0].location]; arguments []; default message [destinationAndDates[0].location]]; default message [Location information is required]] ]
+2024-11-21 14:10:30.015 [http-nio-80-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2024-11-21 14:10:30.016 [http-nio-80-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:10:30.016 [http-nio-80-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing POST /error
+2024-11-21 14:10:30.017 [http-nio-80-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured POST /error
+2024-11-21 14:10:30.017 [http-nio-80-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for POST "/error", parameters={}
+2024-11-21 14:10:30.017 [http-nio-80-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-11-21 14:10:30.019 [http-nio-80-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:10:30.019 [http-nio-80-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Thu Nov 21 14:10:30 EST 2024, status=400, error=Bad Request, trace=org.springframework.we (truncated)...]
+2024-11-21 14:10:30.021 [http-nio-80-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 400
+2024-11-21 14:10:30.021 [http-nio-80-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:10:42.696 [http-nio-80-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/hotels/initial_search
+2024-11-21 14:10:42.697 [http-nio-80-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/hotels/initial_search
+2024-11-21 14:10:42.697 [http-nio-80-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/hotels/initial_search", parameters={}
+2024-11-21 14:10:42.698 [http-nio-80-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.HotelSearchController#initialSearch(InitialSearchDTO)
+2024-11-21 14:10:42.699 [http-nio-80-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [InitialSearchDTO(hotelType=MULTI, destinationAndDates=[StayInfo(location=Location(city=123, state=,  (truncated)...]
+2024-11-21 14:10:42.700 [http-nio-80-exec-10] INFO  c.h.o.u.c.HotelSearchController - Fetching property listings with search Request: InitialSearchDTO(hotelType=MULTI, destinationAndDates=[StayInfo(location=Location(city=123, state=, country=, postalCode=, neighborhoodName=, latitude=0.0, longitude=0.0), checkInDate=Thu Nov 21 00:00:00 EST 2024, checkOutDate=Fri Nov 22 14:10:00 EST 2024), StayInfo(location=Location(city=2, state=, country=, postalCode=, neighborhoodName=, latitude=0.0, longitude=0.0), checkInDate=Fri Nov 22 00:00:00 EST 2024, checkOutDate=Sat Nov 23 00:00:00 EST 2024), StayInfo(location=Location(city=3, state=, country=, postalCode=, neighborhoodName=, latitude=0.0, longitude=0.0), checkInDate=Fri Nov 22 00:00:00 EST 2024, checkOutDate=Sat Nov 23 00:00:00 EST 2024), StayInfo(location=Location(city=4, state=, country=, postalCode=, neighborhoodName=, latitude=0.0, longitude=0.0), checkInDate=Fri Nov 22 00:00:00 EST 2024, checkOutDate=Sat Nov 23 00:00:00 EST 2024)], occupancy=OccupancyDetail(rooms=1, adults=2, children=0, childrenAges=[]), addCar=false, addFlight=false)
+2024-11-21 14:10:42.701 [http-nio-80-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:10:42.701 [http-nio-80-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[PropertyListingDTO(amenityList=[Amenity(amenityIcon=wifi-icon, amenityName=Free WiFi), Amenity(amen (truncated)...]
+2024-11-21 14:10:42.702 [http-nio-80-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:10:42.703 [http-nio-80-exec-10] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:10:56.130 [http-nio-80-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/recommendation/recommended_properties
+2024-11-21 14:10:56.130 [http-nio-80-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/recommendation/recommended_properties
+2024-11-21 14:10:56.130 [http-nio-80-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/recommendation/recommended_properties", parameters={}
+2024-11-21 14:10:56.130 [http-nio-80-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/recommendation/recommended_hotels
+2024-11-21 14:10:56.131 [http-nio-80-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.RecommendationController#getRecommendedProperties()
+2024-11-21 14:10:56.131 [http-nio-80-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/recommendation/recommended_bundles
+2024-11-21 14:10:56.131 [http-nio-80-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/recommendation/recommended_hotels
+2024-11-21 14:10:56.131 [http-nio-80-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/recommendation/recommended_hotels", parameters={}
+2024-11-21 14:10:56.131 [http-nio-80-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.RecommendationController#getRecommendedDeals()
+2024-11-21 14:10:56.131 [http-nio-80-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/recommendation/recommended_bundles
+2024-11-21 14:10:56.131 [http-nio-80-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/recommendation/recommended_bundles", parameters={}
+2024-11-21 14:10:56.131 [http-nio-80-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:10:56.131 [http-nio-80-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.RecommendationController#getRecommendedBundles()
+2024-11-21 14:10:56.132 [http-nio-80-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[RecommendedPropertyDTO(cityName=Neuruppin, country=Germany, countryCode=de, imageUrl=http://cf.bsta (truncated)...]
+2024-11-21 14:10:56.132 [http-nio-80-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:10:56.132 [http-nio-80-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[RecommendedDealDTO(cityName=New York, imageUrl=http://cf.bstatic.com/xdata/images/hotel/square240/1 (truncated)...]
+2024-11-21 14:10:56.132 [http-nio-80-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:10:56.132 [http-nio-80-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[RecommendedBundleDTO(cityName=Las Vegas, NV, cityImageUrl=//s1.pclncdn.com/cityimages/thumb/w600/LA (truncated)...]
+2024-11-21 14:10:56.132 [http-nio-80-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:10:56.132 [http-nio-80-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:10:56.132 [http-nio-80-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:10:56.132 [http-nio-80-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:10:56.134 [http-nio-80-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:10:56.134 [http-nio-80-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:10:56.143 [http-nio-80-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/recommendation/recommended_properties
+2024-11-21 14:10:56.143 [http-nio-80-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/recommendation/recommended_hotels
+2024-11-21 14:10:56.143 [http-nio-80-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/recommendation/recommended_bundles
+2024-11-21 14:10:56.144 [http-nio-80-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/recommendation/recommended_hotels
+2024-11-21 14:10:56.144 [http-nio-80-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/recommendation/recommended_properties
+2024-11-21 14:10:56.144 [http-nio-80-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/recommendation/recommended_hotels", parameters={}
+2024-11-21 14:10:56.145 [http-nio-80-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/recommendation/recommended_properties", parameters={}
+2024-11-21 14:10:56.145 [http-nio-80-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/recommendation/recommended_bundles
+2024-11-21 14:10:56.145 [http-nio-80-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/recommendation/recommended_bundles", parameters={}
+2024-11-21 14:10:56.145 [http-nio-80-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.RecommendationController#getRecommendedBundles()
+2024-11-21 14:10:56.145 [http-nio-80-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.RecommendationController#getRecommendedDeals()
+2024-11-21 14:10:56.145 [http-nio-80-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.RecommendationController#getRecommendedProperties()
+2024-11-21 14:10:56.146 [http-nio-80-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:10:56.146 [http-nio-80-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:10:56.146 [http-nio-80-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:10:56.147 [http-nio-80-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[RecommendedPropertyDTO(cityName=Neuruppin, country=Germany, countryCode=de, imageUrl=http://cf.bsta (truncated)...]
+2024-11-21 14:10:56.147 [http-nio-80-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[RecommendedDealDTO(cityName=New York, imageUrl=http://cf.bstatic.com/xdata/images/hotel/square240/1 (truncated)...]
+2024-11-21 14:10:56.147 [http-nio-80-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[RecommendedBundleDTO(cityName=Las Vegas, NV, cityImageUrl=//s1.pclncdn.com/cityimages/thumb/w600/LA (truncated)...]
+2024-11-21 14:10:56.147 [http-nio-80-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:10:56.147 [http-nio-80-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:10:56.148 [http-nio-80-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:10:56.148 [http-nio-80-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:10:56.148 [http-nio-80-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:10:56.148 [http-nio-80-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:13:53.845 [http-nio-80-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/hotels/initial_search
+2024-11-21 14:13:53.846 [http-nio-80-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/hotels/initial_search
+2024-11-21 14:13:53.846 [http-nio-80-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/hotels/initial_search", parameters={}
+2024-11-21 14:13:53.846 [http-nio-80-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.HotelSearchController#initialSearch(InitialSearchDTO)
+2024-11-21 14:13:53.849 [http-nio-80-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [InitialSearchDTO(hotelType=MULTI, destinationAndDates=[StayInfo(location=Location(city=1, state=, co (truncated)...]
+2024-11-21 14:13:53.850 [http-nio-80-exec-5] INFO  c.h.o.u.c.HotelSearchController - Fetching property listings with search Request: InitialSearchDTO(hotelType=MULTI, destinationAndDates=[StayInfo(location=Location(city=1, state=, country=, postalCode=, neighborhoodName=, latitude=0.0, longitude=0.0), checkInDate=Thu Nov 21 00:00:00 EST 2024, checkOutDate=Fri Nov 22 14:10:55 EST 2024), StayInfo(location=Location(city=2, state=, country=, postalCode=, neighborhoodName=, latitude=0.0, longitude=0.0), checkInDate=Fri Nov 22 00:00:00 EST 2024, checkOutDate=Sun Dec 01 00:00:00 EST 2024), StayInfo(location=Location(city=3, state=, country=, postalCode=, neighborhoodName=, latitude=0.0, longitude=0.0), checkInDate=Sat Nov 23 00:00:00 EST 2024, checkOutDate=Sun Dec 01 00:00:00 EST 2024), StayInfo(location=Location(city=4, state=, country=, postalCode=, neighborhoodName=, latitude=0.0, longitude=0.0), checkInDate=Fri Nov 22 00:00:00 EST 2024, checkOutDate=Mon Dec 02 00:00:00 EST 2024)], occupancy=OccupancyDetail(rooms=1, adults=2, children=0, childrenAges=[]), addCar=false, addFlight=false)
+2024-11-21 14:13:53.851 [http-nio-80-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:13:53.852 [http-nio-80-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[PropertyListingDTO(amenityList=[Amenity(amenityIcon=wifi-icon, amenityName=Free WiFi), Amenity(amen (truncated)...]
+2024-11-21 14:13:53.853 [http-nio-80-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:13:53.853 [http-nio-80-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:14:40.776 [http-nio-80-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/recommendation/recommended_properties
+2024-11-21 14:14:40.777 [http-nio-80-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/recommendation/recommended_properties
+2024-11-21 14:14:40.777 [http-nio-80-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/recommendation/recommended_properties", parameters={}
+2024-11-21 14:14:40.777 [http-nio-80-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.RecommendationController#getRecommendedProperties()
+2024-11-21 14:14:40.778 [http-nio-80-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:14:40.778 [http-nio-80-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[RecommendedPropertyDTO(cityName=Neuruppin, country=Germany, countryCode=de, imageUrl=http://cf.bsta (truncated)...]
+2024-11-21 14:14:40.779 [http-nio-80-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/recommendation/recommended_hotels
+2024-11-21 14:14:40.779 [http-nio-80-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:14:40.779 [http-nio-80-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/recommendation/recommended_bundles
+2024-11-21 14:14:40.779 [http-nio-80-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:14:40.779 [http-nio-80-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/recommendation/recommended_bundles
+2024-11-21 14:14:40.779 [http-nio-80-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/recommendation/recommended_bundles", parameters={}
+2024-11-21 14:14:40.779 [http-nio-80-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/recommendation/recommended_hotels
+2024-11-21 14:14:40.780 [http-nio-80-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.RecommendationController#getRecommendedBundles()
+2024-11-21 14:14:40.780 [http-nio-80-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/recommendation/recommended_hotels", parameters={}
+2024-11-21 14:14:40.780 [http-nio-80-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.RecommendationController#getRecommendedDeals()
+2024-11-21 14:14:40.780 [http-nio-80-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:14:40.780 [http-nio-80-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[RecommendedBundleDTO(cityName=Las Vegas, NV, cityImageUrl=//s1.pclncdn.com/cityimages/thumb/w600/LA (truncated)...]
+2024-11-21 14:14:40.781 [http-nio-80-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:14:40.781 [http-nio-80-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/recommendation/recommended_properties
+2024-11-21 14:14:40.781 [http-nio-80-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:14:40.781 [http-nio-80-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:14:40.781 [http-nio-80-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/recommendation/recommended_properties
+2024-11-21 14:14:40.781 [http-nio-80-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/recommendation/recommended_properties", parameters={}
+2024-11-21 14:14:40.782 [http-nio-80-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[RecommendedDealDTO(cityName=New York, imageUrl=http://cf.bstatic.com/xdata/images/hotel/square240/1 (truncated)...]
+2024-11-21 14:14:40.782 [http-nio-80-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.RecommendationController#getRecommendedProperties()
+2024-11-21 14:14:40.782 [http-nio-80-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:14:40.782 [http-nio-80-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[RecommendedPropertyDTO(cityName=Neuruppin, country=Germany, countryCode=de, imageUrl=http://cf.bsta (truncated)...]
+2024-11-21 14:14:40.783 [http-nio-80-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:14:40.783 [http-nio-80-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/recommendation/recommended_bundles
+2024-11-21 14:14:40.783 [http-nio-80-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:14:40.783 [http-nio-80-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:14:40.783 [http-nio-80-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:14:40.783 [http-nio-80-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/recommendation/recommended_bundles
+2024-11-21 14:14:40.783 [http-nio-80-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/recommendation/recommended_bundles", parameters={}
+2024-11-21 14:14:40.783 [http-nio-80-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.RecommendationController#getRecommendedBundles()
+2024-11-21 14:14:40.784 [http-nio-80-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/recommendation/recommended_hotels
+2024-11-21 14:14:40.784 [http-nio-80-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:14:40.784 [http-nio-80-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/recommendation/recommended_hotels
+2024-11-21 14:14:40.784 [http-nio-80-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[RecommendedBundleDTO(cityName=Las Vegas, NV, cityImageUrl=//s1.pclncdn.com/cityimages/thumb/w600/LA (truncated)...]
+2024-11-21 14:14:40.784 [http-nio-80-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/recommendation/recommended_hotels", parameters={}
+2024-11-21 14:14:40.785 [http-nio-80-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.RecommendationController#getRecommendedDeals()
+2024-11-21 14:14:40.785 [http-nio-80-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:14:40.785 [http-nio-80-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[RecommendedDealDTO(cityName=New York, imageUrl=http://cf.bstatic.com/xdata/images/hotel/square240/1 (truncated)...]
+2024-11-21 14:14:40.786 [http-nio-80-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:14:40.786 [http-nio-80-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:14:40.786 [http-nio-80-exec-10] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:14:40.786 [http-nio-80-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:14:56.410 [http-nio-80-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/hotels/initial_search
+2024-11-21 14:14:56.411 [http-nio-80-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/hotels/initial_search
+2024-11-21 14:14:56.411 [http-nio-80-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/hotels/initial_search", parameters={}
+2024-11-21 14:14:56.411 [http-nio-80-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.HotelSearchController#initialSearch(InitialSearchDTO)
+2024-11-21 14:14:56.413 [http-nio-80-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [InitialSearchDTO(hotelType=MULTI, destinationAndDates=[StayInfo(location=Location(city=1, state=, co (truncated)...]
+2024-11-21 14:14:56.414 [http-nio-80-exec-1] INFO  c.h.o.u.c.HotelSearchController - Fetching property listings with search Request: InitialSearchDTO(hotelType=MULTI, destinationAndDates=[StayInfo(location=Location(city=1, state=, country=, postalCode=, neighborhoodName=, latitude=0.0, longitude=0.0), checkInDate=Thu Nov 21 00:00:00 EST 2024, checkOutDate=Fri Nov 22 14:14:40 EST 2024), StayInfo(location=Location(city=2, state=, country=, postalCode=, neighborhoodName=, latitude=0.0, longitude=0.0), checkInDate=Tue Dec 17 00:00:00 EST 2024, checkOutDate=Wed Dec 18 00:00:00 EST 2024), StayInfo(location=Location(city=3, state=, country=, postalCode=, neighborhoodName=, latitude=0.0, longitude=0.0), checkInDate=Mon Dec 02 00:00:00 EST 2024, checkOutDate=Thu Dec 05 00:00:00 EST 2024), StayInfo(location=Location(city=4, state=, country=, postalCode=, neighborhoodName=, latitude=0.0, longitude=0.0), checkInDate=Sun Dec 01 00:00:00 EST 2024, checkOutDate=Wed Dec 04 00:00:00 EST 2024)], occupancy=OccupancyDetail(rooms=1, adults=2, children=0, childrenAges=[]), addCar=false, addFlight=false)
+2024-11-21 14:14:56.415 [http-nio-80-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:14:56.415 [http-nio-80-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[PropertyListingDTO(amenityList=[Amenity(amenityIcon=wifi-icon, amenityName=Free WiFi), Amenity(amen (truncated)...]
+2024-11-21 14:14:56.416 [http-nio-80-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:14:56.417 [http-nio-80-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:17:40.870 [http-nio-80-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/recommendation/recommended_properties
+2024-11-21 14:17:40.871 [http-nio-80-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/recommendation/recommended_hotels
+2024-11-21 14:17:40.871 [http-nio-80-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/recommendation/recommended_hotels
+2024-11-21 14:17:40.871 [http-nio-80-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/recommendation/recommended_hotels", parameters={}
+2024-11-21 14:17:40.872 [http-nio-80-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.RecommendationController#getRecommendedDeals()
+2024-11-21 14:17:40.872 [http-nio-80-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/recommendation/recommended_properties
+2024-11-21 14:17:40.872 [http-nio-80-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/recommendation/recommended_properties", parameters={}
+2024-11-21 14:17:40.872 [http-nio-80-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.RecommendationController#getRecommendedProperties()
+2024-11-21 14:17:40.872 [http-nio-80-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:17:40.873 [http-nio-80-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:17:40.873 [http-nio-80-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[RecommendedDealDTO(cityName=New York, imageUrl=http://cf.bstatic.com/xdata/images/hotel/square240/1 (truncated)...]
+2024-11-21 14:17:40.873 [http-nio-80-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[RecommendedPropertyDTO(cityName=Neuruppin, country=Germany, countryCode=de, imageUrl=http://cf.bsta (truncated)...]
+2024-11-21 14:17:40.873 [http-nio-80-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/recommendation/recommended_bundles
+2024-11-21 14:17:40.874 [http-nio-80-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/recommendation/recommended_bundles
+2024-11-21 14:17:40.874 [http-nio-80-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/recommendation/recommended_bundles", parameters={}
+2024-11-21 14:17:40.874 [http-nio-80-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:17:40.874 [http-nio-80-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:17:40.874 [http-nio-80-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:17:40.874 [http-nio-80-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:17:40.874 [http-nio-80-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.RecommendationController#getRecommendedBundles()
+2024-11-21 14:17:40.876 [http-nio-80-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:17:40.876 [http-nio-80-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[RecommendedBundleDTO(cityName=Las Vegas, NV, cityImageUrl=//s1.pclncdn.com/cityimages/thumb/w600/LA (truncated)...]
+2024-11-21 14:17:40.877 [http-nio-80-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/recommendation/recommended_properties
+2024-11-21 14:17:40.877 [http-nio-80-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/recommendation/recommended_properties
+2024-11-21 14:17:40.877 [http-nio-80-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/recommendation/recommended_properties", parameters={}
+2024-11-21 14:17:40.878 [http-nio-80-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:17:40.878 [http-nio-80-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/recommendation/recommended_hotels
+2024-11-21 14:17:40.878 [http-nio-80-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.RecommendationController#getRecommendedProperties()
+2024-11-21 14:17:40.878 [http-nio-80-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:17:40.878 [http-nio-80-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/recommendation/recommended_hotels
+2024-11-21 14:17:40.878 [http-nio-80-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/recommendation/recommended_hotels", parameters={}
+2024-11-21 14:17:40.878 [http-nio-80-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:17:40.878 [http-nio-80-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.RecommendationController#getRecommendedDeals()
+2024-11-21 14:17:40.879 [http-nio-80-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[RecommendedPropertyDTO(cityName=Neuruppin, country=Germany, countryCode=de, imageUrl=http://cf.bsta (truncated)...]
+2024-11-21 14:17:40.879 [http-nio-80-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/recommendation/recommended_bundles
+2024-11-21 14:17:40.879 [http-nio-80-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/recommendation/recommended_bundles
+2024-11-21 14:17:40.879 [http-nio-80-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:17:40.879 [http-nio-80-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/recommendation/recommended_bundles", parameters={}
+2024-11-21 14:17:40.879 [http-nio-80-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[RecommendedDealDTO(cityName=New York, imageUrl=http://cf.bstatic.com/xdata/images/hotel/square240/1 (truncated)...]
+2024-11-21 14:17:40.879 [http-nio-80-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.RecommendationController#getRecommendedBundles()
+2024-11-21 14:17:40.879 [http-nio-80-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:17:40.879 [http-nio-80-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:17:40.880 [http-nio-80-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:17:40.880 [http-nio-80-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[RecommendedBundleDTO(cityName=Las Vegas, NV, cityImageUrl=//s1.pclncdn.com/cityimages/thumb/w600/LA (truncated)...]
+2024-11-21 14:17:40.880 [http-nio-80-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:17:40.880 [http-nio-80-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:17:40.881 [http-nio-80-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:17:40.881 [http-nio-80-exec-10] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:18:02.161 [http-nio-80-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/hotels/initial_search
+2024-11-21 14:18:02.161 [http-nio-80-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/hotels/initial_search
+2024-11-21 14:18:02.163 [http-nio-80-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/hotels/initial_search", parameters={}
+2024-11-21 14:18:02.163 [http-nio-80-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.HotelSearchController#initialSearch(InitialSearchDTO)
+2024-11-21 14:18:02.166 [http-nio-80-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [InitialSearchDTO(hotelType=MULTI, destinationAndDates=[StayInfo(location=Location(city=1, state=, co (truncated)...]
+2024-11-21 14:18:02.192 [http-nio-80-exec-2] INFO  c.h.o.u.c.HotelSearchController - Fetching property listings with search Request: InitialSearchDTO(hotelType=MULTI, destinationAndDates=[StayInfo(location=Location(city=1, state=, country=, postalCode=, neighborhoodName=, latitude=0.0, longitude=0.0), checkInDate=Thu Nov 21 00:00:00 EST 2024, checkOutDate=Fri Nov 22 14:17:40 EST 2024), StayInfo(location=Location(city=2, state=, country=, postalCode=, neighborhoodName=, latitude=0.0, longitude=0.0), checkInDate=Sun Dec 01 00:00:00 EST 2024, checkOutDate=Mon Dec 02 00:00:00 EST 2024), StayInfo(location=Location(city=3, state=, country=, postalCode=, neighborhoodName=, latitude=0.0, longitude=0.0), checkInDate=Sun Dec 01 00:00:00 EST 2024, checkOutDate=Mon Dec 02 00:00:00 EST 2024), StayInfo(location=Location(city=4, state=, country=, postalCode=, neighborhoodName=, latitude=0.0, longitude=0.0), checkInDate=Sun Dec 01 00:00:00 EST 2024, checkOutDate=Tue Dec 03 00:00:00 EST 2024)], occupancy=OccupancyDetail(rooms=1, adults=2, children=0, childrenAges=[]), addCar=false, addFlight=false)
+2024-11-21 14:18:02.192 [http-nio-80-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:18:02.193 [http-nio-80-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[PropertyListingDTO(amenityList=[Amenity(amenityIcon=wifi-icon, amenityName=Free WiFi), Amenity(amen (truncated)...]
+2024-11-21 14:18:02.194 [http-nio-80-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:18:02.194 [http-nio-80-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:18:16.226 [http-nio-80-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/hotels/initial_search
+2024-11-21 14:18:16.226 [http-nio-80-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/hotels/initial_search
+2024-11-21 14:18:16.226 [http-nio-80-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/hotels/initial_search", parameters={}
+2024-11-21 14:18:16.227 [http-nio-80-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.HotelSearchController#initialSearch(InitialSearchDTO)
+2024-11-21 14:18:16.229 [http-nio-80-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [InitialSearchDTO(hotelType=MULTI, destinationAndDates=[StayInfo(location=Location(city=1, state=, co (truncated)...]
+2024-11-21 14:18:16.230 [http-nio-80-exec-8] INFO  c.h.o.u.c.HotelSearchController - Fetching property listings with search Request: InitialSearchDTO(hotelType=MULTI, destinationAndDates=[StayInfo(location=Location(city=1, state=, country=, postalCode=, neighborhoodName=, latitude=0.0, longitude=0.0), checkInDate=Thu Nov 21 00:00:00 EST 2024, checkOutDate=Fri Nov 22 14:17:40 EST 2024), StayInfo(location=Location(city=2, state=, country=, postalCode=, neighborhoodName=, latitude=0.0, longitude=0.0), checkInDate=Sun Dec 01 00:00:00 EST 2024, checkOutDate=Mon Dec 02 00:00:00 EST 2024), StayInfo(location=Location(city=3, state=, country=, postalCode=, neighborhoodName=, latitude=0.0, longitude=0.0), checkInDate=Sun Dec 01 00:00:00 EST 2024, checkOutDate=Mon Dec 02 00:00:00 EST 2024), StayInfo(location=Location(city=4, state=, country=, postalCode=, neighborhoodName=, latitude=0.0, longitude=0.0), checkInDate=Sun Dec 01 00:00:00 EST 2024, checkOutDate=Tue Dec 03 00:00:00 EST 2024)], occupancy=OccupancyDetail(rooms=1, adults=2, children=0, childrenAges=[]), addCar=false, addFlight=false)
+2024-11-21 14:18:16.230 [http-nio-80-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:18:16.231 [http-nio-80-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[PropertyListingDTO(amenityList=[Amenity(amenityIcon=wifi-icon, amenityName=Free WiFi), Amenity(amen (truncated)...]
+2024-11-21 14:18:16.232 [http-nio-80-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:18:16.232 [http-nio-80-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:18:25.793 [http-nio-80-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/hotels/initial_search
+2024-11-21 14:18:25.794 [http-nio-80-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/hotels/initial_search
+2024-11-21 14:18:25.795 [http-nio-80-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/hotels/initial_search", parameters={}
+2024-11-21 14:18:25.795 [http-nio-80-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.HotelSearchController#initialSearch(InitialSearchDTO)
+2024-11-21 14:18:25.797 [http-nio-80-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [InitialSearchDTO(hotelType=MULTI, destinationAndDates=[StayInfo(location=Location(city=1, state=, co (truncated)...]
+2024-11-21 14:18:25.798 [http-nio-80-exec-5] INFO  c.h.o.u.c.HotelSearchController - Fetching property listings with search Request: InitialSearchDTO(hotelType=MULTI, destinationAndDates=[StayInfo(location=Location(city=1, state=, country=, postalCode=, neighborhoodName=, latitude=0.0, longitude=0.0), checkInDate=Thu Nov 21 00:00:00 EST 2024, checkOutDate=Fri Nov 22 14:17:40 EST 2024), StayInfo(location=Location(city=2, state=, country=, postalCode=, neighborhoodName=, latitude=0.0, longitude=0.0), checkInDate=Sun Dec 01 00:00:00 EST 2024, checkOutDate=Mon Dec 02 00:00:00 EST 2024), StayInfo(location=Location(city=3, state=, country=, postalCode=, neighborhoodName=, latitude=0.0, longitude=0.0), checkInDate=Sun Dec 01 00:00:00 EST 2024, checkOutDate=Mon Dec 02 00:00:00 EST 2024)], occupancy=OccupancyDetail(rooms=1, adults=2, children=0, childrenAges=[]), addCar=false, addFlight=false)
+2024-11-21 14:18:25.798 [http-nio-80-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:18:25.798 [http-nio-80-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[PropertyListingDTO(amenityList=[Amenity(amenityIcon=wifi-icon, amenityName=Free WiFi), Amenity(amen (truncated)...]
+2024-11-21 14:18:25.800 [http-nio-80-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:18:25.800 [http-nio-80-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:19:01.416 [http-nio-80-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/recommendation/recommended_properties
+2024-11-21 14:19:01.417 [http-nio-80-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/recommendation/recommended_properties
+2024-11-21 14:19:01.417 [http-nio-80-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/recommendation/recommended_hotels
+2024-11-21 14:19:01.417 [http-nio-80-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/recommendation/recommended_properties", parameters={}
+2024-11-21 14:19:01.418 [http-nio-80-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.RecommendationController#getRecommendedProperties()
+2024-11-21 14:19:01.418 [http-nio-80-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/recommendation/recommended_hotels
+2024-11-21 14:19:01.418 [http-nio-80-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/recommendation/recommended_hotels", parameters={}
+2024-11-21 14:19:01.419 [http-nio-80-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.RecommendationController#getRecommendedDeals()
+2024-11-21 14:19:01.419 [http-nio-80-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/recommendation/recommended_bundles
+2024-11-21 14:19:01.419 [http-nio-80-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/recommendation/recommended_bundles
+2024-11-21 14:19:01.419 [http-nio-80-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/recommendation/recommended_bundles", parameters={}
+2024-11-21 14:19:01.419 [http-nio-80-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:19:01.420 [http-nio-80-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.RecommendationController#getRecommendedBundles()
+2024-11-21 14:19:01.420 [http-nio-80-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:19:01.420 [http-nio-80-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[RecommendedPropertyDTO(cityName=Neuruppin, country=Germany, countryCode=de, imageUrl=http://cf.bsta (truncated)...]
+2024-11-21 14:19:01.420 [http-nio-80-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[RecommendedDealDTO(cityName=New York, imageUrl=http://cf.bstatic.com/xdata/images/hotel/square240/1 (truncated)...]
+2024-11-21 14:19:01.421 [http-nio-80-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:19:01.421 [http-nio-80-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[RecommendedBundleDTO(cityName=Las Vegas, NV, cityImageUrl=//s1.pclncdn.com/cityimages/thumb/w600/LA (truncated)...]
+2024-11-21 14:19:01.421 [http-nio-80-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:19:01.421 [http-nio-80-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:19:01.421 [http-nio-80-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:19:01.421 [http-nio-80-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:19:01.427 [http-nio-80-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/recommendation/recommended_properties
+2024-11-21 14:19:01.428 [http-nio-80-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/recommendation/recommended_hotels
+2024-11-21 14:19:01.428 [http-nio-80-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/recommendation/recommended_properties
+2024-11-21 14:19:01.428 [http-nio-80-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/recommendation/recommended_hotels
+2024-11-21 14:19:01.428 [http-nio-80-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/recommendation/recommended_properties", parameters={}
+2024-11-21 14:19:01.428 [http-nio-80-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/recommendation/recommended_hotels", parameters={}
+2024-11-21 14:19:01.428 [http-nio-80-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:19:01.429 [http-nio-80-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:19:01.429 [http-nio-80-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.RecommendationController#getRecommendedProperties()
+2024-11-21 14:19:01.429 [http-nio-80-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.RecommendationController#getRecommendedDeals()
+2024-11-21 14:19:01.429 [http-nio-80-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:19:01.429 [http-nio-80-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[RecommendedDealDTO(cityName=New York, imageUrl=http://cf.bstatic.com/xdata/images/hotel/square240/1 (truncated)...]
+2024-11-21 14:19:01.430 [http-nio-80-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:19:01.430 [http-nio-80-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:19:01.430 [http-nio-80-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:19:01.430 [http-nio-80-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[RecommendedPropertyDTO(cityName=Neuruppin, country=Germany, countryCode=de, imageUrl=http://cf.bsta (truncated)...]
+2024-11-21 14:19:01.431 [http-nio-80-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/recommendation/recommended_bundles
+2024-11-21 14:19:01.431 [http-nio-80-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:19:01.431 [http-nio-80-exec-10] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:19:01.432 [http-nio-80-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/recommendation/recommended_bundles
+2024-11-21 14:19:01.432 [http-nio-80-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/recommendation/recommended_bundles", parameters={}
+2024-11-21 14:19:01.433 [http-nio-80-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.hotel.onlinebooking.ui.controller.RecommendationController#getRecommendedBundles()
+2024-11-21 14:19:01.434 [http-nio-80-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-21 14:19:01.434 [http-nio-80-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[RecommendedBundleDTO(cityName=Las Vegas, NV, cityImageUrl=//s1.pclncdn.com/cityimages/thumb/w600/LA (truncated)...]
+2024-11-21 14:19:01.434 [http-nio-80-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-21 14:19:01.434 [http-nio-80-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-21 14:22:01.979 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-11-21 14:22:01.985 [Thread-7] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-80"]
+2024-11-21 14:22:02.003 [Thread-7] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-21 14:22:02.013 [Thread-7] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-11-21 14:22:02.014 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-11-21 14:22:02.018 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-11-21 14:22:02.207 [restartedMain] INFO  c.h.onlinebooking.ui.UiApplication - Starting UiApplication using Java 21.0.4 with PID 47308 (D:\hbo\study\2024\Project\hotel-booking\ui-service\build\classes\java\main started by hbo in D:\hbo\study\2024\Project\hotel-booking)
+2024-11-21 14:22:02.207 [restartedMain] INFO  c.h.onlinebooking.ui.UiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-21 14:22:02.668 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-21 14:22:02.674 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2024-11-21 14:22:02.901 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 80 (http)
+2024-11-21 14:22:02.903 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2024-11-21 14:22:02.903 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-21 14:22:02.903 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-21 14:22:02.929 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-21 14:22:02.929 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 720 ms
+2024-11-21 14:22:03.047 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2024-11-21 14:22:03.050 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:f295ca3f-a89f-4ae5-8c78-f166f0f3ecf6 user=SA
+2024-11-21 14:22:03.050 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2024-11-21 14:22:03.050 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:f295ca3f-a89f-4ae5-8c78-f166f0f3ecf6'
+2024-11-21 14:22:03.094 [restartedMain] DEBUG o.s.w.f.ServerHttpObservationFilter - Filter 'webMvcObservationFilter' configured for use
+2024-11-21 14:22:03.139 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-21 14:22:03.144 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-11-21 14:22:03.160 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-21 14:22:03.187 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-21 14:22:03.188 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-21 14:22:03.257 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-21 14:22:03.296 [restartedMain] DEBUG o.s.s.c.a.a.c.AuthenticationConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2024-11-21 14:22:03.321 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2024-11-21 14:22:03.343 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+2024-11-21 14:22:03.440 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-11-21 14:22:03.537 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2024-11-21 14:22:03.575 [restartedMain] DEBUG o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-11-21 14:22:03.641 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-21 14:22:03.651 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-21 14:22:05.406 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-11-21 14:22:05.428 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2024-11-21 14:22:05.439 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 80 (http) with context path '/'
+2024-11-21 14:22:05.457 [restartedMain] INFO  c.h.onlinebooking.ui.UiApplication - Started UiApplication in 3.313 seconds (process running for 815.568)
+2024-11-21 14:22:05.459 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-11-21 14:22:06.966 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-11-21 14:22:06.970 [Thread-9] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-80"]
+2024-11-21 14:22:06.991 [Thread-9] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-21 14:22:06.993 [Thread-9] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-11-21 14:22:06.995 [Thread-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2024-11-21 14:22:06.998 [Thread-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2024-11-21 14:22:07.209 [restartedMain] INFO  c.h.onlinebooking.ui.UiApplication - Starting UiApplication using Java 21.0.4 with PID 47308 (D:\hbo\study\2024\Project\hotel-booking\ui-service\build\classes\java\main started by hbo in D:\hbo\study\2024\Project\hotel-booking)
+2024-11-21 14:22:07.210 [restartedMain] INFO  c.h.onlinebooking.ui.UiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-21 14:22:07.544 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-21 14:22:07.548 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2024-11-21 14:22:07.687 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 80 (http)
+2024-11-21 14:22:07.688 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2024-11-21 14:22:07.688 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-21 14:22:07.688 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-21 14:22:07.729 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-21 14:22:07.729 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 515 ms
+2024-11-21 14:22:07.781 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2024-11-21 14:22:07.783 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection conn20: url=jdbc:h2:mem:ff6c14e0-ef58-4b4d-822b-527dfb3776e2 user=SA
+2024-11-21 14:22:07.783 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2024-11-21 14:22:07.783 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:ff6c14e0-ef58-4b4d-822b-527dfb3776e2'
+2024-11-21 14:22:07.813 [restartedMain] DEBUG o.s.w.f.ServerHttpObservationFilter - Filter 'webMvcObservationFilter' configured for use
+2024-11-21 14:22:07.858 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-21 14:22:07.861 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-11-21 14:22:07.869 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-21 14:22:07.888 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-21 14:22:07.889 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-21 14:22:07.932 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-21 14:22:07.953 [restartedMain] DEBUG o.s.s.c.a.a.c.AuthenticationConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2024-11-21 14:22:07.968 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2024-11-21 14:22:07.981 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+2024-11-21 14:22:08.052 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-11-21 14:22:08.127 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2024-11-21 14:22:08.159 [restartedMain] DEBUG o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-11-21 14:22:08.213 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-21 14:22:08.222 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-21 14:22:09.137 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-11-21 14:22:09.151 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2024-11-21 14:22:09.156 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 80 (http) with context path '/'
+2024-11-21 14:22:09.162 [restartedMain] INFO  c.h.onlinebooking.ui.UiApplication - Started UiApplication in 2.0 seconds (process running for 819.272)
+2024-11-21 14:22:09.163 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-11-21 15:39:17.249 [HikariPool-3 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=8m38s326ms741µs900ns).
+2024-11-21 17:12:39.932 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-21 17:12:39.934 [SpringApplicationShutdownHook] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-11-21 17:12:39.936 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2024-11-21 17:12:39.943 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.

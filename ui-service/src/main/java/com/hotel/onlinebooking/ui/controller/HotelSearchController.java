@@ -29,3 +29,11 @@ public class HotelSearchController {
         return ResponseEntity.ok(searchService.getProperties());
     }
 }
+/*
+* TODO:
+* 1. Validate search field before submit
+* 2. Switch between Single/Multi hotel, the form is not properly initialized.
+*    The input field contains the value, but the form model is undefined.
+* 3. Plurals in the history card
+* 4. Search location should be selected from list of locations fetched from backend.
+* */

@@ -1,7 +1,10 @@
 import Slider from "react-slick";
 import "./carouselComponent.css";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
-import { ArrowProps, CarouselComponentProps } from "./types";
+import {
+  ArrowProps,
+  CarouselComponentProps,
+} from "../../types/CarouselComponentTypes";
 import React from "react";
 
 const FeaturedBundleComponent = ({

@@ -55,9 +55,9 @@ export const addSearchAndSave = (searchData: Omit<FormData, "id">) => {
           stay.checkOutDate &&
           stay.checkInDate.getTime() >= new Date().setHours(0, 0, 0, 0)
       )
-      .map((stay) => {
+      .map((stay, index) => {
         const newSearch: RecentSearch = {
-          id: Date.now().toString(),
+          id: `${Date.now()}-${index}`,
           destination: stay.location!.city,
           startDate: stay.checkInDate!.toISOString(),
           endDate: stay.checkOutDate!.toISOString(),
@@ -69,8 +69,8 @@ export const addSearchAndSave = (searchData: Omit<FormData, "id">) => {
       })
       .forEach((newSearch) => {
         dispatch(addSearch(newSearch));
-        dispatch(saveRecentSearches());
       });
+    dispatch(saveRecentSearches());
   };
 };
 
