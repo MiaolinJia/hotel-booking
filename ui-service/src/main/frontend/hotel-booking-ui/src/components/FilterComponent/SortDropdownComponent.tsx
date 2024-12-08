@@ -19,8 +19,8 @@ const SortDropdownComponent = () => {
     const [selectedOption, setSelectedOption] = useState(sortOptions[0]);
 
     return (
-        <div className="w-full max-w-md relative my-4">
-            <div className="text-base leading-6 font-bold mb-4">Sort by</div>
+        <div className="w-full max-w-md relative p-4">
+            <div className="text-base leading-6 font-bold mb-2">Sort by</div>
 
             <button
                 onClick={() => setIsOpen(!isOpen)}

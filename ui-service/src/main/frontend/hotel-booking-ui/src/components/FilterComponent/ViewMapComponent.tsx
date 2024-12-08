@@ -19,6 +19,7 @@ const ViewMapComponent: React.FC<ViewMapComponentProps> = ({
                                                            }) => {
         const navigate = useNavigate();
         return (
+            <div className="view-map p-4">
             <MapContainer
                 center={center}
                 zoom={zoom}
@@ -44,6 +45,7 @@ const ViewMapComponent: React.FC<ViewMapComponentProps> = ({
                     </button>
                 </div>
             </MapContainer>
+            </div>
         );
     }
 ;

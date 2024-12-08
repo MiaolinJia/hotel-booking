@@ -4,6 +4,7 @@ import {ChildAge} from "../types/HotelSearchFormTypes.ts";
 import ViewMapComponent from "../components/FilterComponent/ViewMapComponent.tsx";
 import SortDropdownComponent from "../components/FilterComponent/SortDropdownComponent.tsx";
 import SavingsModeComponent from "../components/FilterComponent/SavingModeComponent.tsx";
+import PropertyTypesFilterComponent from "../components/FilterComponent/PropertyTypesFilterComponent.tsx";
 
 function HotelListPage() {
 
@@ -78,8 +79,8 @@ function HotelListPage() {
 
                         <SortDropdownComponent/>
                         <SavingsModeComponent numDeals={20}/>
+                        <PropertyTypesFilterComponent />
 
-                        <div>Property Types</div>
                         <div>Your Budget Per night</div>
                         <div>Deals</div>
                         <div>Amenities</div>
