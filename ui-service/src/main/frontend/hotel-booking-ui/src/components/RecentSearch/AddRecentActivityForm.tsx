@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { SearchFormData } from "./types";
+import { SearchFormData } from "../../types/RecenSearchTypes";
 import { useDispatch } from "react-redux";
 import { AppDispatch } from "../../store";
 import { addSearchAndSave } from "../../store/modules/recentSearches";
