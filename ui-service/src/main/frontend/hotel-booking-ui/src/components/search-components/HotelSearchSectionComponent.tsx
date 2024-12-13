@@ -4,7 +4,11 @@ import { BadgeDollarSign } from "lucide-react";
 import { AppDispatch } from "../../store";
 import { useDispatch } from "react-redux";
 import { searchHotelList } from "../../store/modules/hotels";
-import { ChildAge, FormData } from "../../types/HotelSearchFormTypes.ts";
+import {
+  ChildAge,
+  FormData,
+  Location,
+} from "../../types/HotelSearchFormTypes.ts";
 import HotelSearchFormSection from "./HotelSearchFormSection.tsx";
 import { addSearchAndSave } from "../../store/modules/recentSearches.ts";
 
@@ -78,10 +82,7 @@ function HotelSearchSectionComponent() {
     }));
   };
 
-  const handleDestinationChange = (
-    index: number,
-    e: React.ChangeEvent<HTMLInputElement>
-  ) => {
+  const handleDestinationChange = (index: number, e: Location) => {
     setFormData((prevState) => ({
       ...prevState,
       destinationAndDates: prevState.destinationAndDates.map((item, i) =>
@@ -89,13 +90,10 @@ function HotelSearchSectionComponent() {
           ? {
               ...item,
               location: {
-                city: e.target.value,
-                state: "",
-                country: "",
-                postalCode: "",
-                neighborhoodName: "",
-                latitude: 0,
-                longitude: 0,
+                city: e.city,
+                state: e.state,
+                country: e.country,
+                id: e.id,
               },
             }
           : item

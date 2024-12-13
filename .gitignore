@@ -42,7 +42,9 @@ out/
 
 ### Frontend ###
 **/static/*
+ui-service/src/main/frontend/hotel-booking-ui/package-lock.json
 
 ### Backend ###
-logs/hotel-service.log
-ui-service/src/main/frontend/hotel-booking-ui/package-lock.json
+
+### Log ###
+logs/*

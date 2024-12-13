@@ -16,10 +16,7 @@ export interface Location {
   city: string;
   state: string;
   country: string;
-  postalCode: string;
-  neighborhoodName: string;
-  latitude: number;
-  longitude: number;
+  id: string;
 }
 
 export interface OccupancyDetail {
@@ -37,10 +34,7 @@ export interface ChildAge {
 export interface HotelSearchFormSectionProps {
   className: string;
   formData: FormData;
-  handleDestinationChange: (
-    index: number,
-    event: React.ChangeEvent<HTMLInputElement>
-  ) => void;
+  handleDestinationChange: (index: number, event: Location) => void;
   handleInputChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
   handleDateChange: (index: number, dates: [Date | null, Date | null]) => void;
   handleRoomDataChange: (
