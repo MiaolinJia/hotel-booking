@@ -10,6 +10,7 @@ import { useEffect, useRef, useState } from "react";
 const useDebounce = (value: string, delay: number) => {
   const [debouncedValue, setDebouncedValue] = useState(value);
 
+  // Set the debounced value after delay
   useEffect(() => {
     const handler = setTimeout(() => {
       setDebouncedValue(value);
@@ -45,18 +46,26 @@ export default function HotelSearchFormSection({
   handleAddHotel,
   handleRemoveHotel,
 }: HotelSearchFormSectionProps) {
+  // Input of each searchbox
   const [searchInputs, setSearchInputs] = useState<string[]>(
     formData.destinationAndDates.map((d) => d.location?.city || "")
   );
-  const [suggestions, setSuggestions] = useState<Suggestion[]>([]);
-  const [showSuggestions, setShowSuggestions] = useState(false);
-  const [isLoading, setIsLoading] = useState(false);
+  // Id of the active searchbox
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  // Search suggestions fetched from API
+  const [suggestions, setSuggestions] = useState<Suggestion[]>([]);
+  // Boolean control to show the suggestions dropdown for the active searchbox
+  const [showSuggestions, setShowSuggestions] = useState(false);
+  // Boolean control of loadding effect of the suggestion dropdown
+  const [isLoading, setIsLoading] = useState(false);
+  // Ref for handling click outside dropdown
   const suggestionsRef = useRef<HTMLDivElement>(null);
+
   const debouncedSearch = useDebounce(
     activeIndex !== null ? searchInputs[activeIndex] : "",
     300
   );
+
   const isMulti = formData.hotelType === "MULTI";
 
   // Update searchInputs when hotels are added or removed
