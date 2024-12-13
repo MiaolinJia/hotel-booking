@@ -145,6 +145,13 @@ export default function HotelSearchFormSection({
     setActiveIndex(null);
   };
 
+  const shouldShowDropdown =
+    showSuggestions &&
+    activeIndex !== null &&
+    (isLoading ||
+      suggestions.length > 0 ||
+      (debouncedSearch && debouncedSearch.length >= 3));
+
   return (
     <form onSubmit={handleSubmit} className={className}>
       {formData.destinationAndDates.map((destinationAndDates, index) => (
@@ -176,10 +183,10 @@ export default function HotelSearchFormSection({
                 }
               />
               <div className="relative">
-                {showSuggestions && activeIndex === index && (
+                {shouldShowDropdown && activeIndex === index && (
                   <div
                     ref={suggestionsRef}
-                    className="absolute z-10 w-full mt-1 bg-white border rounded-md shadow-lg"
+                    className="absolute z-[9999] w-full mt-1 bg-white border rounded-md shadow-lg"
                   >
                     {isLoading ? (
                       <div className="p-2 text-gray-500">Loading...</div>
