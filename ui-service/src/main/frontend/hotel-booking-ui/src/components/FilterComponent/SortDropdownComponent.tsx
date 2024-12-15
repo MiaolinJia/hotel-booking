@@ -1,22 +1,35 @@
 
 import { ChevronDown, Check } from 'lucide-react';
 import {useState} from "react";
+import {useDispatch} from "react-redux";
+import {sortHotelList} from "../../store/modules/hotels.ts";
+import {AppDispatch} from "../../store";
 
 interface SortOption {
     id: string;
     label: string;
+    sortType?: 'rating' | 'price';
 }
 
 const sortOptions: SortOption[] = [
     { id: 'recommended', label: 'Recommended' },
-    { id: 'lowest-price', label: 'Lowest Price' },
-    { id: 'guest-rating', label: 'Guest Rating + Number of Reviews' },
+    { id: 'lowest-price', label: 'Lowest Price', sortType: 'price' },
+    { id: 'guest-rating', label: 'Guest Rating + Number of Reviews', sortType: 'rating' },
     { id: 'nearby', label: 'Nearby' }
 ];
 
 const SortDropdownComponent = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [selectedOption, setSelectedOption] = useState(sortOptions[0]);
+    const dispatch = useDispatch<AppDispatch>();
+
+    const handleSort = (option: SortOption) => {
+        setSelectedOption(option);
+        setIsOpen(false);
+        if (option.sortType) {
+            dispatch(sortHotelList(option.sortType));
+        }
+    }
 
     return (
         <div className="w-full max-w-md relative p-4">
@@ -42,10 +55,7 @@ const SortDropdownComponent = () => {
                                     ? 'bg-blue-600 text-white'
                                     : 'hover:bg-gray-100'
                             }`}
-                            onClick={() => {
-                                setSelectedOption(option);
-                                setIsOpen(false);
-                            }}
+                            onClick={() => handleSort(option)}
                         >
                             <span className="text-sm">{option.label}</span>
                             {selectedOption.id === option.id && (

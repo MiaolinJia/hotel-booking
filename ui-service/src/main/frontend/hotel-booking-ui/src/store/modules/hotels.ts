@@ -1,4 +1,4 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import {createSlice, PayloadAction} from "@reduxjs/toolkit";
 import axios from "axios";
 import { AppDispatch } from "../index";
 
@@ -14,11 +14,12 @@ interface Hotel {
 
 interface HotelsState {
     hotelList: Hotel[],
-
+    sortBy: 'rating' | 'price' | null
 }
 
 const initialState: HotelsState = {
     hotelList: [],
+    sortBy: null
 };
 
 const hotelsStore = createSlice({
@@ -27,10 +28,19 @@ const hotelsStore = createSlice({
     reducers: {
         setHotelsList: (state, action: PayloadAction<Hotel[]>) => {
             state.hotelList = action.payload;
+        },
+        sortHotels: (state, action: PayloadAction<'rating' | 'price'>) => {
+            state.sortBy = action.payload;
+            if(action.payload === 'rating') {
+                state.hotelList = [...state.hotelList].sort((a, b) => b.rating - a.rating);
+            } else if (action.payload === 'price') {
+                state.hotelList = [...state.hotelList].sort((a, b) => a.price - b.price);
+            }
         }
     }
 });
-const { setHotelsList } = hotelsStore.actions;
+
+const { setHotelsList, sortHotels } = hotelsStore.actions;
 
 // async
 const fetchHotelList = () => {
@@ -55,6 +65,12 @@ const searchHotelList = () => {
     }
 }
 
-export { fetchHotelList, searchHotelList }
+const sortHotelList = (sortBy: 'rating' | 'price') => {
+    return (dispatch: AppDispatch) => {
+        dispatch(sortHotels(sortBy));
+    }
+};
+
+export { fetchHotelList, searchHotelList, sortHotelList }
 const reducer = hotelsStore.reducer
 export default reducer

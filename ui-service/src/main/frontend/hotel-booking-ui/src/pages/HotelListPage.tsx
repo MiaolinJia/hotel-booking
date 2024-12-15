@@ -5,6 +5,7 @@ import ViewMapComponent from "../components/FilterComponent/ViewMapComponent.tsx
 import SortDropdownComponent from "../components/FilterComponent/SortDropdownComponent.tsx";
 import SavingsModeComponent from "../components/FilterComponent/SavingModeComponent.tsx";
 import PropertyTypesFilterComponent from "../components/FilterComponent/PropertyTypesFilterComponent.tsx";
+import HotelListCardsPage from "./HotelListCardsPage.tsx";
 
 function HotelListPage() {
 
@@ -66,7 +67,7 @@ function HotelListPage() {
                 </div>
             </div>
 
-            <div className="mt-4 max-w-7xl min-w-min mx-auto">
+            <div className="max-w-7xl min-w-min mx-auto">
                 <div className="flex justify-center w-full">
                     <div className="w-1/4 p-4 font-montserrat text-base">
 
@@ -81,21 +82,22 @@ function HotelListPage() {
                         <SavingsModeComponent numDeals={20}/>
                         <PropertyTypesFilterComponent />
 
-                        <div>Your Budget Per night</div>
-                        <div>Deals</div>
-                        <div>Amenities</div>
-                        <div>Neighborhoods</div>
-                        <div>Guest Rating</div>
-                        <div>Hotel Star Level</div>
-                        <div>Rate Options</div>
-                        <div>Brands</div>
-                        <div>Property Themes</div>
-                        <div>Savings Mode</div>
-                        <div>Map</div>
-                        <div>Special discounts whtn you call</div>
+                        {/*<div>Your Budget Per night</div>*/}
+                        {/*<div>Deals</div>*/}
+                        {/*<div>Amenities</div>*/}
+                        {/*<div>Neighborhoods</div>*/}
+                        {/*<div>Guest Rating</div>*/}
+                        {/*<div>Hotel Star Level</div>*/}
+                        {/*<div>Rate Options</div>*/}
+                        {/*<div>Brands</div>*/}
+                        {/*<div>Property Themes</div>*/}
+                        {/*<div>Savings Mode</div>*/}
+                        {/*<div>Map</div>*/}
+                        {/*<div>Special discounts whtn you call</div>*/}
                     </div>
-                    <div className="w-3/4 p-4">
-                        Right
+
+                    <div className="w-3/4 p-4 font-montserrat text-base">
+                        <HotelListCardsPage />
                     </div>
                 </div>
             </div>

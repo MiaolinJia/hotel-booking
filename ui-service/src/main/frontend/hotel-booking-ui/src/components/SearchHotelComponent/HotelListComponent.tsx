@@ -11,7 +11,7 @@ function HotelListComponent() {
     useEffect(() => {
         dispatch(fetchHotelList())
     }, [dispatch]);
-    // get food list
+    // get hotel list
     const {hotelList} = useSelector((state: RootState) => state.hotels)
 
     return (
